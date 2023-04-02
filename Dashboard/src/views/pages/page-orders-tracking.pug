@@ -1,0 +1,102 @@
+extends ../layouts/master.pug
+
+block title
+	title Ecom - Marketplace Dashboard Template
+
+block content
+	.content-header
+		div
+			h2.content-title.card-title Order Tracking
+			p Details for Order ID: 3453012
+	.card
+		header.card-header
+			.row.align-items-center
+				.col-lg-6.col-md-6.mb-lg-0.mb-15
+					span
+						i.material-icons.md-calendar_today
+						b Wed, Aug 13, 2022, 4:34PM
+					br
+					small.text-muted Order ID: 3453012
+					br
+					small.text-muted Your order has been delivered
+				.col-lg-6.col-md-6.ms-auto.text-md-end
+					select.form-select.d-inline-block.mb-lg-0.mb-15.mw-200.mr-15
+						option Change status
+						option Awaiting payment
+						option Confirmed
+						option Shipped
+						option Delivered
+					a.btn.btn-primary(href='#') Screenshot
+					a.btn.btn-secondary.print.ms-2(href='#')
+						i.icon.material-icons.md-print.mr-5
+						| Print
+		.card-body
+			.order-tracking.mb-100
+				.steps.d-flex.flex-wrap.flex-sm-nowrap.justify-content-between
+					.step.completed
+						.step-icon-wrap
+							.step-icon
+								i.material-icons.md-shopping_cart
+						h4.step-title Confirmed Order
+						small.text-muted.text-sm 15 March 2022
+					.step.completed
+						.step-icon-wrap
+							.step-icon
+								i.material-icons.md-settings
+						h4.step-title Processing Order
+						small.text-muted.text-sm 16 March 2022
+					.step.completed
+						.step-icon-wrap
+							.step-icon
+								i.material-icons.md-shopping_bag
+						h4.step-title Quality Check
+						small.text-muted.text-sm 17 March 2022
+					.step
+						.step-icon-wrap
+							.step-icon
+								i.material-icons.md-local_shipping
+						h4.step-title Product Dispatched
+						small.text-muted.text-sm 18 March 2022
+					.step
+						.step-icon-wrap
+							.step-icon
+								i.material-icons.md-check_circle
+						h4.step-title Product Delivered
+						small.text-muted.text-sm 20 March 2022
+			.row.mb-50.mt-20.order-info-wrap.text-center
+				.col-md-4
+					article.icontext.align-items-start
+						.text
+							h6.mb-1 Customer
+							p.mb-1
+								| John Alexander
+								br
+								|  alex@example.com
+								br
+								|  +998 99 22123456
+							a(href='#') View profile
+				.col-md-4
+					article.icontext.align-items-start
+						.text
+							h6.mb-1 Order info
+							p.mb-1
+								| Shipping: Fargo express
+								br
+								|  Pay method: card
+								br
+								|  Status: new
+							a(href='#') Download info
+				.col-md-4
+					article.icontext.align-items-start
+						.text
+							h6.mb-1 Deliver to
+							p.mb-1
+								| City: Tashkent, Uzbekistan
+								br
+								| Block A, House 123, Floor 2
+								br
+								|  Po Box 10000
+							a(href='#') View profile
+			.row
+				.text-center.mt-100.mb-50
+					a.btn.btn-primary(href='page-orders-detail.html') View Order Details

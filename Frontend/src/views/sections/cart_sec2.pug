@@ -1,0 +1,152 @@
+section.section-box.shop-template
+    .container
+        .row
+            .col-lg-9
+                .box-carts
+                    .head-wishlist
+                        .item-wishlist
+                            .wishlist-cb
+                                input.cb-layout.cb-all(type="checkbox")
+                            .wishlist-product
+                                span.font-md-bold.color-brand-3 Product
+                            .wishlist-price
+                                span.font-md-bold.color-brand-3 Unit Price
+                            .wishlist-status
+                                span.font-md-bold.color-brand-3 Quantity
+                            .wishlist-action
+                                span.font-md-bold.color-brand-3 Subtotal
+                            .wishlist-remove
+                                span.font-md-bold.color-brand-3 Remove
+
+                    .content-wishlist.mb-20
+                        -
+                            const wishLists = [
+                                {
+                                    image: 'assets/imgs/page/product/img-sub.png',
+                                    title: 'Dell Optiplex 9020 Small Form Business Desktop Tower PC',
+                                    price: '$2.51',
+                                    subtotal: '$2.51'
+                                },
+                                {
+                                    image: 'assets/imgs/page/product/img-sub2.png',
+                                    title: 'HP 24 All-in-One PC, Intel Core i3-1115G4, 4GB RAM',
+                                    price: '$1.51',
+                                    subtotal: '$1.51'
+                                },
+                                {
+                                    image: 'assets/imgs/page/product/img-sub3.png',
+                                    title: 'Gateway 23.8" All-in-one Desktop, Fully Adjustable Stand',
+                                    price: '$3.51',
+                                    subtotal: '$3.51'
+                                }
+                            ]
+                        each product in wishLists
+                            .item-wishlist
+                                .wishlist-cb
+                                    input.cb-layout.cb-select(type="checkbox")
+                                .wishlist-product
+                                    .product-wishlist
+                                        .product-image
+                                            a(href="shop-single-product.html")
+                                                img(src= product.image, alt='Ecom')
+                                        .product-info
+                                            a(href="shop-single-product.html")
+                                                h6.color-brand-3= product.title
+                                            .rating
+                                                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                                span.font-xs.color-gray-500
+                                                    |  (65)
+                                .wishlist-price
+                                    h4.color-brand-3= product.price
+                                .wishlist-status
+                                    .box-quantity
+                                        .input-quantity
+                                            input.font-xl.color-brand-3(type="text", value="1")
+                                            span.minus-cart
+                                            span.plus-cart
+
+                                .wishlist-action
+                                    h4.color-brand-3= product.subtotal
+                                .wishlist-remove
+                                    a.btn.btn-delete(href='#')
+                    .row.mb-40
+                        .col-lg-6.col-md-6.col-sm-6-col-6
+                            a.btn.btn-buy.w-auto.arrow-back.mb-10(href='shop-grid.html') Continue shopping
+                        .col-lg-6.col-md-6.col-sm-6-col-6.text-md-end
+                            a.btn.btn-buy.w-auto.update-cart.mb-10(href='shop-cart.html') Update cart
+
+                    .row.mb-50
+                        .col-lg-6.col-md-6
+                            .box-cart-left
+                                h5.font-md-bold.mb-10 Calculate Shipping
+                                span.font-sm-bold.mb-5.d-inline-block.color-gray-500 Flat rate:
+                                |
+                                span.font-sm-bold.d-inline-block.color-brand-3 5%
+                                .form-group
+                                    select.form-control.select-style1.color-gray-700
+                                        option(value='1') USA
+                                        option(value='1') EURO
+                                .row
+                                    .col-lg-6.mb-10
+                                        input.form-control(placeholder='Stage / Country')
+                                    .col-lg-6.mb-10
+                                        input.form-control(placeholder='PostCode / ZIP')
+                        .col-lg-6.col-md-6
+                            .box-cart-right.p-20
+                                h5.font-md-bold.mb-10 Apply Coupon
+                                span.font-sm-bold.mb-5.d-inline-block.color-gray-500 Using A Promo Code?
+                                .form-group.d-flex
+                                    input.form-control.mr-15(placeholder='Enter Your Coupon')
+                                    button.btn.btn-buy.w-auto Apply
+
+            .col-lg-3
+                .summary-cart
+                    .border-bottom.mb-10
+                        .row
+                            .col-6
+                                span.font-md-bold.color-gray-500 Subtotal
+                            .col-6.text-end
+                                h4 	$2.51
+                    .border-bottom.mb-10
+                        .row
+                            .col-6
+                                span.font-md-bold.color-gray-500 Shipping
+                            .col-6.text-end
+                                h4 	Free
+                    .border-bottom.mb-10
+                        .row
+                            .col-6
+                                span.font-md-bold.color-gray-500 Estimate for
+                            .col-6.text-end
+                                h6 United Kingdom
+                    .mb-10
+                        .row
+                            .col-6
+                                span.font-md-bold.color-gray-500 Total
+                            .col-6.text-end
+                                h4 	$2.51
+                    .box-button
+                        a.btn.btn-buy(href='shop-checkout.html') Proceed To CheckOut
+
+        h4.color-brand-3 You may also like
+        .list-products-5.mt-20.mb-40
+            +cardGridStyle3('assets/imgs/page/homepage1/imgsp3.png', "Hisense", "-17%", 'Hisense 43" Class 4K UHD LED XClass Smart TV HDR', '$3225.6', "$2856.3", 'shop-single-product.html')
+            +cardGridStyle3('assets/imgs/page/homepage1/imgsp4.png', "Apple", "-17%", '2022 Apple 10.9-inch iPad Air Wi-Fi 64GB - Silver', '$3225.6', "$2856.3", 'shop-single-product.html')
+            +cardGridStyle3('assets/imgs/page/homepage1/imgsp5.png', "LG", "-17%", 'LG 65" Class 4K UHD Smart TV OLED A1 Series ', '$3225.6', "$2856.3", 'shop-single-product.html')
+            +cardGridStyle3('assets/imgs/page/homepage1/imgsp6.png', "Apple", "-17%", 'Apple AirPods Pro with MagSafe Charging Case', '$3225.6', "$2856.3", 'shop-single-product.html')
+            +cardGridStyle3('assets/imgs/page/homepage1/imgsp7.png', "Razer", "-17%", 'Razer Power Up Gaming Bundle V2 - Cynosa Lite', '$3225.6', "$2856.3", 'shop-single-product.html')
+
+        h4.color-brand-3 Recently viewed items
+        .row.mt-40
+            .col-lg-3.col-md-6.col-sm-12
+                +cardGridStyle2_1('assets/imgs/page/homepage1/imgsp1.png', 'HP', 'HP DeskJet 2755e Wireless Color All-in-One Printer', '$3225.6', '$2556.3', 'shop-single-product.html')
+            .col-lg-3.col-md-6.col-sm-12
+                +cardGridStyle2_1('assets/imgs/page/homepage1/imgsp2.png', 'HP', 'Original HP 63XL Black High-yield Ink Cartridge', '$3225.6', '$2556.3', 'shop-single-product.html')
+            .col-lg-3.col-md-6.col-sm-12
+                +cardGridStyle2_1('assets/imgs/page/homepage1/imgsp1.png', 'Logitech', 'Logitech H390 Wired Headset, Stereo Headphones', '$3225.6', '$2556.3', 'shop-single-product.html')
+            .col-lg-3.col-md-6.col-sm-12
+                +cardGridStyle2_1('assets/imgs/page/homepage1/imgsp2.png', 'Logitech', 'Logitech MK345 Wireless Combo Full-Sized', '$3225.6', '$2556.3', 'shop-single-product.html')

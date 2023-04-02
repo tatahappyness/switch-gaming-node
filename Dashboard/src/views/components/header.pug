@@ -1,0 +1,65 @@
+header.main-header.navbar
+  .col-search
+    form.searchform
+      .input-group
+        input.form-control(list='search_terms', type='text', placeholder='Search term')
+        button.btn.btn-light.bg(type='button')
+          i.material-icons.md-search
+      datalist#search_terms
+        option(value='Products')
+        option(value='New orders')
+        option(value='Apple iphone')
+        option(value='Ahmed Hassan')
+  .col-nav
+    button.btn.btn-icon.btn-mobile.me-auto(data-trigger='#offcanvas_aside')
+      i.material-icons.md-apps
+    ul.nav
+      li.nav-item
+        a.nav-link.btn-icon(href='#')
+          i.material-icons.md-notifications.animation-shake
+          span.badge.rounded-pill 3
+      li.nav-item
+        a.nav-link.btn-icon.darkmode(href='#')
+          i.material-icons.md-nights_stay
+      li.nav-item
+        a.requestfullscreen.nav-link.btn-icon(href='#')
+          i.material-icons.md-cast
+      li.dropdown.nav-item
+        a#dropdownLanguage.dropdown-toggle(data-bs-toggle='dropdown', href='#', aria-expanded='false')
+          i.material-icons.md-public
+        .dropdown-menu.dropdown-menu-end(aria-labelledby='dropdownLanguage')
+          a.dropdown-item.text-brand(href='#')
+            img(src='assets/imgs/theme/flag-us.png', alt='English')
+            | English
+          a.dropdown-item(href='#')
+            img(src='assets/imgs/theme/flag-fr.png', alt='Français')
+            | Fran&ccedil;ais
+          a.dropdown-item(href='#')
+            img(src='assets/imgs/theme/flag-jp.png', alt='Français')
+            | &#x65E5;&#x672C;&#x8A9E;
+          a.dropdown-item(href='#')
+            img(src='assets/imgs/theme/flag-cn.png', alt='Français')
+            | &#x4E2D;&#x56FD;&#x4EBA;
+      li.dropdown.nav-item
+        a#dropdownAccount.dropdown-toggle(data-bs-toggle='dropdown', href='#', aria-expanded='false')
+          img.img-xs.rounded-circle(src='assets/imgs/people/avatar2.jpg', alt='User')
+        .dropdown-menu.dropdown-menu-end(aria-labelledby='dropdownAccount')
+          a.dropdown-item(href='#')
+            i.material-icons.md-perm_identity
+            | Edit Profile
+          a.dropdown-item(href='#')
+            i.material-icons.md-settings
+            | Account Settings
+          a.dropdown-item(href='#')
+            i.material-icons.md-account_balance_wallet
+            | Wallet
+          a.dropdown-item(href='#')
+            i.material-icons.md-receipt
+            | Billing
+          a.dropdown-item(href='#')
+            i.material-icons.md-help_outline
+            | Help center
+          .dropdown-divider
+          a.dropdown-item.text-danger(href='#')
+            i.material-icons.md-exit_to_app
+            | Logout

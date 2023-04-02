@@ -1,0 +1,32 @@
+extends ../layouts/master.pug
+block variables
+    - var page = 'homepage10';
+block title
+    title Home 10 - Ecom Marketplace Template
+
+block header
+    include ../components/header-7.pug
+
+block content
+    include ../sections/homepage10/categories.pug
+    include ../sections/homepage10/banner.pug
+    include ../sections/homepage10/feature-products.pug
+    include ../sections/homepage10/sales.pug
+    include ../sections/homepage10/plant-pots.pug
+    include ../sections/homepage10/plant-tools.pug
+    include ../sections/homepage10/ads.pug
+
+    section.section-box.mt-50
+        .container
+            .head-main
+                h3.mb-5 Latest News &amp; Events
+                p.font-base.color-gray-500 From our blog, forum
+                .box-button-slider
+                .swiper-button-next.swiper-button-next-group-4
+                .swiper-button-prev.swiper-button-prev-group-4
+    include ../sections/blog-slider-6.pug
+    include ../sections/homepage1/home1_sec9.pug
+    include ../sections/newsletter-5.pug
+    include ../elements/quickview.pug
+
+    block scripts-custom

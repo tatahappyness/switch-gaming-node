@@ -1,0 +1,85 @@
+section.section-box.mt-50
+    .container
+        .head-main.bd-gray-200
+            .row
+                .col-xl-6.col-lg-4
+                    h3.mb-5 Plant pots
+                    p.font-base.color-gray-500 Special products in this month. 
+                .col-xl-6.col-lg-8
+                    ul.nav.nav-tabs.text-uppercase.pr-100(role='tablist')
+                        li
+                            a.active(href='#tab-3-all', data-bs-toggle='tab', role='tab', aria-controls='tab-3-all', aria-selected='true', data-index='1') All
+                        li
+                            a(href='#tab-3-bestseller', data-bs-toggle='tab', role='tab', aria-controls='tab-3-bestseller', aria-selected='false', data-index='2') Best seller
+                        li
+                            a(href='#tab-3-mostviewed', data-bs-toggle='tab', role='tab', aria-controls='tab-3-mostviewed', aria-selected='false', data-index='3') Most viewed
+                        li
+                            a(href='#tab-3-topbrands', data-bs-toggle='tab', role='tab', aria-controls='tab-3-topbrands', aria-selected='false', data-index='4') Top Brands
+                    // Button slider
+                    .box-button-slider
+                        #tab-3-all-nav.button-slider-nav
+                            .swiper-button-next.swiper-button-next-tab-1
+                            .swiper-button-prev.swiper-button-prev-tab-1
+                        #tab-3-bestseller-nav.button-slider-nav(style='display: none;')
+                            .swiper-button-next.swiper-button-next-tab-2
+                            .swiper-button-prev.swiper-button-prev-tab-2
+                        #tab-3-mostviewed-nav.button-slider-nav(style='display: none;')
+                            .swiper-button-next.swiper-button-next-tab-3
+                            .swiper-button-prev.swiper-button-prev-tab-3
+                        #tab-3-topbrands-nav.button-slider-nav(style='display: none;')
+                            .swiper-button-next.swiper-button-next-tab-4
+                            .swiper-button-prev.swiper-button-prev-tab-4
+                    // End Button slider
+        .tab-content.tab-content-slider
+            #tab-3-all.tab-pane.fade.active.show(role='tabpanel', aria-labelledby='tab-3-all')
+                .box-swiper
+                    .swiper-container.swiper-tab-1
+                        .swiper-wrapper.pt-5
+                            .swiper-slide
+                                .list-products-5
+                                    +cardGridStyle3_4('assets/imgs/page/homepage10/pots1.png', "Apple", "-17%", 'Wyze Cam v3 1080p HD Indoor/Outdoor', '$3225.6', "$2856.3", 'shop-single-product-3.html')
+                                    +cardGridStyle3_4('assets/imgs/page/homepage10/pots2.png', "Apple", "", 'Wyze Cam v3 1080p HD Indoor/Outdoor', '$3225.6', "$2856.3", 'shop-single-product-3.html')
+                                        span.label.bg-danger Hot
+                                    +cardGridStyle3_4('assets/imgs/page/homepage10/pots3.png', "Apple", "", 'Sonos Ray Compact Soundbar with Wall Mount', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                        span.label.bg-success New
+                                    +cardGridStyle3_4('assets/imgs/page/homepage10/pots4.png', "Apple", "", 'Universal Balance Hoverboard Electric Scooter', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3_4('assets/imgs/page/homepage10/pots5.png', "Apple", "", 'Inspire 7255e All-in-One InkJet Printer', '$3225.6', "$2856.3", 'shop-single-product.html')
+            #tab-3-bestseller.tab-pane.fade(role='tabpanel', aria-labelledby='tab-3-bestseller')
+                .box-swiper
+                    .swiper-container.swiper-tab-2
+                        .swiper-wrapper.pt-5
+                            .swiper-slide
+                                .list-products-5
+                                    +cardGridStyle3_4('assets/imgs/page/homepage10/pots1.png', "Apple", "-17%", 'Wyze Cam v3 1080p HD Indoor/Outdoor', '$3225.6', "$2856.3", 'shop-single-product-3.html')
+                                    +cardGridStyle3_4('assets/imgs/page/homepage10/pots2.png', "Apple", "", 'Wyze Cam v3 1080p HD Indoor/Outdoor', '$3225.6', "$2856.3", 'shop-single-product-3.html')
+                                        span.label.bg-danger Hot
+                                    +cardGridStyle3_4('assets/imgs/page/homepage10/pots3.png', "Apple", "", 'Sonos Ray Compact Soundbar with Wall Mount', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                        span.label.bg-success New
+                                    +cardGridStyle3_4('assets/imgs/page/homepage10/pots4.png', "Apple", "", 'Universal Balance Hoverboard Electric Scooter', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3_4('assets/imgs/page/homepage10/pots5.png', "Apple", "", 'Inspire 7255e All-in-One InkJet Printer', '$3225.6', "$2856.3", 'shop-single-product.html')
+            #tab-3-mostviewed.tab-pane.fade(role='tabpanel', aria-labelledby='tab-3-mostviewed')
+                .box-swiper
+                    .swiper-container.swiper-tab-3
+                        .swiper-wrapper.pt-5
+                            .swiper-slide
+                                .list-products-5
+                                    +cardGridStyle3_4('assets/imgs/page/homepage10/pots1.png', "Apple", "-17%", 'Wyze Cam v3 1080p HD Indoor/Outdoor', '$3225.6', "$2856.3", 'shop-single-product-3.html')
+                                    +cardGridStyle3_4('assets/imgs/page/homepage10/pots2.png', "Apple", "", 'Wyze Cam v3 1080p HD Indoor/Outdoor', '$3225.6', "$2856.3", 'shop-single-product-3.html')
+                                        span.label.bg-danger Hot
+                                    +cardGridStyle3_4('assets/imgs/page/homepage10/pots3.png', "Apple", "", 'Sonos Ray Compact Soundbar with Wall Mount', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                        span.label.bg-success New
+                                    +cardGridStyle3_4('assets/imgs/page/homepage10/pots4.png', "Apple", "", 'Universal Balance Hoverboard Electric Scooter', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3_4('assets/imgs/page/homepage10/pots5.png', "Apple", "", 'Inspire 7255e All-in-One InkJet Printer', '$3225.6', "$2856.3", 'shop-single-product.html')
+            #tab-3-topbrands.tab-pane.fade(role='tabpanel', aria-labelledby='tab-3-topbrands')
+                .box-swiper
+                    .swiper-container.swiper-tab-4
+                        .swiper-wrapper.pt-5
+                            .swiper-slide
+                                .list-products-5
+                                    +cardGridStyle3_4('assets/imgs/page/homepage10/pots1.png', "Apple", "-17%", 'Wyze Cam v3 1080p HD Indoor/Outdoor', '$3225.6', "$2856.3", 'shop-single-product-3.html')
+                                    +cardGridStyle3_4('assets/imgs/page/homepage10/pots2.png', "Apple", "", 'Wyze Cam v3 1080p HD Indoor/Outdoor', '$3225.6', "$2856.3", 'shop-single-product-3.html')
+                                        span.label.bg-danger Hot
+                                    +cardGridStyle3_4('assets/imgs/page/homepage10/pots3.png', "Apple", "", 'Sonos Ray Compact Soundbar with Wall Mount', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                        span.label.bg-success New
+                                    +cardGridStyle3_4('assets/imgs/page/homepage10/pots4.png', "Apple", "", 'Universal Balance Hoverboard Electric Scooter', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3_4('assets/imgs/page/homepage10/pots5.png', "Apple", "", 'Inspire 7255e All-in-One InkJet Printer', '$3225.6', "$2856.3", 'shop-single-product.html')

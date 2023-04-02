@@ -1,0 +1,15 @@
+extends ../layouts/master.pug
+block variables
+    - var PageTitle = 'Login'
+block title
+    title Login - Ecom Marketplace Template
+
+block header
+    include ../components/header.pug
+
+block content
+    include ../sections/login_sec1.pug
+
+    include ../sections/newsletter.pug
+
+    block scripts-custom

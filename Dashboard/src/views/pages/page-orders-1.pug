@@ -1,0 +1,309 @@
+extends ../layouts/master.pug
+
+block title
+	title Ecom - Marketplace Dashboard Template
+
+block content
+	.content-header
+		div
+			h2.content-title.card-title Order List
+			p Lorem ipsum dolor sit amet.
+		div
+			input.form-control.bg-white(type='text' placeholder='Search order ID')
+	.card.mb-4
+		header.card-header
+			.row.gx-3
+				.col-lg-4.col-md-6.me-auto
+					input.form-control(type='text' placeholder='Search...')
+				.col-lg-2.col-6.col-md-3
+					select.form-select
+						option Status
+						option Active
+						option Disabled
+						option Show all
+				.col-lg-2.col-6.col-md-3
+					select.form-select
+						option Show 20
+						option Show 30
+						option Show 40
+		.card-body
+			.table-responsive
+				table.table.table-hover
+					thead
+						tr
+							th #ID
+							th(scope='col') Name
+							th(scope='col') Email
+							th(scope='col') Total
+							th(scope='col') Status
+							th(scope='col') Date
+							th.text-end(scope='col')  Action
+					tbody
+						tr
+							td 0901
+							td
+								b Marvin McKinney
+							td marvin@example.com
+							td $9.00
+							td
+								span.badge.rounded-pill.alert-warning Pending
+							td 03.12.2022
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+						tr
+							td 2323
+							td
+								b Leslie Alexander
+							td leslie@example.com
+							td $46.61
+							td
+								span.badge.rounded-pill.alert-warning Pending
+							td 21.02.2022
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+						tr
+							td 1233
+							td
+								b Esther Howard
+							td esther@example.com
+							td $12.00
+							td
+								span.badge.rounded-pill.alert-danger Canceled
+							td 03.07.2022
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+						tr
+							td 1233
+							td
+								b Esther Howard
+							td esther@example.com
+							td $12.00
+							td
+								span.badge.rounded-pill.alert-danger Canceled
+							td 03.07.2022
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+						tr
+							td 2323
+							td
+								b Jenny Wilson
+							td jenny@example.com
+							td $589.99
+							td
+								span.badge.rounded-pill.alert-success Received
+							td 22.05.2022
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+						tr
+							td 2112
+							td
+								b Marvin McKinney
+							td marvin@example.com
+							td $16.58
+							td
+								span.badge.rounded-pill.alert-success Received
+							td 23.04.2022
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+						tr
+							td 7897
+							td
+								b Albert Flores
+							td albert@example.com
+							td $10.00
+							td
+								span.badge.rounded-pill.alert-success Received
+							td 13.03.2022
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+						tr
+							td 2323
+							td
+								b Wade Warren
+							td wade@example.com
+							td $105.55
+							td
+								span.badge.rounded-pill.alert-success Received
+							td 23.09.2019
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+						tr
+							td 2324
+							td
+								b Jane Cooper
+							td jane@example.com
+							td $710.68
+							td
+								span.badge.rounded-pill.alert-success Received
+							td 28.04.2022
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+						tr
+							td 2325
+							td
+								b Savannah Nguyen
+							td savannah@example.com
+							td $710.68
+							td
+								span.badge.rounded-pill.alert-success Received
+							td 23.03.2022
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+						tr
+							td 2326
+							td
+								b Guy Hawkins
+							td guy@example.com
+							td $767.50
+							td
+								span.badge.rounded-pill.alert-success Received
+							td 28.04.2022
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+						tr
+							td 2327
+							td
+								b Darrell Steward
+							td darrel@example.com
+							td $406.27
+							td
+								span.badge.rounded-pill.alert-success Received
+							td 14.07.2022
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+						tr
+							td 2328
+							td
+								b Jane Cooper
+							td jane@example.com
+							td $601.13
+							td
+								span.badge.rounded-pill.alert-success Received
+							td 18.03.2022
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+						tr
+							td 2329
+							td
+								b Darlene Robertson
+							td deriene@example.com
+							td $948.55
+							td
+								span.badge.rounded-pill.alert-success Received
+							td 03.07.2022
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+	.pagination-area.mt-15.mb-50
+		nav(aria-label='Page navigation example')
+			ul.pagination.justify-content-start
+				li.page-item.active
+					a.page-link(href='#') 01
+				li.page-item
+					a.page-link(href='#') 02
+				li.page-item
+					a.page-link(href='#') 03
+				li.page-item
+					a.page-link.dot(href='#') ...
+				li.page-item
+					a.page-link(href='#') 16
+				li.page-item
+					a.page-link(href='#')
+						i.material-icons.md-chevron_right

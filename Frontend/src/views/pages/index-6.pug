@@ -1,0 +1,33 @@
+extends ../layouts/master.pug
+
+block title
+  title Home 6 - Ecom Marketplace Template
+
+block header
+  include ../components/header-5.pug
+
+block content
+  include ../sections/homepage6/home6_banner.pug
+  include ../sections/homepage6/home6_policy.pug
+  include ../sections/homepage6/most_category.pug
+  include ../sections/homepage6/weekly-selection.pug
+  include ../sections/homepage6/banner-middle.pug
+  include ../sections/homepage6/weekly-selection-2.pug
+  include ../sections/homepage6/home6_category.pug
+  include ../sections/homepage6/banner-bottom.pug
+
+
+  section.section-box.mt-50
+    .container
+      .head-main
+        h3.mb-5 Latest News &amp; Events
+        p.font-base.color-gray-500 From our blog, forum
+        .box-button-slider
+          .swiper-button-next.swiper-button-next-group-4
+          .swiper-button-prev.swiper-button-prev-group-4
+    include ../sections/blog-slider-3.pug
+  include ../sections/homepage1/home1_sec9.pug
+  include ../sections/newsletter.pug
+  include ../elements/quickview.pug
+
+  block scripts-custom

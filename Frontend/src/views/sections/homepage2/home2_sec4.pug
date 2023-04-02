@@ -1,0 +1,94 @@
+section.section-box.pt-50
+    .container
+        .head-main.bd-gray-200
+            .row
+                .col-xl-6.col-lg-5
+                    h3.mb-5 Flash Deals
+                    p.font-base.color-gray-500 Special products in this month.
+                .col-xl-6.col-lg-7
+                    ul.nav.nav-tabs.nav-tabs-underline.text-uppercase(role='tablist')
+                        li
+                            a.active(href='#tab-flash-all', data-bs-toggle='tab', data-index="1", role='tab', aria-controls='tab-flash-all', aria-selected='true') All
+                        li
+                            a(href='#tab-flash-bestseller', data-bs-toggle='tab', data-index="2", role='tab', aria-controls='tab-flash-bestseller', aria-selected='true') Best seller
+                        li
+                            a(href='#tab-flash-mostviewed', data-bs-toggle='tab', data-index="3", role='tab', aria-controls='tab-flash-mostviewed', aria-selected='true') Most viewed
+                        li
+                            a(href='#tab-flash-topbrands', data-bs-toggle='tab', data-index="4", role='tab', aria-controls='tab-flash-topbrands', aria-selected='true') Top Brands
+        .tab-content
+            #tab-flash-all.tab-pane.fade.active.show(role='tabpanel', aria-labelledby='tab-all')
+                .row
+                    .col-xl-5.col-lg-6.col-md-6.col-sm-12
+                        +cardStyle3TopDeal('assets/imgs/page/homepage1/screen.png', 'assets/imgs/page/homepage1/screen-2.png', 'assets/imgs/page/homepage1/screen-3.png', 'Top', 'Deals', 'Apple', '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', 'shop-single-product.html', '$3856.3', '$2856.3', '568', '289', '1')
+                    .col-xl-5.col-lg-6.col-md-6.col-sm-12
+                        +cardStyle3TopDeal('assets/imgs/page/homepage1/screen-2.png', 'assets/imgs/page/homepage1/screen-3.png', 'assets/imgs/page/homepage1/screen.png', 'Top', 'Deals', 'Apple', 'Apple MacBook Air with Apple M1 Chip 13-inch, 8GB RAM', 'shop-single-product.html', '$3856.3', '$2856.3', '568', '289', '1')
+                    .col-lg-2.col-md-6.d-none.d-xl-block.col-sm-12
+                        .grid-banner-height
+                            span.lbl-new-arrival.color-brand-3 New Arrivals
+                            h4.font-24.mt-10.mb-5 Xiaomi Redmi Serial 12
+                            p.font-16 Special Sale
+                    .col-lg-3.col-md-6.col-sm-6
+                        +cardStyle3HideCart('assets/imgs/page/homepage1/imgsp1.png', "Apple", "-17%", 'HP 22 All-in-One PC, Intel Pentium Silver J5040, 4GB RAM', '$3225.6', "$2856.3", 'shop-single-product.html', '568', '289')
+                    .col-lg-3.col-md-6.col-sm-6
+                        +cardStyle3HideCart('assets/imgs/page/homepage1/imgsp3.png', "Gateway", "-17%", 'Gateway 23.8" All-in-one Desktop, Fully Adjustable Stand', '$3225.6', "$2856.3", 'shop-single-product.html', '568', '289')
+                    .col-lg-3.col-md-6.col-sm-6
+                        +cardStyle3HideCart('assets/imgs/page/homepage1/imgsp5.png', "HP", "-17%", 'HP 24 All-in-One PC, Intel Core i3-1115G4, 4GB RAM', '$3225.6', "$2856.3", 'shop-single-product.html', '568', '289')
+                    .col-lg-3.col-md-6.col-sm-6
+                        +cardStyle3HideCart('assets/imgs/page/homepage1/imgsp6.png', "Dell", "-17%", 'Dell Optiplex 9020 Small Form Business Desktop Tower PC', '$3225.6', "$2856.3", 'shop-single-product.html', '568', '289')
+            #tab-flash-bestseller.tab-pane.fade(role='tabpanel', aria-labelledby='tab-flash-bestseller')
+                .row
+                    .col-xl-5.col-lg-6.col-md-6.col-sm-12
+                        +cardStyle3TopDeal('assets/imgs/page/homepage1/screen-3.png', 'assets/imgs/page/homepage1/screen-2.png', 'assets/imgs/page/homepage1/screen.png', 'Top', 'Deals', 'Apple', '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', 'shop-single-product.html', '$3856.3', '$2856.3', '568', '289', '2')
+                    .col-xl-5.col-lg-6.col-md-6.col-sm-12
+                        +cardStyle3TopDeal('assets/imgs/page/homepage1/screen-2.png', 'assets/imgs/page/homepage1/screen-3.png', 'assets/imgs/page/homepage1/screen.png', 'Top', 'Deals', 'Apple', '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', 'shop-single-product.html', '$3856.3', '$2856.3', '568', '289', '2')
+                    .col-lg-2.col-md-6.d-none.d-xl-block.col-sm-12
+                        .grid-banner-height
+                            span.lbl-new-arrival.color-brand-3 New Arrivals
+                            h4.font-24.mt-10.mb-5 Xiaomi Redmi Serial 12
+                            p.font-16 Special Sale
+                    .col-lg-3.col-md-6.col-sm-6
+                        +cardStyle3HideCart('assets/imgs/page/homepage1/imgsp2.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html', '568', '289')
+                    .col-lg-3.col-md-6.col-sm-6
+                        +cardStyle3HideCart('assets/imgs/page/homepage1/imgsp4.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html', '568', '289')
+                    .col-lg-3.col-md-6.col-sm-6
+                        +cardStyle3HideCart('assets/imgs/page/homepage1/imgsp3.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html', '568', '289')
+                    .col-lg-3.col-md-6.col-sm-6
+                        +cardStyle3HideCart('assets/imgs/page/homepage1/imgsp7.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html', '568', '289')
+            #tab-flash-mostviewed.tab-pane.fade(role='tabpanel', aria-labelledby='tab-flash-mostviewed')
+                .row
+                    .col-xl-5.col-lg-6.col-md-6.col-sm-12
+                        +cardStyle3TopDeal('assets/imgs/page/homepage1/screen-2.png', 'assets/imgs/page/homepage1/screen.png', 'assets/imgs/page/homepage1/screen.png', 'Top', 'Deals', 'Apple', '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', 'shop-single-product.html', '$3856.3', '$2856.3', '568', '289', '3')
+                    .col-xl-5.col-lg-6.col-md-6.col-sm-12
+                        +cardStyle3TopDeal('assets/imgs/page/homepage1/screen-3.png', 'assets/imgs/page/homepage1/screen.png', 'assets/imgs/page/homepage1/screen.png', 'Top', 'Deals', 'Apple', '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', 'shop-single-product.html', '$3856.3', '$2856.3', '568', '289', '3')
+                    .col-lg-2.col-md-6.d-none.d-xl-block.col-sm-12
+                        .grid-banner-height
+                            span.lbl-new-arrival.color-brand-3 New Arrivals
+                            h4.font-24.mt-10.mb-5 Xiaomi Redmi Serial 12
+                            p.font-16 Special Sale
+                    .col-lg-3.col-md-6.col-sm-6
+                        +cardStyle3HideCart('assets/imgs/page/homepage1/imgsp1.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html', '568', '289')
+                    .col-lg-3.col-md-6.col-sm-6
+                        +cardStyle3HideCart('assets/imgs/page/homepage1/imgsp3.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html', '568', '289')
+                    .col-lg-3.col-md-6.col-sm-6
+                        +cardStyle3HideCart('assets/imgs/page/homepage1/imgsp4.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html', '568', '289')
+                    .col-lg-3.col-md-6.col-sm-6
+                        +cardStyle3HideCart('assets/imgs/page/homepage1/imgsp6.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html', '568', '289')
+            #tab-flash-topbrands.tab-pane.fade(role='tabpanel', aria-labelledby='tab-flash-topbrands')
+                .row
+                    .col-xl-5.col-lg-6.col-md-6.col-sm-12
+                        +cardStyle3TopDeal('assets/imgs/page/homepage1/screen-3.png', 'assets/imgs/page/homepage1/screen.png', 'assets/imgs/page/homepage1/screen.png', 'Top', 'Deals', 'Apple', '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', 'shop-single-product.html', '$3856.3', '$2856.3', '568', '289', '4')
+                    .col-xl-5.col-lg-6.col-md-6.col-sm-12
+                        +cardStyle3TopDeal('assets/imgs/page/homepage1/screen.png', 'assets/imgs/page/homepage1/screen.png', 'assets/imgs/page/homepage1/screen.png', 'Top', 'Deals', 'Apple', '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', 'shop-single-product.html', '$3856.3', '$2856.3', '568', '289', '4')
+                    .col-lg-2.col-md-6.d-none.d-xl-block.col-sm-12
+                        .grid-banner-height
+                            span.lbl-new-arrival.color-brand-3 New Arrivals
+                            h4.font-24.mt-10.mb-5 Xiaomi Redmi Serial 12
+                            p.font-16 Special Sale
+                    .col-lg-3.col-md-6.col-sm-6
+                        +cardStyle3HideCart('assets/imgs/page/homepage1/imgsp1.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html', '568', '289')
+                    .col-lg-3.col-md-6.col-sm-6
+                        +cardStyle3HideCart('assets/imgs/page/homepage1/imgsp2.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html', '568', '289')
+                    .col-lg-3.col-md-6.col-sm-6
+                        +cardStyle3HideCart('assets/imgs/page/homepage1/imgsp3.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html', '568', '289')
+                    .col-lg-3.col-md-6.col-sm-6
+                        +cardStyle3HideCart('assets/imgs/page/homepage1/imgsp4.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html', '568', '289')

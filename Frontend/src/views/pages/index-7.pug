@@ -1,0 +1,34 @@
+extends ../layouts/master.pug
+block variables
+    - var page = 'homepage7';
+block title
+    title Home 7 - Ecom Marketplace Template
+
+block header
+    include ../components/header-6.pug
+
+block content
+    include ../sections/homepage7/home7_banner.pug
+    include ../sections/homepage7/slide_logo.pug
+    include ../sections/homepage7/most_categories.pug
+    include ../sections/homepage7/shocking_deal.pug
+    include ../sections/homepage7/sales.pug
+    include ../sections/homepage7/milk-powder.pug
+    include ../sections/homepage7/ads1.pug
+    include ../sections/homepage7/kid-toy.pug
+    include ../sections/homepage7/ads2.pug
+    include ../sections/homepage7/kid-fashion.pug
+
+    section.section-box.mt-50
+        .container
+            .head-main
+                h3.mb-5 Latest News &amp; Events
+                p.font-base.color-gray-500 From our blog, forum
+                .box-button-slider
+                    .swiper-button-next.swiper-button-next-group-4
+                    .swiper-button-prev.swiper-button-prev-group-4
+        include ../sections/blog-slider-4.pug
+    include ../sections/homepage1/home1_sec9.pug
+    include ../sections/newsletter-3.pug
+
+    block scripts-custom

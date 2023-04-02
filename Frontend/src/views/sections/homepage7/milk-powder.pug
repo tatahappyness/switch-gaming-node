@@ -1,0 +1,34 @@
+section.section-box.pt-50
+  .container
+    .head-main.bd-gray-200
+      .row
+        .col-lg-6
+          h3.mb-5 Milk Powders
+          p.font-base.color-gray-500 Special products in this month.
+        .col-lg-6.text-end
+          .box-all-hurry
+            .d-inline-block.box-text-hurryup
+              span.font-md-bold.color-gray-900 Hurry up!
+              br
+              span.font-xs.color-gray-500 Offers end in:
+            .box-count.box-count-square.hide-period
+              .deals-countdown(data-countdown='2023/08/25 00:00:00')
+            a.btn.btn-view-all.font-md-bold(href='shop-single-product.html') View All
+    .row
+        .col-lg-12 
+            .list-products-5.list-brand-2
+                .card-grid-style-3
+                    include ../../components/menu-category.pug
+
+                +cardGridStyle3_1('assets/imgs/page/homepage7/sp1.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product-3.html')
+                    .box-count
+                        .deals-countdown(data-countdown='2022/12/25 00:00:00')
+                +cardGridStyle3_1('assets/imgs/page/homepage7/sp2.png', "Apple", "", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    .box-count
+                        .deals-countdown(data-countdown='2022/12/25 00:00:00')
+                +cardGridStyle3_1('assets/imgs/page/homepage7/sp3.png', "Apple", "", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    .box-count
+                        .deals-countdown(data-countdown='2022/12/25 00:00:00')
+                +cardGridStyle3_1('assets/imgs/page/homepage7/sp4.png', "Apple", "", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    .box-count
+                        .deals-countdown(data-countdown='2022/12/25 00:00:00')

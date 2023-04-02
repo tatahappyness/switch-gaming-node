@@ -1,0 +1,81 @@
+extends ../layouts/master.pug
+
+block title
+	title Ecom - Marketplace Dashboard Template
+
+block content
+	.content-header
+		h2.content-title Profile setting
+	.card
+		.card-body
+			.row.gx-5
+				aside.col-lg-3.border-end
+					nav.nav.nav-pills.flex-lg-column.mb-4
+						a.nav-link.active(aria-current='page' href='#') General
+						a.nav-link(href='#') Moderators
+						a.nav-link(href='#') Admin account
+						a.nav-link(href='#') SEO settings
+						a.nav-link(href='#') Mail settings
+						a.nav-link(href='#') Newsletter
+				.col-lg-9
+					section.content-body.p-xl-4
+						form
+							.row
+								.col-lg-8
+									.row.gx-3
+										.col-6.mb-3
+											label.form-label First name
+											input.form-control(type='text' placeholder='Type here')
+										// col .//
+										.col-6.mb-3
+											label.form-label Last name
+											input.form-control(type='text' placeholder='Type here')
+										// col .//
+										.col-lg-6.mb-3
+											label.form-label Email
+											input.form-control(type='email' placeholder='example@mail.com')
+										// col .//
+										.col-lg-6.mb-3
+											label.form-label Phone
+											input.form-control(type='tel' placeholder='+1234567890')
+										// col .//
+										.col-lg-12.mb-3
+											label.form-label Address
+											input.form-control(type='text' placeholder='Type here')
+										// col .//
+										.col-lg-6.mb-3
+											label.form-label Birthday
+											input.form-control(type='date')
+										// col .//
+										// row.//
+										// col.//
+								aside.col-lg-4
+									figure.text-lg-center
+										img.img-lg.mb-3.img-avatar(src='assets/imgs/people/avatar1.jpg' alt='User Photo')
+										figcaption
+											a.btn.btn-light.rounded.font-md(href='#')
+												i.icons.material-icons.md-backup.font-md
+												|  Upload
+								// col.//
+								// row.//
+							br
+							button.btn.btn-primary(type='submit') Save changes
+						hr.my-5
+						.row(style='max-width:920px')
+							.col-md
+								article.box.mb-3.bg-light
+									a.btn.float-end.btn-light.btn-sm.rounded.font-md(href='#') Change
+									h6 Password
+									small.text-muted.d-block(style='width:70%') You can reset or change your password by clicking here
+							// col.//
+							.col-md
+								article.box.mb-3.bg-light
+									a.btn.float-end.btn-light.rounded.btn-sm.font-md(href='#') Deactivate
+									h6 Remove account
+									small.text-muted.d-block(style='width:70%') Once you delete your account, there is no going back.
+							// col.//
+							// row.//
+							// content-body .//
+							// col.//
+							// row.//
+							// card body end//

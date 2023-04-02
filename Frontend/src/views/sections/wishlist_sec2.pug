@@ -1,0 +1,112 @@
+section.section-box.shop-template
+    .container
+        .box-wishlist
+            .head-wishlist
+                .item-wishlist
+                    .wishlist-cb
+                        input.cb-layout.cb-all(type="checkbox")
+                    .wishlist-product
+                        span.font-md-bold.color-brand-3 Product
+                    .wishlist-price
+                        span.font-md-bold.color-brand-3 Price
+                    .wishlist-status
+                        span.font-md-bold.color-brand-3 Stock status
+                    .wishlist-action
+                        span.font-md-bold.color-brand-3 Action
+                    .wishlist-remove
+                        span.font-md-bold.color-brand-3 Remove
+
+            .content-wishlist
+                -
+                    const wishLists = [
+                        {
+                            image: 'assets/imgs/page/product/img-sub.png',
+                            title: 'Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator ',
+                            price: '$2.51',
+                            status: 'In Stock'
+                        },
+                        {
+                            image: 'assets/imgs/page/product/img-sub2.png',
+                            title: 'Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator ',
+                            price: '$1.51',
+                            status: 'In Stock'
+                        },
+                        {
+                            image: 'assets/imgs/page/product/img-sub3.png',
+                            title: 'Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator ',
+                            price: '$3.51',
+                            status: 'In Stock'
+                        },
+                        {
+                            image: 'assets/imgs/page/product/img-sub4.png',
+                            title: 'Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator ',
+                            price: '$4.51',
+                            status: 'In Stock'
+                        },
+                        {
+                            image: 'assets/imgs/page/product/img-sub5.png',
+                            title: 'Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator ',
+                            price: '$3.51',
+                            status: 'In Stock'
+                        },
+                        {
+                            image: 'assets/imgs/page/product/img-sub.png',
+                            title: 'Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator ',
+                            price: '$2.51',
+                            status: 'In Stock'
+                        },
+                        {
+                            image: 'assets/imgs/page/product/img-sub2.png',
+                            title: 'Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator ',
+                            price: '$1.51',
+                            status: 'In Stock'
+                        }
+                    ]
+                each product in wishLists
+                    .item-wishlist
+                        .wishlist-cb
+                            input.cb-layout.cb-select(type="checkbox")
+                        .wishlist-product
+                            .product-wishlist
+                                .product-image
+                                    a(href="shop-single-product.html")
+                                        img(src= product.image, alt='Ecom')
+                                .product-info
+                                    a(href="shop-single-product.html")
+                                        h6.color-brand-3= product.title
+                                    .rating
+                                        img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                        img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                        img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                        img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                        img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                        span.font-xs.color-gray-500
+                                            |  (65)
+                        .wishlist-price
+                            h4.color-brand-3= product.price
+                        .wishlist-status
+                            span.btn.btn-gray.font-md-bold.color-brand-3= product.status
+
+                        .wishlist-action
+                            a.btn.btn-cart.font-sm-bold(href='shop-cart.html') Add to Cart
+                        .wishlist-remove
+                            a.btn.btn-delete(href='#')
+
+        h4.color-brand-3 You may also like
+        .list-products-5.mt-20.mb-40
+            +cardGridStyle3('assets/imgs/page/homepage1/imgsp3.png', "Apple", "-17%", 'Razer Power Up Gaming Bundle V2 - Cynosa Lite', '$3225.6', "$2856.3", 'shop-single-product.html')
+            +cardGridStyle3('assets/imgs/page/homepage1/imgsp4.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM', '$3225.6', "$2856.3", 'shop-single-product.html')
+            +cardGridStyle3('assets/imgs/page/homepage1/imgsp5.png', "Apple", "-17%", 'Samsung Galaxy Tab A7 Lite, 8.7" Tablet 32', '$3225.6', "$2856.3", 'shop-single-product.html')
+            +cardGridStyle3('assets/imgs/page/homepage1/imgsp6.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM', '$3225.6', "$2856.3", 'shop-single-product.html')
+            +cardGridStyle3('assets/imgs/page/homepage1/imgsp7.png', "Apple", "-17%", 'HDR Smart Portable Projector - SP-LSP3B', '$3225.6', "$2856.3", 'shop-single-product.html')
+
+        h4.color-brand-3 Recently viewed items
+        .row.mt-40
+            .col-lg-3.col-md-6.col-sm-12
+                +cardGridStyle2_1('assets/imgs/page/homepage1/imgsp1.png', 'HP', 'HP 24 All-in-One PC, Intel Core i3-1115G4', '$3225.6', '$2556.3', '#')
+            .col-lg-3.col-md-6.col-sm-12
+                +cardGridStyle2_1('assets/imgs/page/homepage1/imgsp2.png', 'HP', 'HP 22 All-in-One PC, Intel Pentium Silver', '$3225.6', '$2556.3', '#')
+            .col-lg-3.col-md-6.col-sm-12
+                +cardGridStyle2_1('assets/imgs/page/homepage1/imgsp1.png', 'Class', 'Class 4K UHD (2160P) LED Roku Smart TV HDR', '$3225.6', '$2556.3', '#')
+            .col-lg-3.col-md-6.col-sm-12
+                +cardGridStyle2_1('assets/imgs/page/homepage1/imgsp2.png', 'LG', 'LG 65" Class 4K UHD Smart TV OLED A1 Series ', '$3225.6', '$2556.3', '#')

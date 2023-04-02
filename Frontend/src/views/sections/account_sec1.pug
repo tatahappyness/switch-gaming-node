@@ -1,0 +1,392 @@
+section.section-box.shop-template.mt-30
+    .container.box-account-template
+        h3 Hello Steven
+        p.font-md.color-gray-500 From your account dashboard. you can easily check & view your recent orders,
+            br.d-none.d-lg-block
+            | manage your shipping and billing addresses and edit your password and account details.
+        .box-tabs.mb-100
+            ul.nav.nav-tabs.nav-tabs-account(role='tablist')
+                li
+                    a.active(href='#tab-notification', data-bs-toggle='tab', role='tab', aria-controls='tab-notification', aria-selected='true') Notification
+                li
+                    a(href='#tab-wishlist', data-bs-toggle='tab', role='tab', aria-controls='tab-wishlist', aria-selected='true') Wishlist
+                li
+                    a(href='#tab-orders', data-bs-toggle='tab', role='tab', aria-controls='tab-orders', aria-selected='true') Orders
+                li
+                    a(href='#tab-order-tracking', data-bs-toggle='tab', role='tab', aria-controls='tab-order-tracking', aria-selected='true') Order Tracking
+                li
+                    a(href='#tab-setting', data-bs-toggle='tab', role='tab', aria-controls='tab-setting', aria-selected='true') Setting
+            .border-bottom.mt-20.mb-40
+            .tab-content.mt-30
+                #tab-notification.tab-pane.fade.active.show(role='tabpanel', aria-labelledby='tab-notification')
+                    .list-notifications
+                        .item-notification
+                            .image-notification
+                                img(src="assets/imgs/page/account/img-1.png", alt="Ecom")
+                            .info-notification
+                                h5.mb-5 COD payment confirmed
+                                p.font-md.color-brand-3 Order
+                                    span.font-md-bold
+                                        |  220914QR92BXNH
+                                    |  has been confirmed. Please check the estimated delivery time in the order details section!
+                            .button-notification
+                                a.btn.btn-buy.w-auto View Details
+                        .item-notification
+                            .image-notification
+                                img(src="assets/imgs/page/account/img-2.png", alt="Ecom")
+                            .info-notification
+                                h5.mb-5 COD payment confirmed
+                                p.font-md.color-brand-3 Order
+                                    span.font-md-bold
+                                        |  220914QR92BXNH
+                                    |  has been confirmed. Please check the estimated delivery time in the order details section!
+                            .button-notification
+                                a.btn.btn-buy.w-auto View Details
+                        .item-notification
+                            .image-notification
+                                img(src="assets/imgs/page/account/img-3.png", alt="Ecom")
+                            .info-notification
+                                h5.mb-5 COD payment confirmed
+                                p.font-md.color-brand-3 Order
+                                    span.font-md-bold
+                                        |  220914QR92BXNH
+                                    |  has been confirmed. Please check the estimated delivery time in the order details section!
+                            .button-notification
+                                a.btn.btn-buy.w-auto View Details
+                        .item-notification
+                            .image-notification
+                                img(src="assets/imgs/page/account/img-4.png", alt="Ecom")
+                            .info-notification
+                                h5 COD payment confirmed
+                                p.font-md.color-brand-3 Order
+                                    span.font-md-bold
+                                        |  220914QR92BXNH
+                                    |  has been confirmed. Please check the estimated delivery time in the order details section!
+                            .button-notification
+                                a.btn.btn-buy.w-auto View Details
+                    include ../elements/pagination.pug
+
+                #tab-wishlist.tab-pane.fade(role='tabpanel', aria-labelledby='tab-wishlist')
+                    .box-wishlist
+                        .head-wishlist
+                            .item-wishlist
+                                .wishlist-cb
+                                    input.cb-layout.cb-all(type="checkbox")
+                                .wishlist-product
+                                    span.font-md-bold.color-brand-3 Product
+                                .wishlist-price
+                                    span.font-md-bold.color-brand-3 Price
+                                .wishlist-status
+                                    span.font-md-bold.color-brand-3 Stock status
+                                .wishlist-action
+                                    span.font-md-bold.color-brand-3 Action
+                                .wishlist-remove
+                                    span.font-md-bold.color-brand-3 Remove
+
+                        .content-wishlist
+                            -
+                                const wishLists = [
+                                    {
+                                        image: 'assets/imgs/page/product/img-sub.png',
+                                        title: 'Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator ',
+                                        price: '$2.51',
+                                        status: 'In Stock'
+                                    },
+                                    {
+                                        image: 'assets/imgs/page/product/img-sub2.png',
+                                        title: 'Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator ',
+                                        price: '$1.51',
+                                        status: 'In Stock'
+                                    },
+                                    {
+                                        image: 'assets/imgs/page/product/img-sub3.png',
+                                        title: 'Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator ',
+                                        price: '$3.51',
+                                        status: 'In Stock'
+                                    },
+                                    {
+                                        image: 'assets/imgs/page/product/img-sub4.png',
+                                        title: 'Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator ',
+                                        price: '$4.51',
+                                        status: 'In Stock'
+                                    },
+                                    {
+                                        image: 'assets/imgs/page/product/img-sub5.png',
+                                        title: 'Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator ',
+                                        price: '$3.51',
+                                        status: 'In Stock'
+                                    },
+                                    {
+                                        image: 'assets/imgs/page/product/img-sub.png',
+                                        title: 'Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator ',
+                                        price: '$2.51',
+                                        status: 'In Stock'
+                                    },
+                                    {
+                                        image: 'assets/imgs/page/product/img-sub2.png',
+                                        title: 'Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator ',
+                                        price: '$1.51',
+                                        status: 'In Stock'
+                                    }
+                                ]
+                            each product in wishLists
+                                .item-wishlist
+                                    .wishlist-cb
+                                        input.cb-layout.cb-select(type="checkbox")
+                                    .wishlist-product
+                                        .product-wishlist
+                                            .product-image
+                                                a(href="shop-single-product.html")
+                                                    img(src= product.image, alt='Ecom')
+                                            .product-info
+                                                a(href="shop-single-product.html")
+                                                    h6.color-brand-3= product.title
+                                                .rating
+                                                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                                    span.font-xs.color-gray-500
+                                                        |  (65)
+                                    .wishlist-price
+                                        h4.color-brand-3= product.price
+                                    .wishlist-status
+                                        span.btn.btn-gray.font-md-bold.color-brand-3= product.status
+
+                                    .wishlist-action
+                                        a.btn.btn-cart.font-sm-bold(href='shop-cart.html') Add to Cart
+                                    .wishlist-remove
+                                        a.btn.btn-delete(href='#')
+                #tab-orders.tab-pane.fade(role='tabpanel', aria-labelledby='tab-orders')
+                    .box-orders
+                        .head-orders
+                            .head-left
+                                h5.mr-20 Order ID: #EWFDSAF1321655
+                                span.font-md.color-brand-3.mr-20 Date: 18 September 2022
+                                span.label-delivery Delivery in progress
+                            .head-right
+                                a.btn.btn-buy.font-sm-bold.w-auto View Order
+                        .body-orders
+                            .list-orders
+                                .item-orders
+                                    .image-orders
+                                        img(src="assets/imgs/page/account/img-1.png", alt="Ecom")
+                                    .info-orders
+                                        h5 Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator
+                                    .quantity-orders
+                                        h5 Quantity: 01
+                                    .price-orders
+                                        h3 $2.51
+                                .item-orders
+                                    .image-orders
+                                        img(src="assets/imgs/page/account/img-1.png", alt="Ecom")
+                                    .info-orders
+                                        h5 Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator
+                                    .quantity-orders
+                                        h5 Quantity: 01
+                                    .price-orders
+                                        h3 $2.51
+
+                    .box-orders
+                        .head-orders
+                            .head-left
+                                h5.mr-20 Order ID: #EWFDSAF1321655
+                                span.font-md.color-brand-3.mr-20 Date: 18 September 2022
+                                span.label-delivery.label-delivered Delivered
+                            .head-right
+                                a.btn.btn-buy.font-sm-bold.w-auto View Order
+                        .body-orders
+                            .list-orders
+                                .item-orders
+                                    .image-orders
+                                        img(src="assets/imgs/page/account/img-1.png", alt="Ecom")
+                                    .info-orders
+                                        h5 Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator
+                                    .quantity-orders
+                                        h5 Quantity: 01
+                                    .price-orders
+                                        h3 $2.51
+                                .item-orders
+                                    .image-orders
+                                        img(src="assets/imgs/page/account/img-1.png", alt="Ecom")
+                                    .info-orders
+                                        h5 Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator
+                                    .quantity-orders
+                                        h5 Quantity: 01
+                                    .price-orders
+                                        h3 $2.51
+
+                    .box-orders
+                        .head-orders
+                            .head-left
+                                h5.mr-20 Order ID: #EWFDSAF1321655
+                                span.font-md.color-brand-3.mr-20 Date: 18 September 2022
+                                span.label-delivery.label-cancel Cancel
+                            .head-right
+                                a.btn.btn-buy.font-sm-bold.w-auto View Order
+                        .body-orders
+                            .list-orders
+                                .item-orders
+                                    .image-orders
+                                        img(src="assets/imgs/page/product/ss.jpg", alt="Ecom")
+                                    .info-orders
+                                        h5 Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator
+                                    .quantity-orders
+                                        h5 Quantity: 01
+                                    .price-orders
+                                        h3 $2.51
+                                .item-orders
+                                    .image-orders
+                                        img(src="assets/imgs/page/product/ss2.jpg", alt="Ecom")
+                                    .info-orders
+                                        h5 Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator
+                                    .quantity-orders
+                                        h5 Quantity: 01
+                                    .price-orders
+                                        h3 $2.51
+                    include ../elements/pagination.pug
+
+                #tab-order-tracking.tab-pane.fade(role='tabpanel', aria-labelledby='tab-order-tracking')
+                    p.font-md.color-gray-600 To track your order please enter your OrderID in the box below and press "Track" button. This was given to you on
+                        br.d-none.d-lg-block
+                        | your receipt and in the confirmation email you should have received.
+                    .row.mt-30
+                        .col-lg-6
+                            .form-tracking
+                                form(action="#", method="get")
+                                    .d-flex
+                                        .form-group.box-input
+                                            input.form-control(type="text", placeholder='FDSFWRFAF13585')
+                                        .form-group.box-button
+                                            button.btn.btn-buy.font-md-bold(type="submit") Tracking Now
+                    .border-bottom.mb-20.mt-20
+                    h3.mb-10 Order Status:
+                        span.color-success International shipping
+                    h6.color-gray-500 Estimated Delivery Date: 27 August - 29 August
+                    .table-responsive
+                        .list-steps
+                            .item-step
+                                .rounded-step
+                                    .icon-step.step-1.active
+                                    h6.mb-5 Order Placed
+                                    p.font-md.color-gray-500 15 August 2022
+                            .item-step
+                                .rounded-step
+                                    .icon-step.step-2.active
+                                    h6.mb-5 In Producttion
+                                    p.font-md.color-gray-500 16 August 2022
+                            .item-step
+                                .rounded-step
+                                    .icon-step.step-3.active
+                                    h6.mb-5 International shipping
+                                    p.font-md.color-gray-500 17 August 2022
+                            .item-step
+                                .rounded-step
+                                    .icon-step.step-4
+                                    h6.mb-5 Shipping Final Mile
+                                    p.font-md.color-gray-500 18 August 2022
+                            .item-step
+                                .rounded-step
+                                    .icon-step.step-5
+                                    h6.mb-5 Delivered
+                                    p.font-md.color-gray-500 19 August 2022
+
+                    .list-features
+                        ul
+                            li 09:10 25 August 2022: Delivery in progress
+                            li 08:25 25 August 2022: The order has arrived at warehouse 05-YBI Marvel LM Hub
+                            li 05:44 25 August 2022: Order has been shipped
+                            li 04:51 25 August 2022: The order has arrived at Marvel SOC warehouse
+                            li 20:54 18 August 2022: Order has been shipped
+                            li 18:21 17 August 2022: The order has arrived at Marvel SOC warehouse
+                            li 17:09 17 August 2022: Order has been shipped
+                            li 15:23 17 August 2022: The order has arrived at warehouse 20-HNI Marvel 2 SOC
+                            li 12:42 16 August 2022: Successful pick up
+                            li 10:44 15 August 2022: The sender is preparing the goods
+                    h3 Package Location
+                    .map-account
+                        iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193548.25784139088!2d-74.12251055507726!3d40.71380001554004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2zVGjDoG5oIHBo4buRIE5ldyBZb3JrLCBUaeG7g3UgYmFuZyBOZXcgWW9yaywgSG9hIEvhu7M!5e0!3m2!1svi!2s!4v1664974174994!5m2!1svi!2s', style='border:0;', allowfullscreen='', loading='lazy', referrerpolicy='no-referrer-when-downgrade')
+                    .row
+                        .col-lg-6
+                            p.color-gray-500.mb-20 Maecenas porttitor augue sit amet nibh venenatis bibendum. Morbi lorem elit, fringilla quis libero vitae, tincidunt commodo purus. Quisque diam nisi, tincidunt sed vehicula nec, fermentum vitae lectus. Curabitur sit amet sagittis libero. Pellentesque cursus turpis at ipsum luctus tempor.
+                        .col-lg-6
+                            p.color-gray-500.mb-20 Ut auctor varius nisl, scelerisque dictum justo maximus ut. Fusce rhoncus, augue sed molestie consectetur, leo felis ultricies erat, nec lobortis enim dui eu justo. Pellentesque aliquam hendrerit venenatis. Integer efficitur bibendum lectus sed sollicitudin. Suspendisse faucibus posuere euismod.
+                #tab-setting.tab-pane.fade(role='tabpanel', aria-labelledby='tab-setting')
+                    .row
+                        .col-lg-6.mb-20
+                            form(action="#", method="get")
+                                .row
+                                    .col-lg-12.mb-20
+                                        h5.font-md-bold.color-brand-3.text-sm-start.text-center Contact information
+                                    .col-lg-12
+                                        .form-group
+                                            input.form-control.font-sm(type="text", placeholder='Fullname *')
+                                    .col-lg-12
+                                        .form-group
+                                            input.form-control.font-sm(type="text", placeholder='Username *')
+                                    .col-lg-12
+                                        .form-group
+                                            input.form-control.font-sm(type="text", placeholder='Phone Number *')
+
+                                    .col-lg-12
+                                        .form-group
+                                            input.form-control.font-sm(type="text", placeholder='Email *')
+                                    .col-lg-12
+                                        .form-group
+                                            label.font-sm.color-brand-3(for="checkboxOffers")
+                                                input.checkboxOffer#checkboxOffers(type="checkbox")
+                                                |
+                                                | Keep me up to date on news and exclusive offers
+                                    .col-lg-12
+                                        h5.font-md-bold.color-brand-3.mt-15.mb-20 Shipping address
+                                    .col-lg-6
+                                        .form-group
+                                            input.form-control.font-sm(type="text", placeholder='First name*')
+                                    .col-lg-6
+                                        .form-group
+                                            input.form-control.font-sm(type="text", placeholder='Last name*')
+                                    .col-lg-12
+                                        .form-group
+                                            input.form-control.font-sm(type="text", placeholder='Address 1*')
+                                    .col-lg-12
+                                        .form-group
+                                            input.form-control.font-sm(type="text", placeholder='Address 2*')
+                                    .col-lg-6
+                                        .form-group
+                                            select.form-control.font-sm.select-style1.color-gray-700
+                                                option(value='') Select an option...
+                                                option(value='1') Option 1
+                                    .col-lg-6
+                                        .form-group
+                                            input.form-control.font-sm(type="text", placeholder='City*')
+                                    .col-lg-12
+                                        .form-group
+                                            input.form-control.font-sm(type="text", placeholder='PostCode / ZIP*')
+                                    .col-lg-6
+                                        .form-group
+                                            input.form-control.font-sm(type="text", placeholder='Company name')
+                                    .col-lg-6
+                                        .form-group
+                                            input.form-control.font-sm(type="text", placeholder='Phone*')
+                                    .col-lg-12
+                                        .form-group.mb-0
+                                            textarea.form-control.font-sm(placeholder='Additional Information', rows='5')
+                                    .col-lg-12
+                                        .form-group.mt-20
+                                            input.btn.btn-buy.w-auto.h54.font-md-bold(value='Save change')
+                        .col-lg-1.mb-20
+                        .col-lg-5.mb-20
+                            .mt-40
+                                h4.mb-10 Steven Job
+                                .mb-10
+                                    p.font-sm.color-brand-3.font-medium Home Address:
+                                    span.font-sm.color-gray-500.font-medium 205 North Michigan Avenue, Suite 810 Chicago, 60601, USA
+                                .mb-10
+                                    p.font-sm.color-brand-3.font-medium Delivery address:
+                                    span.font-sm.color-gray-500.font-medium 205 North Michigan Avenue, Suite 810 Chicago, 60601, USA
+                                .mb-10
+                                    p.font-sm.color-brand-3.font-medium Phone Number:
+                                    span.font-sm.color-gray-500.font-medium (+01) 234 567 89 - (+01) 688 866 99
+                                .mb-10.mt-15
+                                    a.btn.btn-cart.w-auto Set as Default

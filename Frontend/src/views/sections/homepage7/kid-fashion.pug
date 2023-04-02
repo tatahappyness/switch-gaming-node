@@ -1,0 +1,113 @@
+section.section-box.mt-50
+    .container
+        .head-main.bd-gray-200
+            .row
+                .col-xl-6.col-lg-4
+                    h3.mb-5 Kid Fashion
+                    p.font-base.color-gray-500 Clothes, Bags, Shoes, Accessory...
+                .col-xl-6.col-lg-8
+                    ul.nav.nav-tabs.text-uppercase.pr-100(role='tablist')
+                        li
+                            a.active(href='#tab-3-all', data-bs-toggle='tab', role='tab', aria-controls='tab-3-all', aria-selected='true', data-index='1') All
+                        li
+                            a(href='#tab-3-bestseller', data-bs-toggle='tab', role='tab', aria-controls='tab-3-bestseller', aria-selected='false', data-index='2') Best seller
+                        li
+                            a(href='#tab-3-mostviewed', data-bs-toggle='tab', role='tab', aria-controls='tab-3-mostviewed', aria-selected='false', data-index='3') Most viewed
+                        li
+                            a(href='#tab-3-topbrands', data-bs-toggle='tab', role='tab', aria-controls='tab-3-topbrands', aria-selected='false', data-index='4') Top Brands
+                    // Button slider
+                    .box-button-slider
+                        #tab-3-all-nav.button-slider-nav
+                            .swiper-button-next.swiper-button-next-tab-1
+                            .swiper-button-prev.swiper-button-prev-tab-1
+                        #tab-3-bestseller-nav.button-slider-nav(style='display: none;')
+                            .swiper-button-next.swiper-button-next-tab-2
+                            .swiper-button-prev.swiper-button-prev-tab-2
+                        #tab-3-mostviewed-nav.button-slider-nav(style='display: none;')
+                            .swiper-button-next.swiper-button-next-tab-3
+                            .swiper-button-prev.swiper-button-prev-tab-3
+                        #tab-3-topbrands-nav.button-slider-nav(style='display: none;')
+                            .swiper-button-next.swiper-button-next-tab-4
+                            .swiper-button-prev.swiper-button-prev-tab-4
+                    // End Button slider
+        .tab-content.tab-content-slider
+            #tab-3-all.tab-pane.fade.active.show(role='tabpanel', aria-labelledby='tab-3-all')
+                .box-swiper
+                    .swiper-container.swiper-tab-1
+                        .swiper-wrapper.pt-5
+                            .swiper-slide
+                                .list-products-5
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion1.png', "Amish", "-17%", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion2.png', "Amish", "-17%", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                        span.label.bg-danger Hot
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion3.png', "Apple", "-17%", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                        span.label.bg-success New
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion4.png', "Apple", "", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion5.png', "Apple", "", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion6.png', "Apple", "-17%", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion7.png', "Apple", "-17%", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                        span.label.bg-danger Hot
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion8.png', "Apple", "-17%", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                        span.label.bg-success New
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion9.png', "Apple", "", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion10.png', "Apple", "", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+            #tab-3-bestseller.tab-pane.fade(role='tabpanel', aria-labelledby='tab-3-bestseller')
+                .box-swiper
+                    .swiper-container.swiper-tab-2
+                        .swiper-wrapper.pt-5
+                            .swiper-slide
+                                .list-products-5
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion1.png', "Amish", "-17%", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion2.png', "Amish", "-17%", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                        span.label.bg-danger Hot
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion3.png', "Apple", "-17%", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                        span.label.bg-success New
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion4.png', "Apple", "", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion5.png', "Apple", "", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion6.png', "Apple", "-17%", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion7.png', "Apple", "-17%", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                        span.label.bg-danger Hot
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion8.png', "Apple", "-17%", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                        span.label.bg-success New
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion9.png', "Apple", "", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion10.png', "Apple", "", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+            #tab-3-mostviewed.tab-pane.fade(role='tabpanel', aria-labelledby='tab-3-mostviewed')
+                .box-swiper
+                    .swiper-container.swiper-tab-3
+                        .swiper-wrapper.pt-5
+                            .swiper-slide
+                                .list-products-5
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion1.png', "Amish", "-17%", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion2.png', "Amish", "-17%", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                        span.label.bg-danger Hot
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion3.png', "Apple", "-17%", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                        span.label.bg-success New
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion4.png', "Apple", "", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion5.png', "Apple", "", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion6.png', "Apple", "-17%", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion7.png', "Apple", "-17%", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                        span.label.bg-danger Hot
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion8.png', "Apple", "-17%", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                        span.label.bg-success New
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion9.png', "Apple", "", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion10.png', "Apple", "", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+            #tab-3-topbrands.tab-pane.fade(role='tabpanel', aria-labelledby='tab-3-topbrands')
+                .box-swiper
+                    .swiper-container.swiper-tab-4
+                        .swiper-wrapper.pt-5
+                            .swiper-slide
+                                .list-products-5
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion1.png', "Amish", "-17%", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion2.png', "Amish", "-17%", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                        span.label.bg-danger Hot
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion3.png', "Apple", "-17%", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                        span.label.bg-success New
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion4.png', "Apple", "", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion5.png', "Apple", "", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion6.png', "Apple", "-17%", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion7.png', "Apple", "-17%", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                        span.label.bg-danger Hot
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion8.png', "Apple", "-17%", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                        span.label.bg-success New
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion9.png', "Apple", "", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+                                    +cardGridStyle3_home6_2('assets/imgs/page/homepage7/fashion10.png', "Apple", "", 'Amish Simple Mission Wooden Kitchen Chair', '$3225.6', "$2856.3", 'shop-single-product-2.html')

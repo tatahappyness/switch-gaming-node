@@ -1,0 +1,99 @@
+extends ../layouts/master.pug
+
+block title
+	title Ecom - Marketplace Dashboard Template
+
+block content
+	.row
+		.col-9
+			.content-header
+				h2.content-title Add New Product
+				div
+					button.btn.btn-light.rounded.font-sm.mr-5.text-body.hover-up Save to draft
+					button.btn.btn-md.rounded.font-sm.hover-up Publich
+		.col-lg-6
+			.card.mb-4
+				.card-header
+					h4 Basic
+				.card-body
+					form
+						.mb-4
+							label.form-label(for='product_name') Product title
+							input#product_name.form-control(type='text' placeholder='Type here')
+						.mb-4
+							label.form-label Full description
+							textarea.form-control(placeholder='Type here' rows='4')
+						.row
+							.col-lg-4
+								.mb-4
+									label.form-label Regular price
+									.row.gx-2
+									input.form-control(placeholder='$' type='text')
+							.col-lg-4
+								.mb-4
+									label.form-label Promotional price
+									input.form-control(placeholder='$' type='text')
+							.col-lg-4
+								label.form-label Currency
+								select.form-select
+									option  USD
+									option  EUR
+									option  RUBL
+						.mb-4
+							label.form-label Tax rate
+							input#product_name.form-control(type='text' placeholder='%')
+						label.form-check.mb-4
+							input.form-check-input(type='checkbox' value='')
+							span.form-check-label  Make a template
+			.card.mb-4
+				.card-header
+					h4 Shipping
+				.card-body
+					form
+						.row
+							.col-lg-6
+								.mb-4
+									label.form-label(for='product_name') Width
+									input#product_name.form-control(type='text' placeholder='inch')
+							.col-lg-6
+								.mb-4
+									label.form-label(for='product_name') Height
+									input#product_name.form-control(type='text' placeholder='inch')
+							.mb-4
+								label.form-label(for='product_name') Weight
+								input#product_name.form-control(type='text' placeholder='gam')
+							.mb-4
+								label.form-label(for='product_name') Shipping fees
+								input#product_name.form-control(type='text' placeholder='$')
+		.col-lg-3
+			.card.mb-4
+				.card-header
+					h4 Media
+				.card-body
+					.input-upload
+						img(src='assets/imgs/theme/upload.svg' alt='')
+						input.form-control(type='file')
+			.card.mb-4
+				.card-header
+					h4 Organization
+				.card-body
+					.row.gx-2
+						.col-sm-6.mb-3
+							label.form-label Category
+							select.form-select
+								option  Automobiles
+								option  Home items
+								option  Electronics
+								option  Smartphones
+								option  Sport items
+								option  Baby and Tous
+						.col-sm-6.mb-3
+							label.form-label Sub-category
+							select.form-select
+								option  Nissan
+								option  Honda
+								option  Mercedes
+								option  Chevrolet
+						.mb-4
+							label.form-label(for='product_name') Tags
+							input.form-control(type='text')

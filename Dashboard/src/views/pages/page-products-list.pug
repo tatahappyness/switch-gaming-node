@@ -1,0 +1,314 @@
+extends ../layouts/master.pug
+
+block title
+	title Ecom - Marketplace Dashboard Template
+
+block content
+	.content-header
+		div
+			h2.content-title.card-title Products List
+			p Lorem ipsum dolor sit amet.
+		div
+			a.btn.btn-light.rounded.font-md(href='#') Export
+			a.btn.btn-light.rounded.font-md(href='#') Import
+			a.btn.btn-primary.btn-sm.rounded(href='#') Create new
+	.card.mb-4
+		header.card-header
+			.row.align-items-center
+				.col.col-check.flex-grow-0
+					.form-check.ms-2
+						input.form-check-input(type='checkbox' value='')
+				.col-md-3.col-12.me-auto.mb-md-0.mb-3
+					select.form-select
+						option(selected='') All category
+						option Electronics
+						option Clothes
+						option Automobile
+				.col-md-2.col-6
+					input.form-control(type='date' value='02.05.2022')
+				.col-md-2.col-6
+					select.form-select
+						option(selected='') Status
+						option Active
+						option Disabled
+						option Show all
+		// card-header end//
+		.card-body
+			article.itemlist
+				.row.align-items-center
+					.col.col-check.flex-grow-0
+						.form-check
+							input.form-check-input(type='checkbox')
+					.col-lg-4.col-sm-4.col-8.flex-grow-1.col-name
+						a.itemside(href='#')
+							.left
+								img.img-sm.img-thumbnail(src='assets/imgs/items/1.jpg' alt='Item')
+							.info
+								h6.mb-0 T-shirt for men medium size
+					.col-lg-2.col-sm-2.col-4.col-price
+						span $34.50
+					.col-lg-2.col-sm-2.col-4.col-status
+						span.badge.rounded-pill.alert-success Active
+					.col-lg-1.col-sm-2.col-4.col-date
+						span 02.11.2022
+					.col-lg-2.col-sm-2.col-4.col-action.text-end
+						a.btn.btn-sm.font-sm.rounded.btn-brand.mr-5(href='#')
+							i.material-icons.md-edit
+							|  Edit
+						a.btn.btn-sm.font-sm.btn-light.rounded(href='#')
+							i.material-icons.md-delete_forever
+							|  Delete
+				// row .//
+				// itemlist  .//
+			article.itemlist
+				.row.align-items-center
+					.col.col-check.flex-grow-0
+						.form-check
+							input.form-check-input(type='checkbox' value='')
+					.col-lg-4.col-sm-4.col-8.flex-grow-1.col-name
+						a.itemside(href='#')
+							.left
+								img.img-sm.img-thumbnail(src='assets/imgs/items/2.jpg' alt='Item')
+							.info
+								h6.mb-0 Helionic Hooded Down Jacket
+					.col-lg-2.col-sm-2.col-4.col-price
+						span $990.99
+					.col-lg-2.col-sm-2.col-4.col-status
+						span.badge.rounded-pill.alert-success Active
+					.col-lg-1.col-sm-2.col-4.col-date
+						span 02.11.2022
+					.col-lg-2.col-sm-2.col-4.col-action.text-end
+						a.btn.btn-sm.font-sm.rounded.btn-brand.mr-5(href='#')
+							i.material-icons.md-edit
+							|  Edit
+						a.btn.btn-sm.font-sm.btn-light.rounded(href='#')
+							i.material-icons.md-delete_forever
+							|  Delete
+				// row .//
+				// itemlist  .//
+			article.itemlist
+				.row.align-items-center
+					.col.col-check.flex-grow-0
+						.form-check
+							input.form-check-input(type='checkbox' value='')
+					.col-lg-4.col-sm-4.col-8.flex-grow-1.col-name
+						a.itemside(href='#')
+							.left
+								img.img-sm.img-thumbnail(src='assets/imgs/items/3.jpg' alt='Item')
+							.info
+								h6.mb-0 Lace mini dress with faux leather
+					.col-lg-2.col-sm-2.col-4.col-price
+						span $76.99
+					.col-lg-2.col-sm-2.col-4.col-status
+						span.badge.rounded-pill.alert-warning Archived
+					.col-lg-1.col-sm-2.col-4.col-date
+						span 02.11.2022
+					.col-lg-2.col-sm-2.col-4.col-action.text-end
+						a.btn.btn-sm.font-sm.rounded.btn-brand.mr-5(href='#')
+							i.material-icons.md-edit
+							|  Edit
+						a.btn.btn-sm.font-sm.btn-light.rounded(href='#')
+							i.material-icons.md-delete_forever
+							|  Delete
+				// row .//
+				// itemlist  .//
+			article.itemlist
+				.row.align-items-center
+					.col.col-check.flex-grow-0
+						.form-check
+							input.form-check-input(type='checkbox' value='')
+					.col-lg-4.col-sm-4.col-8.flex-grow-1.col-name
+						a.itemside(href='#')
+							.left
+								img.img-sm.img-thumbnail(src='assets/imgs/items/4.jpg' alt='Item')
+							.info
+								h6.mb-0 Fanmis Men's Travel Bag
+					.col-lg-2.col-sm-2.col-4.col-price
+						span $18.00
+					.col-lg-2.col-sm-2.col-4.col-status
+						span.badge.rounded-pill.alert-success Active
+					.col-lg-1.col-sm-2.col-4.col-date
+						span 02.11.2022
+					.col-lg-2.col-sm-2.col-4.col-action.text-end
+						a.btn.btn-sm.font-sm.rounded.btn-brand.mr-5(href='#')
+							i.material-icons.md-edit
+							|  Edit
+						a.btn.btn-sm.font-sm.btn-light.rounded(href='#')
+							i.material-icons.md-delete_forever
+							|  Delete
+				// row .//
+				// itemlist  .//
+			article.itemlist
+				.row.align-items-center
+					.col.col-check.flex-grow-0
+						.form-check
+							input.form-check-input(type='checkbox' value='')
+					.col-lg-4.col-sm-4.col-8.flex-grow-1.col-name
+						a.itemside(href='#')
+							.left
+								img.img-sm.img-thumbnail(src='assets/imgs/items/3.jpg' alt='Item')
+							.info
+								h6.mb-0 Jeans Shorts for Men
+					.col-lg-2.col-sm-2.col-4.col-price
+						span $76.99
+					.col-lg-2.col-sm-2.col-4.col-status
+						span.badge.rounded-pill.alert-danger Disabled
+					.col-lg-1.col-sm-2.col-4.col-date
+						span 02.11.2022
+					.col-lg-2.col-sm-2.col-4.col-action.text-end
+						a.btn.btn-sm.font-sm.rounded.btn-brand.mr-5(href='#')
+							i.material-icons.md-edit
+							|  Edit
+						a.btn.btn-sm.font-sm.btn-light.rounded(href='#')
+							i.material-icons.md-delete_forever
+							|  Delete
+				// row .//
+				// itemlist  .//
+			article.itemlist
+				.row.align-items-center
+					.col.col-check.flex-grow-0
+						.form-check
+							input.form-check-input(type='checkbox' value='')
+					.col-lg-4.col-sm-4.col-8.flex-grow-1.col-name
+						a.itemside(href='#')
+							.left
+								img.img-sm.img-thumbnail(src='assets/imgs/items/5.jpg' alt='Item')
+							.info
+								h6.mb-0 Wallet made of leather brown color
+					.col-lg-2.col-sm-2.col-4.col-price
+						span $18.00
+					.col-lg-2.col-sm-2.col-4.col-status
+						span.badge.rounded-pill.alert-warning Archived
+					.col-lg-1.col-sm-2.col-4.col-date
+						span 02.11.2022
+					.col-lg-2.col-sm-2.col-4.col-action.text-end
+						a.btn.btn-sm.font-sm.rounded.btn-brand.mr-5(href='#')
+							i.material-icons.md-edit
+							|  Edit
+						a.btn.btn-sm.font-sm.btn-light.rounded(href='#')
+							i.material-icons.md-delete_forever
+							|  Delete
+				// row .//
+				// itemlist  .//
+			article.itemlist
+				.row.align-items-center
+					.col.col-check.flex-grow-0
+						.form-check
+							input.form-check-input(type='checkbox' value='')
+					.col-lg-4.col-sm-4.col-8.flex-grow-1.col-name
+						a.itemside(href='#')
+							.left
+								img.img-sm.img-thumbnail(src='assets/imgs/items/6.jpg' alt='Item')
+							.info
+								h6.mb-0 Modern Armchair for home interiors
+					.col-lg-2.col-sm-2.col-4.col-price
+						span $76.99
+					.col-lg-2.col-sm-2.col-4.col-status
+						span.badge.rounded-pill.alert-success Active
+					.col-lg-1.col-sm-2.col-4.col-date
+						span 02.11.2022
+					.col-lg-2.col-sm-2.col-4.col-action.text-end
+						a.btn.btn-sm.font-sm.rounded.btn-brand.mr-5(href='#')
+							i.material-icons.md-edit
+							|  Edit
+						a.btn.btn-sm.font-sm.btn-light.rounded(href='#')
+							i.material-icons.md-delete_forever
+							|  Delete
+				// row .//
+				// itemlist  .//
+			article.itemlist
+				.row.align-items-center
+					.col.col-check.flex-grow-0
+						.form-check
+							input.form-check-input(type='checkbox' value='')
+					.col-lg-4.col-sm-4.col-8.flex-grow-1.col-name
+						a.itemside(href='#')
+							.left
+								img.img-sm.img-thumbnail(src='assets/imgs/items/4.jpg' alt='Item')
+							.info
+								h6.mb-0 Lace mini dress with faux leather
+					.col-lg-2.col-sm-2.col-4.col-price
+						span $18.00
+					.col-lg-2.col-sm-2.col-4.col-status
+						span.badge.rounded-pill.alert-success Active
+					.col-lg-1.col-sm-2.col-4.col-date
+						span 02.11.2022
+					.col-lg-2.col-sm-2.col-4.col-action.text-end
+						a.btn.btn-sm.font-sm.rounded.btn-brand.mr-5(href='#')
+							i.material-icons.md-edit
+							|  Edit
+						a.btn.btn-sm.font-sm.btn-light.rounded(href='#')
+							i.material-icons.md-delete_forever
+							|  Delete
+				// row .//
+				// itemlist  .//
+			article.itemlist
+				.row.align-items-center
+					.col.col-check.flex-grow-0
+						.form-check
+							input.form-check-input(type='checkbox' value='')
+					.col-lg-4.col-sm-4.col-8.flex-grow-1.col-name
+						a.itemside(href='#')
+							.left
+								img.img-sm.img-thumbnail(src='assets/imgs/items/3.jpg' alt='Item')
+							.info
+								h6.mb-0 Lace mini dress with faux leather
+					.col-lg-2.col-sm-2.col-4.col-price
+						span $76.99
+					.col-lg-2.col-sm-2.col-4.col-status
+						span.badge.rounded-pill.alert-success Active
+					.col-lg-1.col-sm-2.col-4.col-date
+						span 02.11.2022
+					.col-lg-2.col-sm-2.col-4.col-action.text-end
+						a.btn.btn-sm.font-sm.rounded.btn-brand.mr-5(href='#')
+							i.material-icons.md-edit
+							|  Edit
+						a.btn.btn-sm.font-sm.btn-light.rounded(href='#')
+							i.material-icons.md-delete_forever
+							|  Delete
+				// row .//
+				// itemlist  .//
+			article.itemlist
+				.row.align-items-center
+					.col.col-check.flex-grow-0
+						.form-check
+							input.form-check-input(type='checkbox' value='')
+					.col-lg-3.col-sm-4.col-8.flex-grow-1.col-name
+						a.itemside(href='#')
+							.left
+								img.img-sm.img-thumbnail(src='assets/imgs/items/4.jpg' alt='Item')
+							.info
+								h6.mb-0 Lace mini dress with faux leather
+					.col-lg-2.col-sm-2.col-4.col-price
+						span $180.99
+					.col-lg-2.col-sm-2.col-4.col-status
+						span.badge.rounded-pill.alert-success Active
+					.col-lg-1.col-sm-2.col-4.col-date
+						span 02.11.2022
+					.col-lg-2.col-sm-2.col-4.col-action.text-end
+						a.btn.btn-sm.font-sm.rounded.btn-brand.mr-5(href='#')
+							i.material-icons.md-edit
+							|  Edit
+						a.btn.btn-sm.font-sm.btn-light.rounded(href='#')
+							i.material-icons.md-delete_forever
+							|  Delete
+				// row .//
+				// itemlist  .//
+				// card-body end//
+	// card end//
+	.pagination-area.mt-30.mb-50
+		nav(aria-label='Page navigation example')
+			ul.pagination.justify-content-start
+				li.page-item.active
+					a.page-link(href='#') 01
+				li.page-item
+					a.page-link(href='#') 02
+				li.page-item
+					a.page-link(href='#') 03
+				li.page-item
+					a.page-link.dot(href='#') ...
+				li.page-item
+					a.page-link(href='#') 16
+				li.page-item
+					a.page-link(href='#')
+						i.material-icons.md-chevron_right

@@ -1,0 +1,684 @@
+mixin cardGridStyle3(img='assets/imgs/page/homepage1/imgsp3.png', label="Apple", sale="-17%", title='2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', price='$3225.6', priceSale="$2856.3", link='#')
+    .card-grid-style-3
+        .card-grid-inner
+            .tools
+                a.btn.btn-trend.btn-tooltip.mb-10(href='#', aria-label="Trend", data-bs-placement="left")
+                a.btn.btn-wishlist.btn-tooltip.mb-10(href='shop-wishlist.html', aria-label="Add To Wishlist")
+                a.btn.btn-compare.btn-tooltip.mb-10(href='shop-compare.html', aria-label="Compare")
+                a.btn.btn-quickview.btn-tooltip(aria-label="Quick view", href='#ModalQuickview', data-bs-toggle='modal')
+            .image-box
+                span.label.bg-brand-2= sale
+                a(href= link)
+                    img(src= img, alt='Ecom')
+            .info-right
+                a.font-xs.color-gray-500(href="shop-vendor-single.html")= label
+                br
+                a.color-brand-3.font-sm-bold(href= link)= title
+                .rating
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    |
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    |
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    |
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    |
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    | 
+                    span.font-xs.color-gray-500 (65)
+                .price-info
+                    strong.font-lg-bold.color-brand-3.price-main= priceSale
+                    span.color-gray-500.price-line= price
+                if block
+                    block
+                .mt-20.box-btn-cart
+                    a.btn.btn-cart(href='shop-cart.html') Add To Cart
+                if !block
+                    ul.list-features
+                        li 27-inch (diagonal) Retina 5K display
+                        li 3.1GHz 6-core 10th-generation Intel Core i5
+                        li AMD Radeon Pro 5300 graphics
+
+mixin cardGridStyle3_home6(img='assets/imgs/page/homepage1/imgsp3.png', label="Apple", sale="-17%", title='2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', price='$3225.6', priceSale="$2856.3", link='#')
+    .card-grid-style-3.home6-style
+        .card-grid-inner
+            .tools
+                a.btn.btn-trend.btn-tooltip.mb-10(href='#', aria-label="Trend", data-bs-placement="left")
+                a.btn.btn-wishlist.btn-tooltip.mb-10(href='shop-wishlist.html', aria-label="Add To Wishlist")
+                a.btn.btn-compare.btn-tooltip.mb-10(href='shop-compare.html', aria-label="Compare")
+                a.btn.btn-quickview.btn-tooltip(aria-label="Quick view", href='#ModalQuickview', data-bs-toggle='modal')
+            .image-box
+                if block
+                    block
+                else if !block
+                    if sale
+                        span.label.bg-brand-2= sale
+                a(href= link)
+                    img(src= img, alt='Ecom')
+            .info-right
+                a.font-xs.color-gray-500(href="shop-vendor-single.html")= label
+                br
+                a.color-brand-3.font-sm-bold(href= link)= title
+                .rating
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    |
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    |
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    |
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    |
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    |
+                    span.font-xs.color-gray-500 (65)
+                .price-info.mb-10
+                    strong.font-lg-bold.color-brand-3.price-main= priceSale
+                    span.color-gray-500.price-line= price
+                .mt-10.box-btn-cart
+                    a.btn.btn-cart(href='shop-cart.html') Add To Cart
+                
+mixin cardGridStyle3_home6_2(img='assets/imgs/page/homepage1/imgsp3.png', label="Apple", sale="-17%", title='2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', price='$3225.6', priceSale="$2856.3", link='#')
+    .card-grid-style-3.home6-style.home7-style
+        .card-grid-inner
+            .tools
+                a.btn.btn-trend.btn-tooltip.mb-10(href='#', aria-label="Trend", data-bs-placement="left")
+                a.btn.btn-wishlist.btn-tooltip.mb-10(href='shop-wishlist.html', aria-label="Add To Wishlist")
+                a.btn.btn-compare.btn-tooltip.mb-10(href='shop-compare.html', aria-label="Compare")
+                a.btn.btn-quickview.btn-tooltip(aria-label="Quick view", href='#ModalQuickview', data-bs-toggle='modal')
+            .image-box
+                if block
+                    block
+                else if !block
+                    if sale
+                        span.label.bg-brand-2= sale
+                a(href= link)
+                    img(src= img, alt='Ecom')
+            .info-right
+                a.font-xs.color-gray-500(href="shop-vendor-single.html")= label
+                br
+                a.color-brand-3.font-sm-bold(href= link)= title
+                .rating
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    |
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    |
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    |
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    |
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    |
+                    span.font-xs.color-gray-500 (65)
+                .price-info.mb-10
+                    strong.font-lg-bold.color-brand-3.price-main= priceSale
+                    span.color-gray-500.price-line= price
+                .mt-10.box-btn-cart
+                    a.btn.btn-cart(href='shop-cart.html') Add To Cart
+
+mixin cardGridStyle3_list(img='assets/imgs/page/homepage1/imgsp3.png', label="Apple", sale="-17%", title='2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', price='$3225.6', priceSale="$2856.3", link='#')
+    .card-grid-style-3
+        .card-grid-inner
+            .tools
+                a.btn.btn-trend.btn-tooltip.mb-10(href='#', aria-label="Trend")
+                a.btn.btn-wishlist.btn-tooltip.mb-10(href='shop-wishlist.html', aria-label="Add To Wishlist")
+                a.btn.btn-compare.btn-tooltip.mb-10(href='shop-compare.html', aria-label="Compare")
+                a.btn.btn-quickview.btn-tooltip(aria-label="Quick view", href='#ModalQuickview', data-bs-toggle='modal')
+            .image-box
+                span.label.bg-brand-2= sale
+                a(href= link)
+                    img(src= img, alt='Ecom')
+            .info-right
+                span.font-xs.color-gray-500= label
+                br
+                a(href= link)
+                    h4.color-brand-3= title
+                .rating
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    span.font-xs.color-gray-500
+                        |  (65)
+                .price-info
+                    strong.font-lg-bold.color-brand-3.price-main= priceSale
+                    span.color-gray-500.price-line= price
+                if block
+                    block
+                if !block
+                    ul.list-features
+                        li  27-inch (diagonal) Retina 5K display
+                        li 3.1GHz 6-core 10th-generation Intel Core i5
+                        li AMD Radeon Pro 5300 graphics
+                .mt-20
+                    a.btn.btn-cart(href='shop-cart.html') Add To Cart
+
+mixin cardGridStyle3_1(img='assets/imgs/page/homepage1/imgsp3.png', label="Apple", sale="-17%", title='2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', price='$3225.6', priceSale="$2856.3", link='#')
+    .card-grid-style-3
+        .card-grid-inner
+            .tools
+                a.btn.btn-trend.btn-tooltip.mb-10(href='#', aria-label="Trend")
+                a.btn.btn-wishlist.btn-tooltip.mb-10(href='shop-wishlist.html', aria-label="Add To Wishlist")
+                a.btn.btn-compare.btn-tooltip.mb-10(href='shop-compare.html', aria-label="Compare")
+                a.btn.btn-quickview.btn-tooltip(aria-label="Quick view", href='#ModalQuickview', data-bs-toggle='modal')
+            .image-box
+                if sale
+                    span.label.bg-brand-2= sale
+                a(href= link)
+                    img(src= img, alt='Ecom')
+            if block
+                block
+            .info-right
+                span.font-xs.color-gray-500= label
+                br
+                a.color-brand-3.font-sm-bold(href= link)= title
+                .rating
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    span.font-xs.color-gray-500 (65)
+                .price-info
+                    strong.font-lg-bold.color-brand-3.price-main= priceSale
+                    span.color-gray-500.price-line= price
+                .mt-20
+                    a.btn.btn-cart(href='shop-cart.html') Add To Cart
+                ul.list-features
+                    li  27-inch (diagonal) Retina 5K display
+
+mixin cardGridStyle3_2(img='assets/imgs/page/homepage1/imgsp3.png', label="Apple", sale="-17%", title='2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', price='$3225.6', priceSale="$2856.3", link='#')
+    .card-grid-style-3.card-grid-none-border
+        .card-grid-inner
+            .tools
+                a.btn.btn-trend.btn-tooltip.mb-10(href='#', aria-label="Trend")
+                a.btn.btn-wishlist.btn-tooltip.mb-10(href='shop-wishlist.html', aria-label="Add To Wishlist")
+                a.btn.btn-compare.btn-tooltip.mb-10(href='shop-compare.html', aria-label="Compare")
+                a.btn.btn-quickview.btn-tooltip(aria-label="Quick view", href='#ModalQuickview', data-bs-toggle='modal')
+            .image-box
+                if block
+                    block
+                else
+                    span.label.bg-brand-2= sale
+                a(href= link)
+                    img(src= img, alt='Ecom')
+            .info-right
+                span.font-xs.color-gray-500= label
+                br
+                a.color-brand-3.font-sm-bold(href= link)= title
+                .rating
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    span.font-xs.color-gray-500 (65)
+                .price-info
+                    strong.font-lg-bold.color-brand-3.price-main= priceSale
+                    span.color-gray-500.price-line= price
+                ul.list-features
+                    li  27-inch (diagonal) Retina 5K display
+                    li 3.1GHz 6-core 10th-generation Intel Core i5
+                    li AMD Radeon Pro 5300 graphics
+                .mt-20.box-add-cart
+                    a.btn.btn-cart(href='shop-cart.html') Add To Cart
+mixin cardGridStyle3_3(img='assets/imgs/page/homepage1/imgsp3.png', label="Apple", sale="-17%", title='2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', price='$3225.6', priceSale="$2856.3", link='#')
+    .card-grid-style-3.card-style-full-image
+        .card-grid-inner
+            .tools
+                a.btn.btn-trend.btn-tooltip.mb-10(href='#', aria-label="Trend")
+                a.btn.btn-wishlist.btn-tooltip.mb-10(href='shop-wishlist.html', aria-label="Add To Wishlist")
+                a.btn.btn-compare.btn-tooltip.mb-10(href='shop-compare.html', aria-label="Compare")
+                a.btn.btn-quickview.btn-tooltip(aria-label="Quick view", href='#ModalQuickview', data-bs-toggle='modal')
+            .image-box
+                if sale
+                    span.label.bg-brand-2= sale
+                a(href= link)
+                    img(src= img, alt='Ecom')
+            if block
+                block
+            .info-right
+                .row 
+                    .col-6 
+                        span.font-xs.color-gray-500= label
+                    .col-6.text-end 
+                        .rating
+                            img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                            | 
+                            img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                            | 
+                            img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                            | 
+                            img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                            | 
+                            img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                            | 
+                            span.font-xs.color-gray-500 (65)
+                a.color-brand-3.font-sm-bold(href= link)= title
+                .price-info
+                    strong.font-lg-bold.color-brand-2.price-main= priceSale
+                    span.color-gray-500.price-line= price
+mixin cardGridStyle3_4(img='assets/imgs/page/homepage1/imgsp7.png', label="Apple", sale="-17%", title='Wyze Cam v3 1080p HD Indoor/Outdoor', price='$3225.6', priceSale="$2856.3", link='#')
+    .card-grid-style-3
+        .card-grid-inner
+            .tools
+                a.btn.btn-trend.btn-tooltip.mb-10(href='#', aria-label="Trend")
+                a.btn.btn-wishlist.btn-tooltip.mb-10(href='shop-wishlist.html', aria-label="Add To Wishlist")
+                a.btn.btn-compare.btn-tooltip.mb-10(href='shop-compare.html', aria-label="Compare")
+                a.btn.btn-quickview.btn-tooltip(aria-label="Quick view", href='#ModalQuickview', data-bs-toggle='modal')
+            .image-box
+                if block
+                    block
+                if sale
+                    span.label.bg-brand-2= sale
+                a(href= link)
+                    img(src= img, alt='Ecom')
+            .info-right
+                span.font-xs.color-gray-500= label
+                br
+                a.color-brand-3.font-sm-bold(href= link)= title
+                .rating
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    span.font-xs.color-gray-500 (65)
+                .price-info
+                    strong.font-lg-bold.color-brand-3.price-main= priceSale
+                    span.color-gray-500.price-line= price
+                ul.list-features
+                    li  27-inch (diagonal) Retina 5K display
+                    li 3.1GHz 6-core 10th-generation Intel Core i5
+                    li AMD Radeon Pro 5300 graphics
+mixin cardGridStyle3_5(img='assets/imgs/page/homepage1/imgsp7.png', label="Apple", sale="-17%", title='Wyze Cam v3 1080p HD Indoor/Outdoor', price='$3225.6', priceSale="$2856.3", link='#')
+    .card-grid-style-3
+        .card-grid-inner
+            .tools
+                a.btn.btn-trend.btn-tooltip.mb-10(href='#', aria-label="Trend")
+                a.btn.btn-wishlist.btn-tooltip.mb-10(href='shop-wishlist.html', aria-label="Add To Wishlist")
+                a.btn.btn-compare.btn-tooltip.mb-10(href='shop-compare.html', aria-label="Compare")
+                a.btn.btn-quickview.btn-tooltip(aria-label="Quick view", href='#ModalQuickview', data-bs-toggle='modal')
+            .image-box
+                if block
+                    block
+                if sale
+                    span.label.bg-brand-2= sale
+                a(href= link)
+                    img(src= img, alt='Ecom')
+            .info-right
+                span.font-xs.color-gray-500= label
+                br
+                a.color-brand-3.font-sm-bold(href= link)= title
+                .rating
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    span.font-xs.color-gray-500 (65)
+                .price-info
+                    strong.font-lg-bold.color-brand-3.price-main= priceSale
+                    span.color-gray-500.price-line= price
+                ul.list-features
+                    li Free Shipping
+                    li 7 days money back
+
+mixin cardGridStyle2(img='assets/imgs/page/homepage1/imgsp2.png', label='Apple', title='2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', price='$3225.6', priceSale='$2556.3', link='#')
+    .card-grid-style-2
+        if block
+            block
+        .image-box
+            a(href= link)
+                img(src= img, alt='Ecom')
+        .info-right
+            span.font-xs.color-gray-500= label
+            br
+            a.color-brand-3.font-sm-bold(href= link)= title
+            .rating
+                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                span.font-xs.color-gray-500 (65)
+            .price-info
+                strong.font-lg-bold.color-brand-3.price-main= priceSale
+                span.color-gray-500.price-line= price
+
+mixin cardGridStyle2_1(img='assets/imgs/page/homepage2/camera.png', label='Apple', title='2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', price='$3225.6', priceSale='$2556.3', link='#')
+    .card-grid-style-2.card-grid-none-border.hover-up
+        .image-box
+            if block
+                block
+            a(href= link)
+                img(src= img, alt='Ecom')
+        .info-right
+            span.font-xs.color-gray-500= label
+            br
+            a.color-brand-3.font-xs-bold(href= link)= title
+            .rating
+                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                span.font-xs.color-gray-500  (65)
+            .price-info
+                strong.font-lg-bold.color-brand-3.price-main= priceSale
+                span.color-gray-500.price-line= price
+
+mixin cardGridStyle2_2(img='assets/imgs/page/homepage2/camera.png', title='2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', price='$3225.6', priceSale='$2556.3', link='#')
+    .card-grid-style-2.card-grid-none-border.border-bottom.mb-10
+        .image-box
+            if block
+                block
+            a(href= link)
+                img(src= img, alt='Ecom')
+        .info-right
+            a.color-brand-3.font-xs-bold(href= link)= title
+            .rating
+                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                span.font-xs.color-gray-500  (65)
+            .price-info
+                strong.font-md-bold.color-brand-3.price-main= priceSale
+                if price
+                    span.color-gray-500.font-sm.price-line= price
+
+mixin cardListNews(img='assets/imgs/page/homepage1/img-1-2.png', title='Expanse Crypto Currency (EXP): Overview and Prospects', date='August 30, 2022', minute='4', link='#')
+    .card-grid-style-2.card-none-border.mb-30.pb-5.mh-auto
+        .image-box.mw-84
+            a(href= link)
+                img(src= img, alt='Ecom')
+        .info-right
+            a.color-brand-3.font-sm(href= link)= title
+            .row.mt-5
+                .col-12
+                    span.color-gray-500.font-xs.mr-20= date
+                    span.color-gray-500.font-xs= minute
+                        |
+                        span.color-gray-500.font-xs Mins read
+
+
+mixin cardGridStyle1(img='assets/imgs/page/homepage1/img-1-4.png', tag='Technology', title='The latest technologies to be used for VR in 2022', postDate='August 30, 2022', minutes='4', link='#')
+    .card-grid-style-1
+        .image-box
+            a(href= link)
+            img(src= img, alt='Ecom')
+        a.tag-dot.font-xs(href='blog-list.html')= tag
+        a.color-gray-1100(href= link)
+            h4= title
+        if block
+            block
+        .mt-20
+            span.color-gray-500.font-xs.mr-30= postDate
+            span.color-gray-500.font-xs= minutes
+                span
+                    |  Mins read
+
+
+mixin bannerRight(no='No.9', text1='Sensitive Touch', text2='without fingerprint', desc='Smooth handle and accurate click')
+    .banner-right.text-center
+        span.text-no= no
+        h5.text-main.mt-20= text1
+            br.d-none.d-lg-block
+            = text2
+        p.text-desc.mt-15= desc
+
+mixin bannerTop(img='assets/imgs/page/shop/grid-2/banner.png')
+    .row
+        .col-lg-3
+            .sidebar-ads
+                .bg-electronic
+                    span.big-deal.mb-5 Big deal
+                    h4.font-25 Electronic
+                    p.font-16.color-brand-3 Hot devices, Latest trending
+        .col-lg-9
+            .banner-top-gray-100
+                .banner-ads-top.mb-30
+                    a(href='#')
+                        img(src= img, alt='Ecom')
+
+mixin itemList(img='assets/imgs/template/delivery.svg', title='Free Delivery', desc='From all orders over $10')
+    .item-list
+        .icon-left
+            img(src= img, alt='Ecom')
+        .info-right
+            h5.font-lg-bold.color-gray-100= title
+            p.font-sm.color-gray-500= desc
+
+mixin categoryItem(img='assets/imgs/page/homepage2/cat-img-1.png', title='Air Purifier', desc='1025 items', link='#')
+    .box-category.hover-up
+        .image
+            a(href= link)
+                img(src= img, alt='Ecom')
+        .text-info
+            a.font-sm.color-gray-900.font-bold(href= link)= title
+            p.font-xs.color-gray-500= desc
+
+mixin cardStyle3TopDeal(img='assets/imgs/page/homepage1/screen.png', img2='assets/imgs/page/homepage1/screen.png', img3='assets/imgs/page/homepage1/screen.png', textTop1='Top', textTop2='Deals', label='Apple', title='2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', link='#', price='$3856.3', priceSale='$2856.3', available='568', sold='289', index='1')
+    .card-grid-style-3.hover-show.top-deals
+        .card-grid-inner
+            span.label
+                span.font-sm.color-white= textTop1
+                    br
+                    = textTop2
+            .box-top-deals
+                .top-deals-left
+                    .image-box
+                        .box-swiper
+                            .swiper-container.swiper-tab(data-index= index)
+                                .swiper-wrapper.pt-5
+                                    .swiper-slide
+                                        img(src= img, alt='Ecom')
+                                    .swiper-slide
+                                        img(src= img2, alt='Ecom')
+                                    .swiper-slide
+                                        img(src= img3, alt='Ecom')
+                                .swiper-pagination.swiper-pagination-2
+                    .box-count.box-count-square
+                        .deals-countdown(data-countdown='2023/09/25 00:00:00')
+                .top-deals-right
+                    .info-right
+                    span.font-xs.color-gray-500= label
+                    br
+                    a.color-brand-3.font-sm-bold(href= link)
+                        h5= title
+                    .rating
+                        img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                        img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                        img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                        img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                        img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                        span.font-xs.color-gray-500 (65)
+                    .price-info
+                        h3.color-brand-3.price-main.d-inline-block= priceSale
+                        span.color-gray-500.price-line= price
+                    .box-progress
+                        .progress-bar
+                            .progress-bar-inner
+                        .row
+                            .col-lg-6.col-md-6.col-sm-6.col-6
+                                span.font-xs.color-gray-500 Available: 
+                                span.font-xs-bold.color-gray-900= available
+                            .col-lg-6.col-md-6.col-sm-6.col-6.text-end
+                                span.font-xs.color-gray-500 Sold: 
+                                span.font-xs-bold.color-gray-900= sold
+                    ul.list-features
+                        li  27-inch (diagonal) Retina 5K display
+                        li 3.1GHz 6-core 10th-generation Intel Core i5
+                        li AMD Radeon Pro 5300 graphics
+
+mixin cardStyle3HideCart(img='assets/imgs/page/homepage1/imgsp3.png', label="Apple", sale="-17%", title='2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', price='$3225.6', priceSale="$2856.3", link='#', available='568', sold='289')
+    .card-grid-style-3.hover-show.hover-hide-show-cart
+        .card-grid-inner
+            .tools
+                a.btn.btn-wishlist.btn-tooltip.mb-10(href='shop-wishlist.html', aria-label="Add To Wishlist")
+                a.btn.btn-compare.btn-tooltip.mb-10(href='shop-compare.html', aria-label="Compare")
+                a.btn.btn-quickview.btn-tooltip(aria-label="Quick view", href='#ModalQuickview', data-bs-toggle='modal')
+            .image-box
+                span.label.bg-brand-2= sale
+                a(href= link)
+                    img(src= img, alt='Ecom')
+            .box-count
+                .deals-countdown(data-countdown='2023/09/25 00:00:00')
+            .info-right
+                span.font-xs.color-gray-500= label
+                br
+                a.color-brand-3.font-sm-bold(href='#')= title
+                .rating
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    span.font-xs.color-gray-500  (65)
+                .price-info
+                    strong.font-lg-bold.color-brand-3.price-main= priceSale
+                    span.color-gray-500.price-line= price
+                .box-progress.box-progress-small
+                    .progress-bar
+                        .progress-bar-inner
+                    .row
+                        .col-lg-6.col-md-6.col-sm-6.col-6
+                            span.font-xs.color-gray-500 Available:
+                            span.font-xs-bold.color-gray-900= available
+                        .col-lg-6.col-md-6.col-sm-6.col-6.text-end
+                            span.font-xs.color-gray-500 Sold:
+                            span.font-xs-bold.color-gray-900= sold
+                .mt-20.box-add-cart
+                    a.btn.btn-cart(href='shop-cart.html') Add To Cart
+                ul.list-features
+                    li  2-day Delivery. Free shipping
+
+mixin cardGridStyle3HurryUp2(img='assets/imgs/page/homepage3/sp6.png', img2='assets/imgs/page/homepage3/sp6.png', img3='assets/imgs/page/homepage3/sp6.png', textTop='Hurry Up!', label='Apple', title='2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', textSpecial='Special Offer', desc_top='Remains until the end of the offer', link='#', price='$3856.3', priceSale='$2856.3', available='568', sold='289', index='1')
+    .card-grid-style-3.hover-show.hurry-up.hurry-up-2
+        .card-grid-inner
+            .tools
+                a.btn.btn-trend.btn-tooltip.mb-10(href='#', aria-label="Trend")
+                a.btn.btn-wishlist.btn-tooltip.mb-10(href='shop-wishlist.html', aria-label="Add To Wishlist")
+                a.btn.btn-compare.btn-tooltip.mb-10(href='shop-compare.html', aria-label="Compare")
+                a.btn.btn-quickview.btn-tooltip(aria-label="Quick view", href='#ModalQuickview', data-bs-toggle='modal')
+            span.label
+                span.font-lg-bold.color-white= textTop
+            .image-box
+                .box-swiper
+                    .swiper-container.swiper-tab(data-index= index)
+                        .swiper-wrapper.pt-5
+                            .swiper-slide
+                                img(src= img, alt='Ecom')
+                            .swiper-slide
+                                img(src= img2, alt='Ecom')
+                            .swiper-slide
+                                img(src= img3, alt='Ecom')
+                        .swiper-pagination.swiper-pagination-2
+            .text-center.mt-10.mb-15
+                h4= textSpecial
+                p.font-base.color-gray-500= desc_top
+            .box-count.box-count-square
+                .deals-countdown(data-countdown='2023/09/25 00:00:00')
+            .divide
+            .info-right
+                span.font-xs.color-gray-500= label
+                br
+                a.color-brand-3.font-sm-bold(href= link)
+                    h5= title
+                .rating
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                    span.font-xs.color-gray-500.ml-5 (65)
+                .price-info
+                    h3.color-brand-3.price-main.d-inline-block= priceSale
+                    span.color-gray-500.price-line= price
+                .box-progress
+                    .progress-bar
+                        .progress-bar-inner
+                    .row
+                        .col-lg-6.col-md-6.col-sm-6.col-6
+                            span.font-xs.color-gray-500 Available:
+                            span.font-xs-bold.color-gray-900= available
+                        .col-lg-6.col-md-6.col-sm-6.col-6.text-end
+                            span.font-xs.color-gray-500 Sold:
+                            span.font-xs-bold.color-gray-900= sold
+                .divide
+                ul.list-features.mb-30
+                    li  27-inch (diagonal) Retina 5K display
+                    li 3.1GHz 6-core 10th-generation Intel Core i5
+                    li AMD Radeon Pro 5300 graphics
+                a.btn.btn-cart(href='shop-cart.html') Add To Cart
+
+
+mixin cardGridStyle4(img='assets/imgs/page/homepage2/img-microsoft.png', img2='assets/imgs/page/homepage2/microsoft.svg', text_link="Shop Now", title='PC, Laptop, Smart Watch, Gaming Gear ...', desc="Up to 55% off", link='#')
+    .card-grid-style-4
+        .card-grid-inner
+            .image-box
+                a(href= link)
+                    img(src= img, alt='Ecom')
+            .info-right
+                a(href='shop-vendor-single.html')
+                    img(src= img2, alt='Ecom')
+                p.font-xs.color-brand-3= title
+                .divide.mb-5
+                .font-lg-bold.color-brand-3= desc
+                .box-link
+                    a.btn.btn-link-brand-2.btn-arrow-brand-2.btn-arrow-small.text-lowercase.pt-0.pb-0(href= link)= text_link
+
+mixin cardAds1(img='assets/imgs/page/homepage3/img-fridge.png', label='New Arrival', desc='Stock up your food in all weathers', link='#')
+    .card-grid-style-3.card-ads-1
+        .card-grid-inner.text-center
+            .info-right
+                span.font-16.color-brand-2.text-uppercase= label
+                br
+                h4.color-green.font-32.mt-15.mb-15= desc
+            .mt-30
+                a.btn.btn-brand-2.btn-arrow-right(href= link) Shop Now
+            .image-box
+                a(href= link)
+                    img(src= img, alt='Ecom')
+
+mixin cardAds2(img='assets/imgs/page/homepage3/img-girl.png', title='Multifunctional Household Tool Kit ', desc='perfect for DIY or home repair and maintenance', link='#')
+    .card-grid-style-3.card-ads-2
+        .card-grid-inner
+            .info-right.pl-20.pr-20
+                h4.color-gray-1000.font-23.mb-10= title
+                p.font-sm.color-brand-3.mb-10= desc
+                .box-count.box-count-square.hide-period
+                    .deals-countdown(data-countdown='2023/09/25 00:00:00')
+            .image-box
+                a(href= link)
+                    img(src= img, alt='Ecom')
+
+mixin cardProductSamll(img='assets/imgs/page/homepage9/sp1.png', price='$3256', price_sale='$2856.3', link='#')
+    .card-product-small 
+        .card-image 
+            a(href='#') 
+                img(src= img, alt="Ecom")
+        .card-info 
+            .rating
+                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                | 
+                span.font-xs.color-gray-500 (65)
+            .box-prices 
+                .price-bold.color-brand-3= price_sale
+                .price-line.text-end.color-gray-500= price
+
+mixin cardCategoryItem(img='assets/imgs/page/homepage10/cat1.png', title='Snake Plant', num='2356 items')
+    .item-cat 
+        .box-category-1
+            .box-image 
+                .inner-image
+                    img(src= img, alt="Ecom")
+            .box-info 
+                a.color-gray-900.font-md-bold(href='#')= title
+                p.font-xs.color-gray-500= num

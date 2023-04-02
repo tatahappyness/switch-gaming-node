@@ -1,0 +1,161 @@
+section.section-box.shop-template.mt-30
+    .container
+        .row
+            .col-lg-12
+                include ../elements/box-filters-blog.pug
+        .row.mt-30
+            .col-lg-9
+                .row
+                    -
+                        const blogList = [
+                            {
+                                image: 'assets/imgs/page/homepage1/img-1.png',
+                                title: 'Augmented and Virtual Reality Challenges and Future Trends Virtual Reality Shopping',
+                                date: 'August 30, 2022',
+                                minute: '4',
+                                tag: 'Technology',
+                                link: 'blog-single.html'
+
+                            }
+                        ]
+                    each blog in blogList
+                        .col-lg-12.mb-50.display-list
+                            .card-grid-style-1
+                                .image-box
+                                    a(href= blog.link)
+                                        img(src= blog.image, alt='Ecom')
+                                .blog-info
+                                    a.tag-dot.font-xs(href='#')= blog.tag
+                                    a.color-gray-1100(href= blog.link)
+                                        h4.mb-15= blog.title
+                                    p.font-md.color-gray-500 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                    .row.mt-20
+                                        .col-8
+                                            span.color-gray-500.font-sm.mr-30= blog.date
+                                            span.color-gray-500.font-sm= blog.minute
+                                                span Mins read
+                                        .col-4.text-end
+                                            a.btn.btn-arrow-2 Read more
+
+                    -
+                        const blogLists = [
+                            {
+                                image: 'assets/imgs/page/blog/blog-13.jpg',
+                                title: 'The latest technologies to be used for VR in 2022',
+                                date: 'August 30, 2022',
+                                minute: '4',
+                                tag: 'Technology',
+                                link: 'blog-single.html'
+
+                            },
+                            {
+                                image: 'assets/imgs/page/blog/blog-14.jpg',
+                                title: 'The fate of Elon Musks deal to buy Twitter',
+                                date: 'August 30, 2022',
+                                minute: '4',
+                                tag: 'Technology',
+                                link: 'blog-single.html'
+                            },
+                            {
+                                image: 'assets/imgs/page/blog/blog-15.jpg',
+                                title: 'Binance blockchain hit by $570 million crypto',
+                                date: 'August 30, 2022',
+                                minute: '4',
+                                tag: 'Technology',
+                                link: 'blog-single.html'
+                            },
+                            {
+                                image: 'assets/imgs/page/blog/blog-16.jpg',
+                                title: 'The Twitter-Musk trial is now on pause',
+                                date: 'August 30, 2022',
+                                minute: '4',
+                                tag: 'Technology',
+                                link: 'blog-single.html'
+                            },
+                            {
+                                image: 'assets/imgs/page/blog/blog-17.jpg',
+                                title: 'The latest technologies to be used for VR in 2022',
+                                date: 'August 30, 2022',
+                                minute: '4',
+                                tag: 'Technology',
+                                link: 'blog-single.html'
+
+                            },
+                            {
+                                image: 'assets/imgs/page/blog/blog-9.jpg',
+                                title: 'Apple unveils iPhone 14 at far out even',
+                                date: 'August 30, 2022',
+                                minute: '4',
+                                tag: 'Technology',
+                                link: 'blog-single.html'
+                            },
+                            {
+                                image: 'assets/imgs/page/blog/blog-8.jpg',
+                                title: 'Walmart enters the metaverse with Roblox',
+                                date: 'August 30, 2022',
+                                minute: '4',
+                                tag: 'Technology',
+                                link: 'blog-single.html'
+                            },
+                            {
+                                image: 'assets/imgs/page/blog/blog-7.jpg',
+                                title: 'Take no prisoners: In the Feds inflation fight',
+                                date: 'August 30, 2022',
+                                minute: '4',
+                                tag: 'Technology',
+                                link: 'blog-single.html'
+                            },
+                            {
+                                image: 'assets/imgs/page/blog/blog-6.jpg',
+                                title: 'Amazon raising hourly pay for warehouse ',
+                                date: 'August 30, 2022',
+                                minute: '4',
+                                tag: 'Technology',
+                                link: 'blog-single.html'
+
+                            },
+                            {
+                                image: 'assets/imgs/page/blog/blog-5.jpg',
+                                title: 'Who is who: Meet the Murdoch Family ',
+                                date: 'August 30, 2022',
+                                minute: '4',
+                                tag: 'Technology',
+                                link: 'blog-single.html'
+                            },
+                            {
+                                image: 'assets/imgs/page/blog/blog-4.jpg',
+                                title: 'NFL has a new halftime show sponsor',
+                                date: 'August 30, 2022',
+                                minute: '4',
+                                tag: 'Technology',
+                                link: 'blog-single.html'
+                            },
+                            {
+                                image: 'assets/imgs/page/blog/blog-3.jpg',
+                                title: 'Actress details sexual harassment on sitcom set',
+                                date: 'August 30, 2022',
+                                minute: '4',
+                                tag: 'Technology',
+                                link: 'blog-single.html'
+                            }
+                        ]
+                    each blog in blogLists
+                        .col-lg-4.col-md-6.col-sm-6.col-12.mb-40
+                            .card-grid-style-1
+                                .image-box
+                                    a(href= blog.link)
+                                    img(src= blog.image, alt='Ecom')
+                                a.tag-dot.font-xs(href='blog.html')= blog.tag
+                                a.color-gray-1100(href= blog.link)
+                                    h4.mb-10= blog.title
+                                p.font-xs.color-gray-500 Donec rhoncus quis diam sit amet faucibus. Vivamus pellentesque, sem sed convallis ultricies, ante eros laoreet libero, vitae suscipit lorem turpis sit amet lectus.
+                                .row.mt-20
+                                    .col-8
+                                        span.color-gray-500.font-xs.mr-30= blog.date
+                                        span.color-gray-500.font-xs= blog.minute
+                                            span Mins read
+                                    .col-4.text-end
+                                        a.btn.btn-gray.font-xs.font-medium Read more
+                include ../elements/pagination.pug
+            .col-lg-3
+                include ../components/sidebar-blog.pug

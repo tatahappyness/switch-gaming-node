@@ -1,0 +1,234 @@
+extends ../layouts/master.pug
+
+block title
+	title Ecom - Marketplace Dashboard Template
+
+block content
+	.content-header
+		h2.content-title Transactions Details
+	.card
+		.card-body
+			.row
+				.col-lg-8.pr-80
+					header.card-header2
+						.row.align-items-center
+							.col-lg-6.col-md-6.mb-lg-0.mb-15
+								span
+									i.material-icons.md-calendar_today
+									b Wed, Aug 13, 2022, 4:34PM
+								br
+								small.text-muted Transaction ID: 3453012
+								br
+								small.text-muted Transaction Hash: 1a7b7c1b33d161f45804730c70b75175dccd9883
+								p.mt-15
+									span Status:
+									span.badge.rounded-pill.alert-success.text-success Success
+							.col-lg-6.col-md-6.ms-auto.text-md-end
+								a.btn.btn-primary(href='#') Download PDF
+								a.btn.btn-secondary.print.ms-2(href='#')
+									i.icon.material-icons.md-print.mr-5
+									| Print
+					// card-header end//
+					hr
+					.trans-details.mb-30
+						.box.shadow-sm.bg-light
+							.row
+								.col-4
+									h6.mb-15 Payment info
+									p
+										img.border(src='assets/imgs/card-brands/2.png' height='20')
+										|  Master Card **** **** 4768
+										br
+										|                                                 Business name: Grand Market LLC
+										br
+										|                                                 Phone: +1 (800) 555-154-52
+								.col-4
+									h6.mb-1 Customer
+									p.mb-1
+										| John Alexander
+										br
+										|  alex@example.com
+										br
+										|  +998 99 22123456
+								.col-4
+									h6.mb-1 Deliver to
+									p.mb-1
+										| City: Tashkent, Uzbekistan
+										br
+										| Block A, House 123, Floor 2
+										br
+										|  Po Box 10000
+					h5.mb-15 Item List
+					.table-responsive
+						table.table
+							thead
+								tr
+									th(width='40%') Product
+									th(width='20%') Unit Price
+									th(width='20%') Quantity
+									th.text-end(width='20%') Total
+							tbody
+								tr
+									td
+										a.itemside(href='#')
+											.left
+												img.img-xs(src='assets/imgs/items/1.jpg' alt='Item' width='40' height='40')
+											.info  T-shirt blue, XXL size
+									td  $44.25
+									td  2
+									td.text-end  $99.50
+								tr
+									td
+										a.itemside(href='#')
+											.left
+												img.img-xs(src='assets/imgs/items/2.jpg' alt='Item' width='40' height='40')
+											.info  Winter jacket for men
+									td  $7.50
+									td  2
+									td.text-end  $15.00
+								tr
+									td
+										a.itemside(href='#')
+											.left
+												img.img-xs(src='assets/imgs/items/3.jpg' alt='Item' width='40' height='40')
+											.info  Jeans wear for men
+									td  $43.50
+									td  2
+									td.text-end  $102.04
+								tr
+									td
+										a.itemside(href='#')
+											.left
+												img.img-xs(src='assets/imgs/items/4.jpg' alt='Item' width='40' height='40')
+											.info  Product name color and size
+									td  $99.00
+									td  3
+									td.text-end  $297.00
+								tr
+									td(colspan='4')
+										article.float-end
+											dl.dlist
+												dt Subtotal:
+												dd $973.35
+											dl.dlist
+												dt Shipping cost:
+												dd $10.00
+											dl.dlist
+												dt Grand total:
+												dd
+													b.h5 $983.00
+					// table-responsive//
+					h5.mb-15 Transaction Note
+					p.text-muted
+						| Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, veritatis at. Dolore facilis repellat numquam cum, id, iste sint libero odio atque a quam ducimus cumque quis enim reiciendis repellendus?
+				// col end//
+				.col-lg-4
+					header.border-bottom.mb-4.pb-4
+						.row
+							.col-12
+								h3.mb-5.mt-25 Latest Transactions
+								hr.mb-30
+							.col-lg-8.col-6.me-auto
+								input.form-control(type='text' placeholder='Search...')
+							.col-lg-4.col-6
+								select.form-select
+									option Method
+									option Master card
+									option Visa card
+									option Paypal
+					// card-header end//
+					.table-responsive
+						table.table.table-hover
+							thead
+								tr
+									th Transaction ID
+									th Paid
+									th Date
+									th.text-end  Action
+							tbody
+								tr
+									td
+										b #456667
+									td $294.00
+									td 18 Jan 2022
+									td.text-end
+										a.btn.btn-sm.btn-light.font-sm.rounded(href='#') Details
+								tr
+									td
+										b #134768
+									td $294.00
+									td 18 Jan 2022
+									td.text-end
+										a.btn.btn-sm.btn-light.font-sm.rounded(href='#') Details
+								tr
+									td
+										b #134768
+									td $294.00
+									td 18 Jan 2022
+									td.text-end
+										a.btn.btn-sm.btn-light.font-sm.rounded(href='#') Details
+								tr
+									td
+										b #134768
+									td $294.00
+									td 18 Jan 2022
+									td.text-end
+										a.btn.btn-sm.btn-light.font-sm.rounded(href='#') Details
+								tr
+									td
+										b #887780
+									td $294.00
+									td 18 Jan 2022
+									td.text-end
+										a.btn.btn-sm.btn-light.font-sm.rounded(href='#') Details
+								tr
+									td
+										b #344556
+									td $294.00
+									td 18 Jan 2022
+									td.text-end
+										a.btn.btn-sm.btn-light.font-sm.rounded(href='#') Details
+								tr
+									td
+										b #134768
+									td $294.00
+									td 18 Jan 2022
+									td.text-end
+										a.btn.btn-sm.btn-light.font-sm.rounded(href='#') Details
+								tr
+									td
+										b #134768
+									td $294.00
+									td 18 Jan 2022
+									td.text-end
+										a.btn.btn-sm.btn-light.font-sm.rounded(href='#') Details
+								tr
+									td
+										b #998784
+									td $294.00
+									td 18 Jan 2022
+									td.text-end
+										a.btn.btn-sm.btn-light.font-sm.rounded(href='#') Details
+								tr
+									td
+										b #556667
+									td $294.00
+									td 18 Jan 2022
+									td.text-end
+										a.btn.btn-sm.btn-light.font-sm.rounded(href='#') Details
+					// table-responsive.//
+					.pagination-area.mt-30.mb-50
+						nav(aria-label='Page navigation example')
+							ul.pagination.justify-content-start
+								li.page-item.active
+									a.page-link(href='#') 1
+								li.page-item
+									a.page-link(href='#') 2
+								li.page-item
+									a.page-link(href='#') 3
+								li.page-item
+									a.page-link(href='#')
+										i.material-icons.md-chevron_right
+				// col end//
+				// row end//
+				// card-body //

@@ -1,0 +1,46 @@
+section.section-box.bg-gray-50.pt-50.pb-50.mt-50
+    .container
+        .head-main.bd-gray-200
+            .row
+                .col-xl-7.col-lg-6
+                    h3.mb-5 Trending This Week
+                    p.font-base.color-gray-500 Special products in this month.
+                .col-xl-5.col-lg-6
+                    ul.nav.nav-tabs(role='tablist')
+                        li
+                            a.active(href='#tab-2-all', data-bs-toggle='tab', role='tab', aria-controls='tab-2-all', aria-selected='true') All
+                        li
+                            a(href='#tab-2-bestseller', data-bs-toggle='tab', role='tab', aria-controls='tab-2-bestseller', aria-selected='true') Best seller
+                        li
+                            a(href='#tab-2-mostviewed', data-bs-toggle='tab', role='tab', aria-controls='tab-2-mostviewed', aria-selected='true') Most viewed
+                        li
+                            a(href='#tab-2-topbrands', data-bs-toggle='tab', role='tab', aria-controls='tab-2-topbrands', aria-selected='true') Top Brands
+        .tab-content
+            #tab-2-all.tab-pane.fade.active.show(role='tabpanel', aria-labelledby='tab-2-all')
+                .list-products-5
+                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp3.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp4.png', "Philips", "-17%", 'Philips H4205 On-Ear Wireless Headphones with 32mm', '$162.5', "$154.0.3", 'shop-single-product.html')
+                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp5.png', "Apple", "-17%", '2020 Apple MacBook Air Laptop: Apple M1 Chip, 13”', '$2225.6', "$2325.3", 'shop-single-product.html')
+                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp6.png', "Apple", "-17%", 'Apple Watch Series 8 [GPS 45mm] Smart Watch', '$560.6', "$530.3", 'shop-single-product.html')
+                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp7.png', "Kami Tech", "-17%", 'Kami by YI 4pc 1080p Home Security Cameras', '$250.6', "$156.3", 'shop-single-product.html')
+            #tab-2-bestseller.tab-pane.fade(role='tabpanel', aria-labelledby='tab-2-bestseller')
+                .list-products-5
+                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp1.png', "Apple", "-17%", '2020 Apple MacBook Air Laptop: Apple M1 Chip, 13”', '$2225.6', "$2325.3", 'shop-single-product.html')
+                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp2.png', "Apple", "-17%", 'Apple Watch Series 8 [GPS 45mm] Smart Watch', '$560.6', "$530.3", 'shop-single-product.html')
+                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp7.png', "Kami Tech", "-17%", 'Kami by YI 4pc 1080p Home Security Cameras', '$250.6', "$156.3", 'shop-single-product.html')
+                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp3.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp4.png', "Philips", "-17%", 'Philips H4205 On-Ear Wireless Headphones with 32mm', '$162.5', "$154.0.3", 'shop-single-product.html')
+            #tab-2-mostviewed.tab-pane.fade(role='tabpanel', aria-labelledby='tab-2-mostviewed')
+                .list-products-5
+                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp5.png', "Apple", "-17%", '2020 Apple MacBook Air Laptop: Apple M1 Chip, 13”', '$2225.6', "$2325.3", 'shop-single-product.html')
+                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp6.png', "Apple", "-17%", 'Apple Watch Series 8 [GPS 45mm] Smart Watch', '$560.6', "$530.3", 'shop-single-product.html')
+                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp3.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp4.png', "Philips", "-17%", 'Philips H4205 On-Ear Wireless Headphones with 32mm', '$162.5', "$154.0.3", 'shop-single-product.html')
+                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp7.png', "Kami Tech", "-17%", 'Kami by YI 4pc 1080p Home Security Cameras', '$250.6', "$156.3", 'shop-single-product.html')
+            #tab-2-topbrands.tab-pane.fade(role='tabpanel', aria-labelledby='tab-2-topbrands')
+                .list-products-5
+                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp7.png', "Kami Tech", "-17%", 'Kami by YI 4pc 1080p Home Security Cameras', '$250.6', "$156.3", 'shop-single-product.html')
+                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp2.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp1.png', "Philips", "-17%", 'Philips H4205 On-Ear Wireless Headphones with 32mm', '$162.5', "$154.0.3", 'shop-single-product.html')
+                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp5.png', "Apple", "-17%", '2020 Apple MacBook Air Laptop: Apple M1 Chip, 13”', '$2225.6', "$2325.3", 'shop-single-product.html')
+                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp6.png', "Apple", "-17%", 'Apple Watch Series 8 [GPS 45mm] Smart Watch', '$560.6', "$530.3", 'shop-single-product.html')

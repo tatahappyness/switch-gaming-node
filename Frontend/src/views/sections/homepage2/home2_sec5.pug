@@ -1,0 +1,66 @@
+section.section-box.pt-70
+    .container
+        .head-main
+            .row
+                .col-xl-5.col-lg-5
+                    h3.mb-5 Trending Products
+                    p.font-base.color-gray-500 Special products in this month.
+                .col-xl-7.col-lg-7
+                    ul.nav.nav-tabs.nav-tabs-underline.text-uppercase(role='tablist')
+                        li
+                            a.active(href='#tab-all', data-bs-toggle='tab', role='tab', aria-controls='tab-all', aria-selected='true') All
+                        li
+                            a(href='#tab-bestseller', data-bs-toggle='tab', role='tab', aria-controls='tab-bestseller', aria-selected='true') Best seller
+                        li
+                            a(href='#tab-mostviewed', data-bs-toggle='tab', role='tab', aria-controls='tab-mostviewed', aria-selected='true') Most viewed
+                        li
+                            a(href='#tab-topbrands', data-bs-toggle='tab', role='tab', aria-controls='tab-topbrands', aria-selected='true') Top Brands
+        .tab-content
+            #tab-all.tab-pane.fade.active.show(role='tabpanel', aria-labelledby='tab-all')
+                .list-products-5
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp3.png', "Apple", "-12%", 'Dell Optiplex 9020 Small Form Business Desktop Tower PC', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp4.png', "Apple", "-17%", 'HP 24 All-in-One PC, Intel Core i3-1115G4, 4GB RAM', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp5.png', "Apple", "-25%", 'Gateway 23.8" All-in-one Desktop, Fully Adjustable Stand', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp6.png', "Apple", "-16%", 'HP 22 All-in-One PC, Intel Pentium Silver J5040, 4GB RAM', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp7.png', "Apple", "-22%", 'HP Slim Desktop, Intel Celeron J4025, 4GB RAM, 256GB', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp1.png', "Apple", "-25%", 'Class 4K UHD (2160P) LED Roku Smart TV HDR', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp2.png', "Apple", "-17%", 'SAMSUNG Galaxy Tab S7 Plus 12.4" 128GB Mystic Black', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp3.png', "Apple", "-12%", 'MSI Optix G272 27" Full HD LED Gaming LCD Monitor', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp4.png', "Apple", "-10%", 'RCA 43" Class 4K Ultra HD (2160P) HDR Roku Smart', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp6.png', "Apple", "-5%", 'Bose Sport Earbuds True Wireless Bluetooth Headphones', '$3225.6', "$2856.3", 'shop-single-product.html')
+            #tab-bestseller.tab-pane.fade(role='tabpanel', aria-labelledby='tab-bestseller')
+                .list-products-5
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp3.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp4.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp5.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp6.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp7.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp3.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp4.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp5.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp6.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp7.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+            #tab-mostviewed.tab-pane.fade(role='tabpanel', aria-labelledby='tab-mostviewed')
+                .list-products-5
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp3.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp4.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp5.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp6.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp7.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp3.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp4.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp5.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp6.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp7.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+            #tab-topbrands.tab-pane.fade(role='tabpanel', aria-labelledby='tab-topbrands')
+                .list-products-5
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp3.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp4.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp5.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp6.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp7.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp3.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp4.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp5.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp6.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                    +cardGridStyle3_2('assets/imgs/page/homepage1/imgsp7.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')

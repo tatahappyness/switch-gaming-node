@@ -1,0 +1,77 @@
+section.section-box.mt-50
+    .container
+        .head-main.bd-gray-200
+            .row
+                .col-xl-6.col-lg-6
+                    h3.mb-5 Refrigerators &amp; Freezers
+                    p.font-base.color-gray-500 Special products in this month.
+                .col-xl-6.col-lg-6
+                    ul.nav.nav-tabs.text-uppercase.pr-100(role='tablist')
+                        li
+                            a.active(href='#tab-5-all', data-bs-toggle='tab', role='tab', aria-controls='tab-5-all', aria-selected='true', data-index='9') All
+                        li
+                            a(href='#tab-5-bestseller', data-bs-toggle='tab', role='tab', aria-controls='tab-5-bestseller', aria-selected='false', data-index='10') Best seller
+                        li
+                            a(href='#tab-5-mostviewed', data-bs-toggle='tab', role='tab', aria-controls='tab-5-mostviewed', aria-selected='false', data-index='11') Most viewed
+                        li
+                            a(href='#tab-5-topbrands', data-bs-toggle='tab', role='tab', aria-controls='tab-5-topbrands', aria-selected='false', data-index='12') Top Brands
+                    // Button slider
+                    .box-button-slider
+                        #tab-5-all-nav.button-slider-nav
+                            .swiper-button-next.swiper-button-next-tab-9
+                            .swiper-button-prev.swiper-button-prev-tab-9
+                        #tab-5-bestseller-nav.button-slider-nav(style='display: none;')
+                            .swiper-button-next.swiper-button-next-tab-10
+                            .swiper-button-prev.swiper-button-prev-tab-10
+                        #tab-5-mostviewed-nav.button-slider-nav(style='display: none;')
+                            .swiper-button-next.swiper-button-next-tab-11
+                            .swiper-button-prev.swiper-button-prev-tab-11
+                        #tab-5-topbrands-nav.button-slider-nav(style='display: none;')
+                            .swiper-button-next.swiper-button-next-tab-12
+                            .swiper-button-prev.swiper-button-prev-tab-12
+                    // End Button slider
+        .tab-content.tab-content-slider
+            #tab-5-all.tab-pane.fade.active.show(role='tabpanel', aria-labelledby='tab-5-all')
+                .box-swiper
+                    .swiper-container.swiper-tab-9
+                        .swiper-wrapper.pt-5
+                            .swiper-slide
+                                .list-products-5
+                                    +cardAds2('assets/imgs/page/homepage3/img-girl.png', 'Multifunctional Household Tool Kit', 'perfect for DIY or home repair and maintenance', '#')
+                                    +cardGridStyle3('assets/imgs/page/homepage3/img-tool1.png', "Apple", "-17%", 'MSI Optix G272 27" Full HD LED Gaming LCD Monitor', '$3225.6', "$2856.3", '#')
+                                    +cardGridStyle3('assets/imgs/page/homepage3/img-tool2.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", '#')
+                                    +cardGridStyle3('assets/imgs/page/homepage3/img-tool3.png', "Apple", "-17%", 'Bose Sport Earbuds True Wireless Bluetooth Headphones', '$3225.6', "$2856.3", '#')
+                                    +cardGridStyle3('assets/imgs/page/homepage3/img-tool4.png', "Apple", "-17%", 'Chromecast with Google TV - Streaming Entertainment', '$3225.6', "$2856.3", '#')
+            #tab-5-bestseller.tab-pane.fade(role='tabpanel', aria-labelledby='tab-5-bestseller')
+                .box-swiper
+                    .swiper-container.swiper-tab-10
+                        .swiper-wrapper.pt-5
+                            .swiper-slide
+                                .list-products-5
+                                    +cardAds2('assets/imgs/page/homepage3/img-girl.png', 'Multifunctional Household Tool Kit', 'perfect for DIY or home repair and maintenance', '#')
+                                    +cardGridStyle3('assets/imgs/page/homepage3/img-tool4.png', "Apple", "-17%", 'RCA 43" Class 4K Ultra HD (2160P) HDR Roku Smart', '$3225.6', "$2856.3", '#')
+                                    +cardGridStyle3('assets/imgs/page/homepage3/img-tool3.png', "Apple", "-17%", 'Class 4K UHD (2160P) LED Roku Smart TV HDR', '$3225.6', "$2856.3", '#')
+                                    +cardGridStyle3('assets/imgs/page/homepage3/img-tool2.png', "Apple", "-17%", 'SAMSUNG Galaxy Tab S7 Plus 12.4" 128GB Mystic Black', '$3225.6', "$2856.3", '#')
+                                    +cardGridStyle3('assets/imgs/page/homepage3/img-tool1.png', "Apple", "-17%", 'HP Slim Desktop, Intel Celeron J4025, 4GB RAM', '$3225.6', "$2856.3", '#')
+            #tab-5-mostviewed.tab-pane.fade(role='tabpanel', aria-labelledby='tab-5-mostviewed')
+                .box-swiper
+                    .swiper-container.swiper-tab-11
+                        .swiper-wrapper.pt-5
+                            .swiper-slide
+                                .list-products-5
+                                    +cardAds2('assets/imgs/page/homepage3/img-girl.png', 'Multifunctional Household Tool Kit', 'perfect for DIY or home repair and maintenance', '#')
+                                    +cardGridStyle3('assets/imgs/page/homepage3/img-tool3.png', "Apple", "-17%", 'Hisense 43" Class 4K UHD LED XClass Smart', '$3225.6', "$2856.3", '#')
+                                    +cardGridStyle3('assets/imgs/page/homepage3/img-tool1.png', "Apple", "-17%", 'Dell Optiplex 9020 Small Form Business Desktop', '$3225.6', "$2856.3", '#')
+                                    +cardGridStyle3('assets/imgs/page/homepage3/img-tool2.png', "Apple", "-17%", 'HP 22 All-in-One PC, Intel Pentium Silver J5040', '$3225.6', "$2856.3", '#')
+                                    +cardGridStyle3('assets/imgs/page/homepage3/img-tool4.png', "Apple", "-17%", '2022 Apple 10.9-inch iPad Air Wi-Fi 64GB', '$3225.6', "$2856.3", '#')
+            #tab-5-topbrands.tab-pane.fade(role='tabpanel', aria-labelledby='tab-5-topbrands')
+                .box-swiper
+                    .swiper-container.swiper-tab-12
+                        .swiper-wrapper.pt-5
+                            .swiper-slide
+                                .list-products-5
+                                    +cardAds2('assets/imgs/page/homepage3/img-girl.png', 'Multifunctional Household Tool Kit', 'perfect for DIY or home repair and maintenance', '#')
+                                    +cardGridStyle3('assets/imgs/page/homepage3/img-tool2.png', "Apple", "-17%", '2022 Apple 10.9-inch iPad Air Wi-Fi 64GB - Silver', '$3225.6', "$2856.3", '#')
+                                    +cardGridStyle3('assets/imgs/page/homepage3/img-tool4.png', "Apple", "-17%", '2022 Apple 10.9-inch iPad Air Wi-Fi 64GB', '$3225.6', "$2856.3", '#')
+                                    +cardGridStyle3('assets/imgs/page/homepage3/img-tool3.png', "Apple", "-17%", 'SAMSUNG Galaxy Tab A7 Lite, 8.7" Tablet 32GB', '$3225.6', "$2856.3", '#')
+                                    +cardGridStyle3('assets/imgs/page/homepage3/img-tool1.png', "Apple", "-17%", 'Razer Power Up Gaming Bundle V2 - Cynosa Lite', '$3225.6', "$2856.3", '#')

@@ -1,0 +1,136 @@
+section.section-box.shop-template
+    .container
+        .row
+            .col-lg-6
+                .box-border
+                    .box-payment
+                        a.btn.btn-gpay
+                            img(src='assets/imgs/page/checkout/gpay.svg', alt='Ecom')
+                        a.btn.btn-paypal
+                            img(src='assets/imgs/page/checkout/paypal.svg', alt='Ecom')
+                        a.btn.btn-amazon
+                            img(src='assets/imgs/page/checkout/amazon.svg', alt='Ecom')
+                    .border-bottom-4.text-center.mb-20
+                        .text-or.font-md.color-gray-500 Or
+                    .row
+                        .col-lg-6.col-sm-6.mb-20
+                            h5.font-md-bold.color-brand-3.text-sm-start.text-center Contact information
+                        .col-lg-6.col-sm-6.mb-20.text-sm-end.text-center
+                            span.font-sm.color-brand-3 Already have an account?
+                            |
+                            a.font-sm.color-brand-1(href='page-login.html')
+                                |  Login
+                        .col-lg-12
+                            .form-group
+                                input.form-control.font-sm(type="text", placeholder='Email*')
+                        .col-lg-12
+                            .form-group
+                                label.font-sm.color-brand-3(for="checkboxOffers")
+                                    input.checkboxOffer#checkboxOffers(type="checkbox")
+                                    | Keep me up to date on news and exclusive offers
+                        .col-lg-12
+                            h5.font-md-bold.color-brand-3.mt-15.mb-20 Shipping address
+                        .col-lg-6
+                            .form-group
+                                input.form-control.font-sm(type="text", placeholder='First name*')
+                        .col-lg-6
+                            .form-group
+                                input.form-control.font-sm(type="text", placeholder='Last name*')
+                        .col-lg-12
+                            .form-group
+                                input.form-control.font-sm(type="text", placeholder='Address 1*')
+                        .col-lg-12
+                            .form-group
+                                input.form-control.font-sm(type="text", placeholder='Address 2*')
+                        .col-lg-6
+                            .form-group
+                                select.form-control.font-sm.select-style1.color-gray-700
+                                    option(value='') Select an option...
+                                    option(value='1') Option 1
+                        .col-lg-6
+                            .form-group
+                                input.form-control.font-sm(type="text", placeholder='City*')
+                        .col-lg-12
+                            .form-group
+                                input.form-control.font-sm(type="text", placeholder='PostCode / ZIP*')
+                        .col-lg-6
+                            .form-group
+                                input.form-control.font-sm(type="text", placeholder='Company name')
+                        .col-lg-6
+                            .form-group
+                                input.form-control.font-sm(type="text", placeholder='Phone*')
+                        .col-lg-12
+                            .form-group.mb-0
+                                textarea.form-control.font-sm(placeholder='Additional Information', rows='5')
+                .row.mt-20
+                    .col-lg-6.col-5.mb-20
+                        a.btn.font-sm-bold.color-brand-1.arrow-back-1(href='shop-cart.html') Return to Cart
+                    .col-lg-6.col-7.mb-20.text-end
+                        a.btn.btn-buy.w-auto.arrow-next(href='shop-checkout.html') Place an Order
+            .col-lg-6
+                .box-border
+                    h5.font-md-bold.mb-20 Your Order
+                    .listCheckout
+                        -
+                            const productLists = [
+                                {
+                                    image: 'assets/imgs/page/product/img-sub.png',
+                                    title: 'Gateway 23.8" All-in-one Desktop, Fully Adjustable Stand',
+                                    price: '$2.51',
+                                    quantity: 'x1'
+                                },
+                                {
+                                    image: 'assets/imgs/page/product/img-sub2.png',
+                                    title: 'HP 24 All-in-One PC, Intel Core i3-1115G4, 4GB RAM',
+                                    price: '$1.51',
+                                    quantity: 'x1'
+                                },
+                                {
+                                    image: 'assets/imgs/page/product/img-sub3.png',
+                                    title: 'Dell Optiplex 9020 Small Form Business Desktop Tower PC',
+                                    price: '$3.51',
+                                    quantity: 'x1'
+                                }
+                            ]
+                        each product in productLists
+                            .item-wishlist
+                                .wishlist-product
+                                    .product-wishlist
+                                        .product-image
+                                            a(href="shop-single-product.html")
+                                                img(src= product.image, alt='Ecom')
+                                        .product-info
+                                            a(href="shop-single-product.html")
+                                                h6.color-brand-3= product.title
+                                            .rating
+                                                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                                span.font-xs.color-gray-500
+                                                    |  (65)
+                                .wishlist-status
+                                    h5.color-gray-500= product.quantity
+                                .wishlist-price
+                                    h4.color-brand-3.font-lg-bold= product.price
+                    .form-group.d-flex.mt-15
+                        input.form-control.mr-15(placeholder='Enter Your Coupon')
+                        button.btn.btn-buy.w-auto Apply
+                    .form-group.mb-0
+                        .row.mb-10
+                            .col-lg-6.col-6
+                                span.font-md-bold.color-brand-3 Subtotal
+                            .col-lg-6.col-6.text-end
+                                span.font-lg-bold.color-brand-3 $6.51
+                        .border-bottom.mb-10.pb-5
+                            .row
+                                .col-lg-6.col-6
+                                    span.font-md-bold.color-brand-3 Shipping
+                                .col-lg-6.col-6.text-end
+                                    span.font-lg-bold.color-brand-3 -
+                        .row
+                            .col-lg-6.col-6
+                                span.font-md-bold.color-brand-3 Total
+                            .col-lg-6.col-6.text-end
+                                span.font-lg-bold.color-brand-3 $6.51

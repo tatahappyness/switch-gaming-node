@@ -1,0 +1,15 @@
+extends ../layouts/master.pug
+block variables
+    - var PageTitle = '404'
+block title
+    title 404 - Ecom Marketplace Template
+
+block header
+    include ../components/header.pug
+
+block content
+    include ../sections/404_sec1.pug
+
+    include ../sections/newsletter.pug
+
+    block scripts-custom

@@ -1,0 +1,20 @@
+extends ../layouts/master.pug
+
+block variables
+    - var PageTitle = 'NEWS & BLOGS'
+
+block title
+    title Blog Single Left Sidebar - Ecom Marketplace Template
+
+block header
+    include ../components/header.pug
+
+block content
+    include ../elements/blog_head.pug
+    include ../sections/blog_single_sec1.pug
+    include ../components/latest-blog.pug
+
+    include ../sections/homepage1/home1_sec9.pug
+    include ../sections/newsletter.pug
+
+    block scripts-custom

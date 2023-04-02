@@ -1,0 +1,199 @@
+extends ../layouts/master.pug
+
+block title
+	title Ecom - Marketplace Dashboard Template
+
+block content
+	.content-header
+		h2.content-title Sellers list
+		div
+			a.btn.btn-primary(href='#')
+				i.material-icons.md-plus
+				|  Create new
+	.card.mb-4
+		header.card-header
+			.row.gx-3
+				.col-lg-4.col-md-6.me-auto
+					input.form-control(type='text' placeholder='Search...')
+				.col-lg-2.col-md-3.col-6
+					select.form-select
+						option Status
+						option Active
+						option Disabled
+						option Show all
+				.col-lg-2.col-md-3.col-6
+					select.form-select
+						option Show 20
+						option Show 30
+						option Show 40
+		// card-header end//
+		.card-body
+			.table-responsive
+				table.table.table-hover
+					thead
+						tr
+							th Seller
+							th Email
+							th Status
+							th Registered
+							th.text-end  Action
+					tbody
+						tr
+							td(width='40%')
+								a.itemside(href='#')
+									.left
+										img.img-sm.img-avatar(src='assets/imgs/people/avatar1.jpg' alt='Userpic')
+									.info.pl-3
+										h6.mb-0.title Eleanor Pena
+										small.text-muted Seller ID: #439
+							td eleanor2022@example.com
+							td
+								span.badge.rounded-pill.alert-success Active
+							td 08.07.2022
+							td.text-end
+								a.btn.btn-sm.btn-brand.rounded.font-sm.mt-15(href='#') View details
+						tr
+							td(width='40%')
+								a.itemside(href='#')
+									.left
+										img.img-sm.img-avatar(src='assets/imgs/people/avatar2.jpg' alt='Userpic')
+									.info.pl-3
+										h6.mb-0.title Mary Monasa
+										small.text-muted Seller ID: #129
+							td monalisa@example.com
+							td
+								span.badge.rounded-pill.alert-success Active
+							td 11.07.2022
+							td.text-end
+								a.btn.btn-sm.btn-brand.rounded.font-sm.mt-15(href='#') View details
+						tr
+							td(width='40%')
+								a.itemside(href='#')
+									.left
+										img.img-sm.img-avatar(src='assets/imgs/people/avatar3.jpg' alt='Userpic')
+									.info.pl-3
+										h6.mb-0.title Jonatan Ive
+										small.text-muted Seller ID: #400
+							td mrjohn@example.com
+							td
+								span.badge.rounded-pill.alert-success Active
+							td 08.07.2022
+							td.text-end
+								a.btn.btn-sm.btn-brand.rounded.font-sm.mt-15(href='#') View details
+						tr
+							td(width='40%')
+								a.itemside(href='#')
+									.left
+										img.img-sm.img-avatar(src='assets/imgs/people/avatar4.jpg' alt='Userpic')
+									.info.pl-3
+										h6.mb-0.title Eleanor Pena
+										small.text-muted Seller ID: #439
+							td eleanor2022@example.com
+							td
+								span.badge.rounded-pill.alert-danger Inactive
+							td 08.07.2022
+							td.text-end
+								a.btn.btn-sm.btn-brand.rounded.font-sm.mt-15(href='#') View details
+						tr
+							td(width='40%')
+								a.itemside(href='#')
+									.left
+										img.img-sm.img-avatar(src='assets/imgs/people/avatar1.jpg' alt='Userpic')
+									.info.pl-3
+										h6.mb-0.title Albert Pushkin
+										small.text-muted Seller ID: #439
+							td someone@mymail.com
+							td
+								span.badge.rounded-pill.alert-success Active
+							td 20.11.2019
+							td.text-end
+								a.btn.btn-sm.btn-brand.rounded.font-sm.mt-15(href='#') View details
+						tr
+							td(width='40%')
+								a.itemside(href='#')
+									.left
+										img.img-sm.img-avatar(src='assets/imgs/people/avatar2.jpg' alt='Userpic')
+									.info.pl-3
+										h6.mb-0.title Alexandra Pena
+										small.text-muted Seller ID: #439
+							td eleanor2022@example.com
+							td
+								span.badge.rounded-pill.alert-danger Inactive
+							td 08.07.2022
+							td.text-end
+								a.btn.btn-sm.btn-brand.rounded.font-sm.mt-15(href='#') View details
+						tr
+							td(width='40%')
+								a.itemside(href='#')
+									.left
+										img.img-sm.img-avatar(src='assets/imgs/people/avatar3.jpg' alt='Userpic')
+									.info.pl-3
+										h6.mb-0.title Eleanor Pena
+										small.text-muted Seller ID: #439
+							td eleanor2022@example.com
+							td
+								span.badge.rounded-pill.alert-danger Inactive
+							td 08.07.2022
+							td.text-end
+								a.btn.btn-sm.btn-brand.rounded.font-sm.mt-15(href='#') View details
+						tr
+							td(width='40%')
+								a.itemside(href='#')
+									.left
+										img.img-sm.img-avatar(src='assets/imgs/people/avatar4.jpg' alt='Userpic')
+									.info.pl-3
+										h6.mb-0.title Alex Pushkina
+										small.text-muted Seller ID: #439
+							td alex@gmail.org
+							td
+								span.badge.rounded-pill.alert-success Active
+							td 08.07.2022
+							td.text-end
+								a.btn.btn-sm.btn-brand.rounded.font-sm.mt-15(href='#') View details
+						tr
+							td(width='40%')
+								a.itemside(href='#')
+									.left
+										img.img-sm.img-avatar(src='assets/imgs/people/avatar1.jpg' alt='Userpic')
+									.info.pl-3
+										h6.mb-0.title Eleanor Pena
+										small.text-muted Seller ID: #439
+							td eleanor2022@example.com
+							td
+								span.badge.rounded-pill.alert-success Active
+							td 08.07.2022
+							td.text-end
+								a.btn.btn-sm.btn-brand.rounded.font-sm.mt-15(href='#') View details
+						tr
+							td(width='40%')
+								a.itemside(href='#')
+									.left
+										img.img-sm.img-avatar(src='assets/imgs/people/avatar2.jpg' alt='Userpic')
+									.info.pl-3
+										h6.mb-0.title Eleanor Pena
+										small.text-muted Seller ID: #439
+							td eleanor2022@example.com
+							td
+								span.badge.rounded-pill.alert-success Active
+							td 08.07.2022
+							td.text-end
+								a.btn.btn-sm.btn-brand.rounded.font-sm.mt-15(href='#') View details
+				// table-responsive.//
+				// card-body end//
+	// card end//
+	.pagination-area.mt-15.mb-50
+		nav(aria-label='Page navigation example')
+			ul.pagination.justify-content-start
+				li.page-item.active
+					a.page-link(href='#') 01
+				li.page-item
+					a.page-link(href='#') 02
+				li.page-item
+					a.page-link(href='#') 03
+				li.page-item
+					a.page-link.dot(href='#') ...
+				li.page-item
+					a.page-link(href='#') 16
+				li.page-item
+					a.page-link(href='#')
+						i.material-icons.md-chevron_right

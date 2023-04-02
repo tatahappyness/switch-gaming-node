@@ -1,0 +1,82 @@
+extends ../layouts/master.pug
+
+block title
+	title Ecom - Marketplace Dashboard Template
+
+block content
+	.row
+		.col-6
+			.content-header
+				h2.content-title Add New Product
+				div
+					button.btn.btn-light.rounded.font-sm.mr-5.text-body.hover-up Save to draft
+					button.btn.btn-md.rounded.font-sm.hover-up Publich
+	.row
+		.col-lg-6
+			.card.mb-4
+				.card-body
+					.row
+						.col-md-3
+							h6 1. General info
+						.col-md-9
+							.mb-4
+								label.form-label Product title
+								input.form-control(type='text' placeholder='Type here')
+							.mb-4
+								label.form-label Description
+								textarea.form-control(placeholder='Type here' rows='4')
+							.mb-4
+								label.form-label Brand name
+								select.form-select
+									option  Adidas
+									option  Nike
+									option  Puma
+						hr.mb-4.mt-0
+						.row
+							.col-md-3
+								h6 2. Pricing
+							.col-md-9
+								.mb-4
+									label.form-label Cost in USD
+									input.form-control(type='text' placeholder='$00.0')
+							hr.mb-4.mt-0
+							.row
+								.col-md-3
+									h6 3. Category
+								.col-md-9
+									.mb-4
+										label.mb-2.form-check.form-check-inline(style='width: 45%;')
+											input.form-check-input(checked='' name='mycategory' type='radio')
+											span.form-check-label  Clothes
+										label.mb-2.form-check.form-check-inline(style='width: 45%;')
+											input.form-check-input(name='mycategory' type='radio')
+											span.form-check-label  Electronics
+										label.mb-2.form-check.form-check-inline(style='width: 45%;')
+											input.form-check-input(name='mycategory' type='radio')
+											span.form-check-label  Sports
+										label.mb-2.form-check.form-check-inline(style='width: 45%;')
+											input.form-check-input(name='mycategory' type='radio')
+											span.form-check-label  Automobiles
+										label.mb-2.form-check.form-check-inline(style='width: 45%;')
+											input.form-check-input(name='mycategory' type='radio')
+											span.form-check-label  Home interior
+										label.mb-2.form-check.form-check-inline(style='width: 45%;')
+											input.form-check-input(name='mycategory' type='radio')
+											span.form-check-label  Smartphones
+										label.mb-2.form-check.form-check-inline(style='width: 45%;')
+											input.form-check-input(name='mycategory' type='radio')
+											span.form-check-label  Books
+										label.mb-2.form-check.form-check-inline(style='width: 45%;')
+											input.form-check-input(name='mycategory' type='radio')
+											span.form-check-label  Kids item
+										label.mb-2.form-check.form-check-inline(style='width: 45%;')
+											input.form-check-input(name='mycategory' type='radio')
+											span.form-check-label  Others
+								hr.mb-4.mt-0
+								.row
+									.col-md-3
+										h6 4. Media
+									.col-md-9
+										.mb-4
+											label.form-label Images
+											input.form-control(type='file')

@@ -1,0 +1,55 @@
+section.section-box.mt-20
+    .container
+        .row
+            .col-lg-12
+                h3 Most Popular Categories
+        .mt-50
+            .box-swiper
+                .swiper-container.swiper-group-5
+                    .swiper-wrapper.pt-5
+                        -
+                            const catLists = [
+                                {
+                                    image: 'assets/imgs/page/homepage6/living-room.png',
+                                    title: 'Living Room',
+                                    link: 'blog-single.html',
+                                    num_product: '156 products'
+
+                                },
+                                {
+                                    image: 'assets/imgs/page/homepage6/reading-room.png',
+                                    title: 'Reading Room',
+                                    link: 'blog-single.html',
+                                    num_product: '156 products'
+                                },
+                                {
+                                    image: 'assets/imgs/page/homepage6/bed-room.png',
+                                    title: 'Bed Room',
+                                    link: 'blog-single.html',
+                                    num_product: '156 products'
+                                },
+                                {
+                                    image: 'assets/imgs/page/homepage6/kitchen.png',
+                                    title: 'Kitchen',
+                                    link: 'blog-single.html',
+                                    num_product: '156 products'
+                                },
+                                {
+                                    image: 'assets/imgs/page/homepage6/decoration.png',
+                                    title: 'Decorations',
+                                    link: 'blog-single.html',
+                                    num_product: '156 products'
+
+                                }
+                            ]
+                        each cat, index in catLists
+                            .swiper-slide
+                                .card-category
+                                    .card-image
+                                        a(href="#")
+                                            img(src= cat.image, alt="Ecom")
+                                    .card-info
+                                        a(href= cat.link)
+                                            h5.color-brand-3.mb-5= cat.title
+                                            p.font-md.color-gray-500= cat.num_product
+        .border-bottom

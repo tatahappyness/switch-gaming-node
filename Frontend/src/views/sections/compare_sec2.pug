@@ -1,0 +1,149 @@
+section.section-box.shop-template
+    .container
+        .row.mb-80
+            .col-lg-1
+            .col-lg-10
+                .box-compare-products
+                    .table-responsive
+                        table
+                            tbody
+                                tr
+                                    td
+                                        span Products
+                                    td
+                                        img(src="assets/imgs/page/compare/img1.png", alt="Ecom")
+                                        h6
+                                            a.text-brand-3(href='shop-single-product.html')
+                                                | Dell Optiplex 9020 Small Form Business Desktop Tower PC
+                                    td
+                                        img(src="assets/imgs/page/compare/img2.png", alt="Ecom")
+                                        h6
+                                            a.text-brand-3(href='shop-single-product-2.html')
+                                                | HP 24 All-in-One PC, Intel Core i3-1115G4, 4GB RAM
+                                    td
+                                        img(src="assets/imgs/page/compare/img3.png", alt="Ecom")
+                                        h6
+                                            a.text-brand-3(href='shop-single-product-3.html')
+                                                | Logitech Brio 4K Webcam, Ultra 4K HD Video Calling
+                                tr
+                                    td
+                                        span Review
+                                    td
+                                        .rating
+                                            img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                            img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                            img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                            img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                            img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                            span.font-xs.color-gray-500
+                                                |  (65)
+                                    td
+                                        .rating
+                                            img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                            img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                            img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                            img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                            img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                            span.font-xs.color-gray-500
+                                                |  (65)
+                                    td
+                                        .rating
+                                            img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                            img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                            img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                            img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                            img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                            span.font-xs.color-gray-500
+                                                |  (65)
+                                tr
+                                    td
+                                        span Screen Size
+                                    td
+                                        span 42”
+                                    td
+                                        span 42”
+                                    td
+                                        span 42”
+                                tr
+                                    td
+                                        span Screen Definition
+                                    td
+                                        span Full High Definition
+                                    td
+                                        span Full High Definition
+                                    td
+                                        span Full High Definition
+                                tr
+                                    td
+                                        span Product Type
+                                    td
+                                        span LED LCDs
+                                    td
+                                        span LED LCDs
+                                    td
+                                        span LED LCDs
+                                tr
+                                    td
+                                        span Connectivity
+                                    td
+                                        span
+                                    td
+                                        span
+                                    td
+                                        span
+                                tr
+                                    td
+                                        span Price
+                                    td
+                                        span.font-sm-bold.color-brand-3 $2786.5
+                                    td
+                                        span.font-sm-bold.color-brand-3 $2856.0
+                                    td
+                                        span.font-sm-bold.color-brand-3 $2950.0
+                                tr
+                                    td
+                                        span Stock status
+                                    td
+                                        span.btn.btn-gray.font-sm-bold In Stock
+                                    td
+                                        span.btn.btn-out-stock.font-sm-bold Out of stock
+                                    td
+                                        span.btn.btn-gray.font-sm-bold In Stock
+                                tr
+                                    td
+                                        span Buy now
+                                    td
+                                        a.btn.btn-buy.w-auto(href='shop-cart.html') Add to Cart
+                                    td
+                                        a.btn.btn-cart.w-auto(href='page-contact.html') Contact us
+                                    td
+                                        a.btn.btn-buy.w-auto(href='shop-cart.html') Add to Cart
+                                tr
+                                    td
+                                        span Remove
+                                    td
+                                        a.btn.btn-delete(href='#')
+                                    td
+                                        a.btn.btn-delete(href='#')
+                                    td
+                                        a.btn.btn-delete(href='#')
+
+
+        h4.color-brand-3 Recently viewed items
+        .row.mt-40.mb-40
+            .col-lg-3.col-md-6.col-sm-12
+                +cardGridStyle2_1('assets/imgs/page/homepage1/imgsp1.png', 'Dell', 'Dell Optiplex 9020 Small Form Business Desktop', '$3225.6', '$2556.3', 'shop-single-product.html')
+            .col-lg-3.col-md-6.col-sm-12
+                +cardGridStyle2_1('assets/imgs/page/homepage1/imgsp2.png', 'HP', 'HP 24 All-in-One PC, Intel Core i3-1115G4, 4GB RAM', '$3225.6', '$2556.3', 'shop-single-product.html')
+            .col-lg-3.col-md-6.col-sm-12
+                +cardGridStyle2_1('assets/imgs/page/homepage1/imgsp1.png', 'Gateway', 'Gateway 23.8" All-in-one Desktop', '$3225.6', '$2556.3', 'shop-single-product.html')
+            .col-lg-3.col-md-6.col-sm-12
+                +cardGridStyle2_1('assets/imgs/page/homepage1/imgsp2.png', 'HP', 'HP 22 All-in-One PC, Intel Pentium Silver J5040', '$3225.6', '$2556.3', 'shop-single-product.html')
+
+        h4.color-brand-3 You may also like
+        .list-products-5.mt-20
+            +cardGridStyle3('assets/imgs/page/homepage1/imgsp3.png', "HP", "-17%", 'HP 24mh FHD Monitor - Computer Monitor', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+            +cardGridStyle3('assets/imgs/page/homepage1/imgsp4.png', "Logitech", "-17%", 'Logitech H390 Wired Headset, Stereo Headphones', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+            +cardGridStyle3('assets/imgs/page/homepage1/imgsp5.png', "Samsung", "-17%", 'Samsung 36" French door 28 cu. ft. Smart Energy', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+            +cardGridStyle3('assets/imgs/page/homepage1/imgsp6.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM', '$3225.6', "$2856.3", 'shop-single-product-2.html')
+            +cardGridStyle3('assets/imgs/page/homepage1/imgsp7.png', "Samsung", "-17%", 'Samsung 36" French door 28 cu. ft. Smart Energy', '$3225.6', "$2856.3", 'shop-single-product-2.html')

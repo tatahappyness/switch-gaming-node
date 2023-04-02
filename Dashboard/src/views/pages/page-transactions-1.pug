@@ -1,0 +1,193 @@
+extends ../layouts/master.pug
+
+block title
+	title Ecom - Marketplace Dashboard Template
+
+block content
+	.content-header
+		h2.content-title Transactions
+	.card
+		.card-body
+			.row
+				.col-lg-9
+					header.border-bottom.mb-4.pb-4
+						.row
+							.col-lg-5.col-6.me-auto
+								input.form-control(type='text' placeholder='Search...')
+							.col-lg-2.col-6
+								select.form-select
+									option Method
+									option Master card
+									option Visa card
+									option Paypal
+					// card-header end//
+					.table-responsive
+						table.table.table-hover
+							thead
+								tr
+									th Transaction ID
+									th Paid
+									th Method
+									th Date
+									th.text-end  Action
+							tbody
+								tr
+									td
+										b #456667
+									td $294.00
+									td
+										.icontext
+											img.icon.border(src='assets/imgs/card-brands/1.png' alt='Payment')
+											span.text.text-muted Amex
+									td 16.12.2022, 14:21
+									td.text-end
+										a.btn.btn-sm.btn-light.font-sm.rounded(href='#') Details
+								tr
+									td
+										b #134768
+									td $294.00
+									td
+										.icontext
+											img.icon.border(src='assets/imgs/card-brands/2.png' alt='Payment')
+											span.text.text-muted Master card
+									td 16.12.2022, 14:21
+									td.text-end
+										a.btn.btn-sm.btn-light.font-sm.rounded(href='#') Details
+								tr
+									td
+										b #134768
+									td $294.00
+									td
+										.icontext
+											img.icon.border(src='assets/imgs/card-brands/3.png' alt='Payment')
+											span.text.text-muted Paypal
+									td 16.12.2022, 14:21
+									td.text-end
+										a.btn.btn-sm.btn-light.font-sm.rounded(href='#') Details
+								tr
+									td
+										b #134768
+									td $294.00
+									td
+										.icontext
+											img.icon.border(src='assets/imgs/card-brands/4.png' alt='Payment')
+											span.text.text-muted Visa
+									td 16.12.2022, 14:21
+									td.text-end
+										a.btn.btn-sm.btn-light.font-sm.rounded(href='#') Details
+								tr
+									td
+										b #887780
+									td $294.00
+									td
+										.icontext
+											img.icon.border(src='assets/imgs/card-brands/4.png' alt='Payment')
+											span.text.text-muted Visa
+									td 16.12.2022, 14:21
+									td.text-end
+										a.btn.btn-sm.btn-light.font-sm.rounded(href='#') Details
+								tr
+									td
+										b #344556
+									td $294.00
+									td
+										.icontext
+											img.icon.border(src='assets/imgs/card-brands/4.png' alt='Payment')
+											span.text.text-muted Visa
+									td 16.12.2022, 14:21
+									td.text-end
+										a.btn.btn-sm.btn-light.font-sm.rounded(href='#') Details
+								tr
+									td
+										b #134768
+									td $294.00
+									td
+										.icontext
+											img.icon.border(src='assets/imgs/card-brands/2.png' alt='Payment')
+											span.text.text-muted Master card
+									td 16.12.2022, 14:21
+									td.text-end
+										a.btn.btn-sm.btn-light.font-sm.rounded(href='#') Details
+								tr
+									td
+										b #134768
+									td $294.00
+									td
+										.icontext
+											img.icon.border(src='assets/imgs/card-brands/2.png' alt='Payment')
+											span.text.text-muted Master card
+									td 16.12.2022, 14:21
+									td.text-end
+										a.btn.btn-sm.btn-light.font-sm.rounded(href='#') Details
+								tr
+									td
+										b #998784
+									td $294.00
+									td
+										.icontext
+											img.icon.border(src='assets/imgs/card-brands/3.png' alt='Payment')
+											span.text.text-muted Paypal
+									td 16.12.2022, 14:21
+									td.text-end
+										a.btn.btn-sm.btn-light.font-sm.rounded(href='#') Details
+								tr
+									td
+										b #556667
+									td $294.00
+									td
+										.icontext
+											img.icon.border(src='assets/imgs/card-brands/3.png' alt='Payment')
+											span.text.text-muted Paypal
+									td 16.12.2022, 14:21
+									td.text-end
+										a.btn.btn-sm.btn-light.font-sm.rounded(href='#') Details
+								tr
+									td
+										b #098989
+									td $294.00
+									td
+										.icontext
+											img.icon.border(src='assets/imgs/card-brands/3.png' alt='Payment')
+											span.text.text-muted Paypal
+									td 16.12.2022, 14:21
+									td.text-end
+										a.btn.btn-sm.btn-light.font-sm.rounded(href='#') Details
+								tr
+									td
+										b #134768
+									td $294.00
+									td
+										.icontext
+											img.icon.border(src='assets/imgs/card-brands/4.png' alt='Payment')
+											span.text.text-muted Visa
+									td 16.12.2022, 14:21
+									td.text-end
+										a.btn.btn-sm.btn-light.font-sm.rounded(href='#') Details
+					// table-responsive.//
+					// col end//
+				aside.col-lg-3
+					.box.bg-light(style='min-height:80%')
+						p.text-center.text-muted.my-5
+							| Please select transaction
+							br
+							|  to see details
+				// col end//
+				// row end//
+				// card-body //
+	// card end//
+	.pagination-area.mt-30.mb-50
+		nav(aria-label='Page navigation example')
+			ul.pagination.justify-content-start
+				li.page-item.active
+					a.page-link(href='#') 01
+				li.page-item
+					a.page-link(href='#') 02
+				li.page-item
+					a.page-link(href='#') 03
+				li.page-item
+					a.page-link.dot(href='#') ...
+				li.page-item
+					a.page-link(href='#') 16
+				li.page-item
+					a.page-link(href='#')
+						i.material-icons.md-chevron_right

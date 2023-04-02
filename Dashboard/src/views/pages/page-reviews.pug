@@ -1,0 +1,387 @@
+extends ../layouts/master.pug
+
+block title
+	title Ecom - Marketplace Dashboard Template
+
+block content
+	.content-header
+		div
+			h2.content-title.card-title Reviews
+			p Lorem ipsum dolor sit amet.
+		div
+			input.form-control.bg-white(type='text' placeholder='Search by name')
+	.card.mb-4
+		header.card-header
+			.row.gx-3
+				.col-lg-4.col-md-6.me-auto
+					input.form-control(type='text' placeholder='Search...')
+				.col-lg-2.col-md-3.col-6
+					select.form-select
+						option Status
+						option Active
+						option Disabled
+						option Show all
+				.col-lg-2.col-md-3.col-6
+					select.form-select
+						option Show 20
+						option Show 30
+						option Show 40
+		// card-header end//
+		.card-body
+			.table-responsive
+				table.table.table-hover
+					thead
+						tr
+							th
+								.form-check
+									input.form-check-input(type='checkbox' value='')
+							th #ID
+							th Product
+							th Name
+							th Rating
+							th Date
+							th.text-end Action
+					tbody
+						tr
+							td
+								.form-check
+									input.form-check-input(type='checkbox' value='')
+							td 23
+							td
+								b A-Line Mini Dress in Blue
+							td Devon Lane
+							td
+								ul.rating-stars
+									li.stars-active(style='width: 60%;')
+										img(src='assets/imgs/icons/stars-active.svg' alt='stars')
+									li
+										img(src='assets/imgs/icons/starts-disable.svg' alt='stars')
+							td 10.03.2022
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+								// dropdown //end
+						tr
+							td
+								.form-check
+									input.form-check-input(type='checkbox' value='')
+							td 24
+							td
+								b Fashion Woman Bag
+							td Guy Hawkins
+							td
+								ul.rating-stars
+									li.stars-active(style='width: 80%;')
+										img(src='assets/imgs/icons/stars-active.svg' alt='stars')
+									li
+										img(src='assets/imgs/icons/starts-disable.svg' alt='stars')
+							td 04.12.2019
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+								// dropdown //end
+						tr
+							td
+								.form-check
+									input.form-check-input(type='checkbox' value='')
+							td 25
+							td
+								b Air Jordan 1 Top 3 Sneaker (DS)
+							td Savannah Nguyen
+							td
+								ul.rating-stars
+									li.stars-active(style='width: 90%;')
+										img(src='assets/imgs/icons/stars-active.svg' alt='stars')
+									li
+										img(src='assets/imgs/icons/starts-disable.svg' alt='stars')
+							td 25.05.2022
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+								// dropdown //end
+						tr
+							td
+								.form-check
+									input.form-check-input(type='checkbox' value='')
+							td 26
+							td
+								b Samsung Galaxy S20 (SM-G980F/DS) Dual SIM
+							td Kristin Watson
+							td
+								ul.rating-stars
+									li.stars-active(style='width: 90%;')
+										img(src='assets/imgs/icons/stars-active.svg' alt='stars')
+									li
+										img(src='assets/imgs/icons/starts-disable.svg' alt='stars')
+							td 01.06.2022
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+								// dropdown //end
+						tr
+							td
+								.form-check
+									input.form-check-input(type='checkbox' value='')
+							td 27
+							td
+								b Macbook Pro 16 inch (2022 ) For Sale
+							td Jane Cooper
+							td
+								ul.rating-stars
+									li.stars-active(style='width: 100%;')
+										img(src='assets/imgs/icons/stars-active.svg' alt='stars')
+									li
+										img(src='assets/imgs/icons/starts-disable.svg' alt='stars')
+							td 13.03.2022
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+								// dropdown //end
+						tr
+							td
+								.form-check
+									input.form-check-input(type='checkbox' value='')
+							td 28
+							td
+								b Gaming Chair, local pickup only
+							td Courtney Henry
+							td
+								ul.rating-stars
+									li.stars-active(style='width: 100%;')
+										img(src='assets/imgs/icons/stars-active.svg' alt='stars')
+									li
+										img(src='assets/imgs/icons/starts-disable.svg' alt='stars')
+							td 21.02.2022
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+								// dropdown //end
+						tr
+							td
+								.form-check
+									input.form-check-input(type='checkbox' value='')
+							td 29
+							td
+								b Coach Tabby 26 for sale
+							td Ralph Edwards
+							td
+								ul.rating-stars
+									li.stars-active(style='width: 90%;')
+										img(src='assets/imgs/icons/stars-active.svg' alt='stars')
+									li
+										img(src='assets/imgs/icons/starts-disable.svg' alt='stars')
+							td 23.03.2022
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+								// dropdown //end
+						tr
+							td
+								.form-check
+									input.form-check-input(type='checkbox' value='')
+							td 30
+							td
+								b Oneplus 7 Pro GM1910 256GB
+							td Courtney Henry
+							td
+								ul.rating-stars
+									li.stars-active(style='width: 70%;')
+										img(src='assets/imgs/icons/stars-active.svg' alt='stars')
+									li
+										img(src='assets/imgs/icons/starts-disable.svg' alt='stars')
+							td 20.02.2022
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+								// dropdown //end
+						tr
+							td
+								.form-check
+									input.form-check-input(type='checkbox' value='')
+							td 31
+							td
+								b DJI Mavic Pro 2
+							td Theresa Webb
+							td
+								ul.rating-stars
+									li.stars-active(style='width: 20%;')
+										img(src='assets/imgs/icons/stars-active.svg' alt='stars')
+									li
+										img(src='assets/imgs/icons/starts-disable.svg' alt='stars')
+							td 10.03.2022
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+								// dropdown //end
+						tr
+							td
+								.form-check
+									input.form-check-input(type='checkbox' value='')
+							td 32
+							td
+								b Heimer Miller Sofa (Mint Condition)
+							td Darrell Steward
+							td
+								ul.rating-stars
+									li.stars-active(style='width: 80%;')
+										img(src='assets/imgs/icons/stars-active.svg' alt='stars')
+									li
+										img(src='assets/imgs/icons/starts-disable.svg' alt='stars')
+							td 10.04.2022
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+								// dropdown //end
+						tr
+							td
+								.form-check
+									input.form-check-input(type='checkbox' value='')
+							td 33
+							td
+								b Dell XPS 13 9380, 13.3" 4K UHD (3840X2160)
+							td Leslie Alexander
+							td
+								ul.rating-stars
+									li.stars-active(style='width: 50%;')
+										img(src='assets/imgs/icons/stars-active.svg' alt='stars')
+									li
+										img(src='assets/imgs/icons/starts-disable.svg' alt='stars')
+							td 25.05.2022
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+								// dropdown //end
+						tr
+							td
+								.form-check
+									input.form-check-input(type='checkbox' value='')
+							td 34
+							td
+								b Fashion Woman Bag
+							td Esther Howard
+							td
+								ul.rating-stars
+									li.stars-active(style='width: 100%;')
+										img(src='assets/imgs/icons/stars-active.svg' alt='stars')
+									li
+										img(src='assets/imgs/icons/starts-disable.svg' alt='stars')
+							td 07.04.2022
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+								// dropdown //end
+						tr
+							td
+								.form-check
+									input.form-check-input(type='checkbox' value='')
+							td 35
+							td
+								b iPad Pro 2017 Model
+							td Savannah Nguyen
+							td
+								ul.rating-stars
+									li.stars-active(style='width: 100%;')
+										img(src='assets/imgs/icons/stars-active.svg' alt='stars')
+									li
+										img(src='assets/imgs/icons/starts-disable.svg' alt='stars')
+							td 10.10.2019
+							td.text-end
+								a.btn.btn-md.rounded.font-sm(href='#') Detail
+								.dropdown
+									a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+										i.material-icons.md-more_horiz
+									.dropdown-menu
+										a.dropdown-item(href='#') View detail
+										a.dropdown-item(href='#') Edit info
+										a.dropdown-item.text-danger(href='#') Delete
+								// dropdown //end
+								// table-responsive//end
+								// card-body end//
+	.pagination-area.mt-30.mb-50
+		nav(aria-label='Page navigation example')
+			ul.pagination.justify-content-start
+				li.page-item.active
+					a.page-link(href='#') 01
+				li.page-item
+					a.page-link(href='#') 02
+				li.page-item
+					a.page-link(href='#') 03
+				li.page-item
+					a.page-link.dot(href='#') ...
+				li.page-item
+					a.page-link(href='#') 16
+				li.page-item
+					a.page-link(href='#')
+						i.material-icons.md-chevron_right

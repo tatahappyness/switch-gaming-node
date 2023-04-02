@@ -1,0 +1,254 @@
+extends ../layouts/master.pug
+
+block title
+	title Ecom - Marketplace Dashboard Template
+
+block content
+	.content-header
+		div
+			h2.content-title.card-title Order List
+			p Lorem ipsum dolor sit amet.
+	.row
+		.col-md-9
+			.card.mb-4
+				header.card-header
+					.row.gx-3
+						.col-lg-4.col-md-6.me-auto
+							input.form-control(type='text' placeholder='Search...')
+						.col-lg-2.col-md-3.col-6
+							select.form-select
+								option Status
+								option Active
+								option Disabled
+								option Show all
+						.col-lg-2.col-md-3.col-6
+							select.form-select
+								option Show 20
+								option Show 30
+								option Show 40
+				.card-body
+					.table-responsive
+						table.table.table-hover
+							thead
+								tr
+									th ID
+									th Customer name
+									th Price
+									th Status
+									th Date
+									th.text-end  Action
+							tbody
+								tr
+									td 452
+									td
+										b Devon Lane
+									td $948.55
+									td
+										span.badge.rounded-pill.alert-success Received
+									td 07.05.2022
+									td.text-end
+										a.btn.btn-md.rounded.font-sm(href='#') Detail
+										.dropdown
+											a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+												i.material-icons.md-more_horiz
+											.dropdown-menu
+												a.dropdown-item(href='#') View detail
+												a.dropdown-item(href='#') Edit info
+												a.dropdown-item.text-danger(href='#') Delete
+								tr
+									td 789
+									td
+										b Guy Hawkins
+									td $0.00
+									td
+										span.badge.rounded-pill.alert-danger Cancelled
+									td 25.05.2022
+									td.text-end
+										a.btn.btn-md.rounded.font-sm(href='#') Detail
+										.dropdown
+											a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+												i.material-icons.md-more_horiz
+											.dropdown-menu
+												a.dropdown-item(href='#') View detail
+												a.dropdown-item(href='#') Edit info
+												a.dropdown-item.text-danger(href='#') Delete
+								tr
+									td 478
+									td
+										b Leslie Alexander
+									td $293.01
+									td
+										span.badge.rounded-pill.alert-warning Pending
+									td 18.05.2022
+									td.text-end
+										a.btn.btn-md.rounded.font-sm(href='#') Detail
+										.dropdown
+											a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+												i.material-icons.md-more_horiz
+											.dropdown-menu
+												a.dropdown-item(href='#') View detail
+												a.dropdown-item(href='#') Edit info
+												a.dropdown-item.text-danger(href='#') Delete
+								tr
+									td 589
+									td
+										b Albert Flores
+									td $105.55
+									td
+										span.badge.rounded-pill.alert-warning Pending
+									td 07.02.2022
+									td.text-end
+										a.btn.btn-md.rounded.font-sm(href='#') Detail
+										.dropdown
+											a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+												i.material-icons.md-more_horiz
+											.dropdown-menu
+												a.dropdown-item(href='#') View detail
+												a.dropdown-item(href='#') Edit info
+												a.dropdown-item.text-danger(href='#') Delete
+								tr
+									td 345
+									td
+										b Eleanor Pena
+									td $779.58
+									td
+										span.badge.rounded-pill.alert-success Received
+									td 18.03.2022
+									td.text-end
+										a.btn.btn-md.rounded.font-sm(href='#') Detail
+										.dropdown
+											a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+												i.material-icons.md-more_horiz
+											.dropdown-menu
+												a.dropdown-item(href='#') View detail
+												a.dropdown-item(href='#') Edit info
+												a.dropdown-item.text-danger(href='#') Delete
+								tr
+									td 456
+									td
+										b Dianne Russell
+									td $576.28
+									td
+										span.badge.rounded-pill.alert-success Received
+									td 23.04.2022
+									td.text-end
+										a.btn.btn-md.rounded.font-sm(href='#') Detail
+										.dropdown
+											a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+												i.material-icons.md-more_horiz
+											.dropdown-menu
+												a.dropdown-item(href='#') View detail
+												a.dropdown-item(href='#') Edit info
+												a.dropdown-item.text-danger(href='#') Delete
+								tr
+									td 768
+									td
+										b Savannah Nguyen
+									td $589.99
+									td
+										span.badge.rounded-pill.alert-success Received
+									td 18.05.2022
+									td.text-end
+										a.btn.btn-md.rounded.font-sm(href='#') Detail
+										.dropdown
+											a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+												i.material-icons.md-more_horiz
+											.dropdown-menu
+												a.dropdown-item(href='#') View detail
+												a.dropdown-item(href='#') Edit info
+												a.dropdown-item.text-danger(href='#') Delete
+								tr
+									td 977
+									td
+										b Kathryn Murphy
+									td $169.43
+									td
+										span.badge.rounded-pill.alert-success Received
+									td 23.03.2022
+									td.text-end
+										a.btn.btn-md.rounded.font-sm(href='#') Detail
+										.dropdown
+											a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+												i.material-icons.md-more_horiz
+											.dropdown-menu
+												a.dropdown-item(href='#') View detail
+												a.dropdown-item(href='#') Edit info
+												a.dropdown-item.text-danger(href='#') Delete
+								tr
+									td 687
+									td
+										b Jacob Jones
+									td $219.78
+									td
+										span.badge.rounded-pill.alert-success Received
+									td 07.05.2022
+									td.text-end
+										a.btn.btn-md.rounded.font-sm(href='#') Detail
+										.dropdown
+											a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+												i.material-icons.md-more_horiz
+											.dropdown-menu
+												a.dropdown-item(href='#') View detail
+												a.dropdown-item(href='#') Edit info
+												a.dropdown-item.text-danger(href='#') Delete
+								tr
+									td 688
+									td
+										b Jacob Jones
+									td $219.78
+									td
+										span.badge.rounded-pill.alert-success Received
+									td 07.05.2022
+									td.text-end
+										a.btn.btn-md.rounded.font-sm(href='#') Detail
+										.dropdown
+											a.btn.btn-light.rounded.btn-sm.font-sm(href='#' data-bs-toggle='dropdown')
+												i.material-icons.md-more_horiz
+											.dropdown-menu
+												a.dropdown-item(href='#') View detail
+												a.dropdown-item(href='#') Edit info
+												a.dropdown-item.text-danger(href='#') Delete
+		.col-md-3
+			.card.mb-4
+				.card-body
+					h5.mb-3 Filter by
+					form
+						.mb-4
+							label.form-label(for='order_id') Order ID
+							input#order_id.form-control(type='text' placeholder='Type here')
+						.mb-4
+							label.form-label(for='order_customer') Customer
+							input#order_customer.form-control(type='text' placeholder='Type here')
+						.mb-4
+							label.form-label Order Status
+							select.form-select
+								option Published
+								option Draft
+						.mb-4
+							label.form-label(for='order_total') Total
+							input#order_total.form-control(type='text' placeholder='Type here')
+						.mb-4
+							label.form-label(for='order_created_date') Date Added
+							input#order_created_date.form-control(type='text' placeholder='Type here')
+						.mb-4
+							label.form-label(for='order_modified_date') Date Modified
+							input#order_modified_date.form-control(type='text' placeholder='Type here')
+						.mb-4
+							label.form-label(for='order_customer_1') Customer
+							input#order_customer_1.form-control(type='text' placeholder='Type here')
+	.pagination-area.mt-15.mb-50
+		nav(aria-label='Page navigation example')
+			ul.pagination.justify-content-start
+				li.page-item.active
+					a.page-link(href='#') 01
+				li.page-item
+					a.page-link(href='#') 02
+				li.page-item
+					a.page-link(href='#') 03
+				li.page-item
+					a.page-link.dot(href='#') ...
+				li.page-item
+					a.page-link(href='#') 16
+				li.page-item
+					a.page-link(href='#')
+						i.material-icons.md-chevron_right

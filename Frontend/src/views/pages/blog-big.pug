@@ -1,0 +1,19 @@
+extends ../layouts/master.pug
+
+block variables
+    - var PageTitle = 'BLOGS'
+
+block title
+    title Blog Category Big - Ecom Marketplace Template
+
+block header
+    include ../components/header.pug
+
+block content
+    include ../elements/blog_head.pug
+    include ../sections/blog_big_sec1.pug
+
+    include ../sections/homepage1/home1_sec9.pug
+    include ../sections/newsletter.pug
+
+    block scripts-custom

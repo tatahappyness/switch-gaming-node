@@ -1,0 +1,212 @@
+extends ../layouts/master.pug
+
+block title
+	title Ecom - Marketplace Dashboard Template
+
+block content
+	.content-header
+		div
+			h2.content-title.card-title Products grid
+			p Lorem ipsum dolor sit amet.
+		div
+			a.btn.btn-light.rounded.font-md(href='#') Export
+			a.btn.btn-light.rounded.font-md(href='#') Import
+			a.btn.btn-primary.btn-sm.rounded(href='#') Create new
+	.card.mb-4
+		header.card-header
+			.row.gx-3
+				.col-lg-4.col-md-6.me-auto
+					input.form-control(type='text' placeholder='Search...')
+				.col-lg-2.col-6.col-md-3
+					select.form-select
+						option All category
+						option Electronics
+						option Clothings
+						option Something else
+				.col-lg-2.col-6.col-md-3
+					select.form-select
+						option Latest added
+						option Cheap first
+						option Most viewed
+		// card-header end//
+		.card-body
+			.row.gx-3.row-cols-1.row-cols-sm-2.row-cols-md-3.row-cols-xl-4.row-cols-xxl-5
+				.col
+					.card.card-product-grid
+						a.img-wrap(href='#')
+							img(src='assets/imgs/items/1.jpg' alt='Product')
+						.info-wrap
+							a.title.text-truncate(href='#') Just another product name
+							.price.mb-2 $179.00
+							// price.//
+							a.btn.btn-sm.font-sm.rounded.btn-brand(href='#')
+								i.material-icons.md-edit
+								|  Edit
+							a.btn.btn-sm.font-sm.btn-light.rounded(href='#')
+								i.material-icons.md-delete_forever
+								|  Delete
+					// card-product  end//
+					// col.//
+				.col
+					.card.card-product-grid
+						a.img-wrap(href='#')
+							img(src='assets/imgs/items/2.jpg' alt='Product')
+						.info-wrap
+							a.title.text-truncate(href='#') Brown Winter Jacket for Men
+							.price.mb-2 $179.00
+							// price.//
+							a.btn.btn-sm.font-sm.rounded.btn-brand(href='#')
+								i.material-icons.md-edit
+								|  Edit
+							a.btn.btn-sm.font-sm.btn-light.rounded(href='#')
+								i.material-icons.md-delete_forever
+								|  Delete
+					// card-product  end//
+					// col.//
+				.col
+					.card.card-product-grid
+						a.img-wrap(href='#')
+							img(src='assets/imgs/items/3.jpg' alt='Product')
+						.info-wrap
+							a.title.text-truncate(href='#') Jeans short new model
+							.price.mb-2 $179.00
+							// price.//
+							a.btn.btn-sm.font-sm.rounded.btn-brand(href='#')
+								i.material-icons.md-edit
+								|  Edit
+							a.btn.btn-sm.font-sm.btn-light.rounded(href='#')
+								i.material-icons.md-delete_forever
+								|  Delete
+					// card-product  end//
+					// col.//
+				.col
+					.card.card-product-grid
+						a.img-wrap(href='#')
+							img(src='assets/imgs/items/4.jpg' alt='Product')
+						.info-wrap
+							a.title.text-truncate(href='#') Travel Bag XL
+							.price.mb-2 $179.00
+							// price.//
+							a.btn.btn-sm.font-sm.rounded.btn-brand(href='#')
+								i.material-icons.md-edit
+								|  Edit
+							a.btn.btn-sm.font-sm.btn-light.rounded(href='#')
+								i.material-icons.md-delete_forever
+								|  Delete
+					// card-product  end//
+					// col.//
+				.col
+					.card.card-product-grid
+						a.img-wrap(href='#')
+							img(src='assets/imgs/items/5.jpg' alt='Product')
+						.info-wrap
+							a.title.text-truncate(href='#') Just another product name
+							.price.mb-2 $179.00
+							// price.//
+							a.btn.btn-sm.font-sm.rounded.btn-brand(href='#')
+								i.material-icons.md-edit
+								|  Edit
+							a.btn.btn-sm.font-sm.btn-light.rounded(href='#')
+								i.material-icons.md-delete_forever
+								|  Delete
+					// card-product  end//
+					// col.//
+				.col
+					.card.card-product-grid
+						a.img-wrap(href='#')
+							img(src='assets/imgs/items/6.jpg' alt='Product')
+						.info-wrap
+							a.title.text-truncate(href='#') Just another product name
+							.price.mb-2 $179.00
+							// price.//
+							a.btn.btn-sm.font-sm.rounded.btn-brand(href='#')
+								i.material-icons.md-edit
+								|  Edit
+							a.btn.btn-sm.font-sm.btn-light.rounded(href='#')
+								i.material-icons.md-delete_forever
+								|  Delete
+					// card-product  end//
+					// col.//
+				.col
+					.card.card-product-grid
+						a.img-wrap(href='#')
+							img(src='assets/imgs/items/7.jpg' alt='Product')
+						.info-wrap
+							a.title.text-truncate(href='#') Just another product name
+							.price.mb-2 $179.00
+							// price.//
+							a.btn.btn-sm.font-sm.rounded.btn-brand(href='#')
+								i.material-icons.md-edit
+								|  Edit
+							a.btn.btn-sm.font-sm.btn-light.rounded(href='#')
+								i.material-icons.md-delete_forever
+								|  Delete
+					// card-product  end//
+					// col.//
+				.col
+					.card.card-product-grid
+						a.img-wrap(href='#')
+							img(src='assets/imgs/items/8.jpg' alt='Product')
+						.info-wrap
+							a.title.text-truncate(href='#') Apple Airpods CB-133
+							.price.mb-2 $179.00
+							// price.//
+							a.btn.btn-sm.font-sm.rounded.btn-brand(href='#')
+								i.material-icons.md-edit
+								|  Edit
+							a.btn.btn-sm.font-sm.btn-light.rounded(href='#')
+								i.material-icons.md-delete_forever
+								|  Delete
+					// card-product  end//
+					// col.//
+				.col
+					.card.card-product-grid
+						a.img-wrap(href='#')
+							img(src='assets/imgs/items/9.jpg' alt='Product')
+						.info-wrap
+							a.title.text-truncate(href='#') Apple Airpods CB-133
+							.price.mb-2 $179.00
+							// price.//
+							a.btn.btn-sm.font-sm.rounded.btn-brand(href='#')
+								i.material-icons.md-edit
+								|  Edit
+							a.btn.btn-sm.font-sm.btn-light.rounded(href='#')
+								i.material-icons.md-delete_forever
+								|  Delete
+					// card-product  end//
+					// col.//
+				.col
+					.card.card-product-grid
+						a.img-wrap(href='#')
+							img(src='assets/imgs/items/10.jpg' alt='Product')
+						.info-wrap
+							a.title.text-truncate(href='#') Apple Airpods CB-133
+							.price.mb-2 $179.00
+							// price.//
+							a.btn.btn-sm.font-sm.rounded.btn-brand(href='#')
+								i.material-icons.md-edit
+								|  Edit
+							a.btn.btn-sm.font-sm.btn-light.rounded(href='#')
+								i.material-icons.md-delete_forever
+								|  Delete
+					// card-product  end//
+					// col.//
+					// row.//
+					// card-body end//
+	// card end//
+	.pagination-area.mt-30.mb-50
+		nav(aria-label='Page navigation example')
+			ul.pagination.justify-content-start
+				li.page-item.active
+					a.page-link(href='#') 01
+				li.page-item
+					a.page-link(href='#') 02
+				li.page-item
+					a.page-link(href='#') 03
+				li.page-item
+					a.page-link.dot(href='#') ...
+				li.page-item
+					a.page-link(href='#') 16
+				li.page-item
+					a.page-link(href='#')
+						i.material-icons.md-chevron_right

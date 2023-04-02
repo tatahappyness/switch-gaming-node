@@ -1,0 +1,190 @@
+extends ../layouts/master.pug
+
+block title
+	title Ecom - Marketplace Dashboard Template
+
+block content
+	.content-header
+		div
+			h2.content-title.card-title Categories
+			p Add, edit or delete a category
+		div
+			input.form-control.bg-white(type='text', placeholder='Search Categories')
+	.card
+		.card-body
+			.row
+				.col-md-3
+					form
+					.mb-4
+						label.form-label(for='product_name') Name
+						input#product_name.form-control(type='text', placeholder='Type here')
+					.mb-4
+						label.form-label(for='product_slug') Slug
+						input#product_slug.form-control(type='text', placeholder='Type here')
+					.mb-4
+						label.form-label Parent
+						select.form-select
+							option Clothes
+							option T-Shirts
+					.mb-4
+						label.form-label Description
+						textarea.form-control(placeholder='Type here')
+					.d-grid
+						button.btn.btn-primary Create category
+				.col-md-9
+					.table-responsive
+						table.table.table-hover
+							thead
+								tr
+									th.text-center
+										.form-check
+											input.form-check-input(type='checkbox', value='')
+									th ID
+									th Name
+									th Description
+									th Slug
+									th Order
+									th.text-end Action
+							tbody
+								tr
+									td.text-center
+										.form-check
+											input.form-check-input(type='checkbox', value='')
+									td 21
+									td
+										b Men clothes
+									td Men clothes
+									td /men
+									td 1
+									td.text-end
+										.dropdown
+											a.btn.btn-light.rounded.btn-sm.font-sm(href='#', data-bs-toggle='dropdown')
+												i.material-icons.md-more_horiz
+											.dropdown-menu
+												a.dropdown-item(href='#') View detail
+												a.dropdown-item(href='#') Edit info
+												a.dropdown-item.text-danger(href='#') Delete
+								tr
+									td.text-center
+										.form-check
+											input.form-check-input(type='checkbox', value='')
+									td 2
+									td
+										b Women fashion
+									td Fashions for Women
+									td /women
+									td 2
+									td.text-end
+										.dropdown
+											a.btn.btn-light.rounded.btn-sm.font-sm(href='#', data-bs-toggle='dropdown')
+												i.material-icons.md-more_horiz
+											.dropdown-menu
+												a.dropdown-item(href='#') View detail
+												a.dropdown-item(href='#') Edit info
+												a.dropdown-item.text-danger(href='#') Delete
+								tr
+									td.text-center
+										.form-check
+											input.form-check-input(type='checkbox', value='')
+									td 3
+									td
+										b Kids clothes
+									td Clothes for kids
+									td /kids
+									td 3
+									td.text-end
+										.dropdown
+											a.btn.btn-light.rounded.btn-sm.font-sm(href='#', data-bs-toggle='dropdown')
+												i.material-icons.md-more_horiz
+											.dropdown-menu
+												a.dropdown-item(href='#') View detail
+												a.dropdown-item(href='#') Edit info
+												a.dropdown-item.text-danger(href='#') Delete
+								tr
+									td.text-center
+										i.material-icons.md-subdirectory_arrow_right.text-muted
+									td 4
+									td
+										b Hot Gifts
+									td Hot Gifts
+									td /gifts
+									td 4
+									td.text-end
+										.dropdown
+											a.btn.btn-light.rounded.btn-sm.font-sm(href='#', data-bs-toggle='dropdown')
+												i.material-icons.md-more_horiz
+											.dropdown-menu
+												a.dropdown-item(href='#') View detail
+												a.dropdown-item(href='#') Edit info
+												a.dropdown-item.text-danger(href='#') Delete
+								tr
+									td.text-center
+										i.material-icons.md-subdirectory_arrow_right.text-muted
+									td 5
+									td
+										b Electronics
+									td Electronics
+									td /electr
+									td 5
+									td.text-end
+										.dropdown
+											a.btn.btn-light.rounded.btn-sm.font-sm(href='#', data-bs-toggle='dropdown')
+												i.material-icons.md-more_horiz
+											.dropdown-menu
+												a.dropdown-item(href='#') View detail
+												a.dropdown-item(href='#') Edit info
+												a.dropdown-item.text-danger(href='#') Delete
+								tr
+									td.text-center
+										.form-check
+											input.form-check-input(type='checkbox', value='')
+									td 6
+									td
+										b Accessories
+									td Accessories
+									td /accessories
+									td 6
+									td.text-end
+										.dropdown
+											a.btn.btn-light.rounded.btn-sm.font-sm(href='#', data-bs-toggle='dropdown')
+												i.material-icons.md-more_horiz
+											.dropdown-menu
+												a.dropdown-item(href='#') View detail
+												a.dropdown-item(href='#') Edit info
+												a.dropdown-item.text-danger(href='#') Delete
+								tr
+									td.text-center
+										.form-check
+											input.form-check-input(type='checkbox', value='')
+									td 7
+									td
+										b Jewellery
+									td Jewellery
+									td /jewel
+									td 7
+									td.text-end
+										.dropdown
+											a.btn.btn-light.rounded.btn-sm.font-sm(href='#', data-bs-toggle='dropdown')
+												i.material-icons.md-more_horiz
+											.dropdown-menu
+												a.dropdown-item(href='#') View detail
+												a.dropdown-item(href='#') Edit info
+												a.dropdown-item.text-danger(href='#') Delete
+								tr
+									td.text-center
+										.form-check
+											input.form-check-input(type='checkbox', value='')
+									td 8
+									td
+										b Interiors
+									td Interiors
+									td /interior
+									td 8
+									td.text-end
+										.dropdown
+											a.btn.btn-light.rounded.btn-sm.font-sm(href='#', data-bs-toggle='dropdown')
+												i.material-icons.md-more_horiz
+											.dropdown-menu
+												a.dropdown-item(href='#') View detail
+												a.dropdown-item(href='#') Edit info
+												a.dropdown-item.text-danger(href='#') Delete

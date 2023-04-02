@@ -1,0 +1,34 @@
+extends ../layouts/master.pug
+block variables
+    - var page = 'homepage5';
+block title
+    title Home 5 - Ecom Marketplace Template
+
+block header
+    include ../components/header-4.pug
+
+block content
+    include ../sections/homepage5/home5_banner.pug
+    include ../sections/homepage5/homepage5_sec1.pug
+    include ../sections/homepage5/home5_sec2.pug
+    include ../sections/homepage5/home5_ads1.pug
+    include ../sections/homepage5/home5_sec3.pug
+    include ../sections/homepage5/home5_ads2.pug
+    include ../sections/homepage5/home5_sec4.pug
+    include ../sections/homepage5/home5_sec5.pug
+    include ../sections/homepage5/home5_ads3.pug
+
+    section.section-box.mt-50
+        .container
+            .head-main
+                h3.mb-5 Latest News &amp; Events
+                p.font-base.color-gray-500 From our blog, forum
+                .box-button-slider
+                    .swiper-button-next.swiper-button-next-group-4
+                    .swiper-button-prev.swiper-button-prev-group-4
+        include ../sections/blog-slider-2.pug
+    include ../sections/homepage1/home1_sec9.pug
+    include ../sections/newsletter-2.pug
+    include ../elements/quickview.pug
+
+    block scripts-custom

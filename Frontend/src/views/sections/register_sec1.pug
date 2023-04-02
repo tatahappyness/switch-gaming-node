@@ -1,0 +1,49 @@
+section.section-box.shop-template.mt-60
+    .container
+        .row.mb-100
+            .col-lg-1
+            .col-lg-5
+                h3 Create an account
+                p.font-md.color-gray-500 Access to all features. No credit card required.
+                .form-register.mt-30.mb-30
+                    .form-group
+                        label.mb-5.font-sm.color-gray-700 Full Name *
+                        input.form-control(type="text", placeholder='Steven job')
+                    .form-group
+                        label.mb-5.font-sm.color-gray-700 Email *
+                        input.form-control(type="text", placeholder='stevenjob@gmail.com')
+                    .form-group
+                        label.mb-5.font-sm.color-gray-700 Username *
+                        input.form-control(type="text", placeholder='stevenjob')
+                    .form-group
+                        label.mb-5.font-sm.color-gray-700 Password *
+                        input.form-control(type="password", placeholder='******************')
+                    .form-group
+                        label.mb-5.font-sm.color-gray-700 Re-Password *
+                        input.form-control(type="password", placeholder='******************')
+                    .form-group
+                        label
+                            input.checkagree(type="checkbox")
+                            | By clicking Register button, you agree our terms and policy,
+                    .form-group
+                        input.font-md-bold.btn.btn-buy(type="submit", value='Sign Up')
+                    .mt-20
+                        span.font-xs.color-gray-500.font-medium Already have an account?
+                        a.font-xs.color-brand-3.font-medium(href='page-login.html')
+                            |  Sign In
+            .col-lg-5
+                .box-login-social.pt-65.pl-50
+                    h5.text-center Use Social Network Account
+                    .box-button-login.mt-25
+                        a.btn.btn-login.font-md-bold.color-brand-3.mb-15
+                            | Sign up with
+                            img(src="assets/imgs/page/account/google.svg", alt="Ecom")
+                        a.btn.btn-login.font-md-bold.color-brand-3.mb-15
+                            | Sign up with
+                            span.color-blue.font-md-bold Facebook
+                        a.btn.btn-login.font-md-bold.color-brand-3.mb-15
+                            | Sign up with
+                            img(src="assets/imgs/page/account/amazon.svg", alt="Ecom")
+                    .mt-10.text-center
+                        span.font-xs.color-gray-900 Buying for work?
+                        a.color-brand-1.font-xs(href='#') Create a free business account

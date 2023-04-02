@@ -1,0 +1,129 @@
+section.section-box.mt-50
+    .container
+        .head-main.bd-gray-200
+            .row
+                .col-xl-6.col-lg-4
+                    h3.mb-5 Plant tools
+                    p.font-base.color-gray-500 Special products in this month. 
+                .col-xl-6.col-lg-8
+                    ul.nav.nav-tabs.text-uppercase.pr-100(role='tablist')
+                        li
+                            a.active(href='#tab-4-all', data-bs-toggle='tab', role='tab', aria-controls='tab-4-all', aria-selected='true', data-index='5') All
+                        li
+                            a(href='#tab-4-bestseller', data-bs-toggle='tab', role='tab', aria-controls='tab-4-bestseller', aria-selected='false', data-index='6') Best seller
+                        li
+                            a(href='#tab-4-mostviewed', data-bs-toggle='tab', role='tab', aria-controls='tab-4-mostviewed', aria-selected='false', data-index='7') Most viewed
+                        li
+                            a(href='#tab-4-topbrands', data-bs-toggle='tab', role='tab', aria-controls='tab-4-topbrands', aria-selected='false', data-index='8') Top Brands
+                    // Button slider
+                    .box-button-slider
+                        #tab-4-all-nav.button-slider-nav
+                            .swiper-button-next.swiper-button-next-tab-5
+                            .swiper-button-prev.swiper-button-prev-tab-6
+                        #tab-4-bestseller-nav.button-slider-nav(style='display: none;')
+                            .swiper-button-next.swiper-button-next-tab-6
+                            .swiper-button-prev.swiper-button-prev-tab-6
+                        #tab-4-mostviewed-nav.button-slider-nav(style='display: none;')
+                            .swiper-button-next.swiper-button-next-tab-7
+                            .swiper-button-prev.swiper-button-prev-tab-7
+                        #tab-4-topbrands-nav.button-slider-nav(style='display: none;')
+                            .swiper-button-next.swiper-button-next-tab-8
+                            .swiper-button-prev.swiper-button-prev-tab-8
+                    // End Button slider
+        .tab-content.tab-content-slider
+            #tab-4-all.tab-pane.fade.active.show(role='tabpanel', aria-labelledby='tab-4-all')
+                .box-swiper
+                    .swiper-container.swiper-tab-5.style-label-right
+                        .swiper-wrapper.pt-5
+                            .swiper-slide
+                                .row
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool1.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool2.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool3.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool4.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool5.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool6.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool7.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool8.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool9.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+            #tab-4-bestseller.tab-pane.fade(role='tabpanel', aria-labelledby='tab-4-bestseller')
+                .box-swiper
+                    .swiper-container.swiper-tab-6.style-label-right
+                        .swiper-wrapper.pt-5
+                            .swiper-slide
+                                .row
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool1.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool2.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool3.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool4.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool5.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool6.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool7.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool8.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool9.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+            #tab-4-mostviewed.tab-pane.fade(role='tabpanel', aria-labelledby='tab-4-mostviewed')
+                .box-swiper
+                    .swiper-container.swiper-tab-7.style-label-right
+                        .swiper-wrapper.pt-5
+                            .swiper-slide
+                                .row
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool1.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool2.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool3.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool4.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool5.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool6.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool7.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool8.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool9.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+            #tab-4-topbrands.tab-pane.fade(role='tabpanel', aria-labelledby='tab-4-topbrands')
+                .box-swiper
+                    .swiper-container.swiper-tab-8.style-label-right
+                        .swiper-wrapper.pt-5
+                            .swiper-slide
+                                .row
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool1.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool2.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool3.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool4.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool5.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool6.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool7.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool8.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')
+                                    .col-lg-4.col-md-6.col-sm-12
+                                        +cardGridStyle2('assets/imgs/page/homepage10/tool9.png', 'Steven Job', 'Eight Unconventional CEOs and Their Radically Rational Blueprint for Success', '$3225.6', '$2556.3', 'shop-single-product.html')

@@ -1,0 +1,197 @@
+section.section-box.shop-template.mt-0
+    .container
+        h2 Vendors Listing
+        .row.align-items-center
+            .col-lg-6.mb-30
+                p.font-md.color-gray-500 We have
+                    span.font-md-bold.color-brand-3
+                        |  780
+                    span
+                        |  vendors now
+            .col-lg-6.mb-30.text-end
+                a.font-sm.color-gray-900.mr-30(href='#') Support Ticket
+                a.font-sm.color-gray-900.mr-30(href='#') Become an Affilate
+                a.btn.btn-buy.w-auto.font-sm-bold(href='page-register.html') Open a Shop
+        .border-bottom.pt-0.mb-30
+        .row
+            .col-lg-9.order-first.order-lg-last
+                include ../elements/box-filters-vendor.pug
+                .row.mt-20
+                    -
+                        const vendorLists = [
+                            {
+                                image: 'assets/imgs/page/vendor/futur.png',
+                                address: '5171 W Campbell Ave undefined Kent, Utah 53127 United States',
+                                phone: '(+91) - 540-025-124553',
+                                number: '360 Products',
+                                since: 'Member since 2012',
+                                link: 'shop-vendor-single.html'
+
+                            },
+                            {
+                                image: 'assets/imgs/page/vendor/elmado.png',
+                                address: '5171 W Campbell Ave undefined Kent, Utah 53127 United States',
+                                phone: '(+91) - 540-025-124553',
+                                number: '360 Products',
+                                since: 'Member since 2012',
+                                link: 'shop-vendor-single.html'
+                            },
+                            {
+                                image: 'assets/imgs/page/vendor/costctrl.png',
+                                address: '5171 W Campbell Ave undefined Kent, Utah 53127 United States',
+                                phone: '(+91) - 540-025-124553',
+                                number: '360 Products',
+                                since: 'Member since 2012',
+                                link: 'shop-vendor-single.html'
+                            },
+                            {
+                                image: 'assets/imgs/page/vendor/fasfox.png',
+                                address: '5171 W Campbell Ave undefined Kent, Utah 53127 United States',
+                                phone: '(+91) - 540-025-124553',
+                                number: '360 Products',
+                                since: 'Member since 2012',
+                                link: 'shop-vendor-single.html'
+                            },
+                            {
+                                image: 'assets/imgs/page/vendor/elmado.png',
+                                address: '5171 W Campbell Ave undefined Kent, Utah 53127 United States',
+                                phone: '(+91) - 540-025-124553',
+                                number: '360 Products',
+                                since: 'Member since 2012',
+                                link: 'shop-vendor-single.html'
+
+                            },
+                            {
+                                image: 'assets/imgs/page/vendor/fasfox.png',
+                                address: '5171 W Campbell Ave undefined Kent, Utah 53127 United States',
+                                phone: '(+91) - 540-025-124553',
+                                number: '360 Products',
+                                since: 'Member since 2012',
+                                link: 'shop-vendor-single.html'
+                            },
+                            {
+                                image: 'assets/imgs/page/vendor/tropper.png',
+                                address: '5171 W Campbell Ave undefined Kent, Utah 53127 United States',
+                                phone: '(+91) - 540-025-124553',
+                                number: '360 Products',
+                                since: 'Member since 2012',
+                                link: 'shop-vendor-single.html'
+                            },
+                            {
+                                image: 'assets/imgs/page/vendor/asembly.png',
+                                address: '5171 W Campbell Ave undefined Kent, Utah 53127 United States',
+                                phone: '(+91) - 540-025-124553',
+                                number: '360 Products',
+                                since: 'Member since 2012',
+                                link: 'shop-vendor-single.html'
+                            },
+                            {
+                                image: 'assets/imgs/page/vendor/aslan.png',
+                                address: '5171 W Campbell Ave undefined Kent, Utah 53127 United States',
+                                phone: '(+91) - 540-025-124553',
+                                number: '360 Products',
+                                since: 'Member since 2012',
+                                link: 'shop-vendor-single.html'
+
+                            },
+                            {
+                                image: 'assets/imgs/page/vendor/market.png',
+                                address: '5171 W Campbell Ave undefined Kent, Utah 53127 United States',
+                                phone: '(+91) - 540-025-124553',
+                                number: '360 Products',
+                                since: 'Member since 2012',
+                                link: 'shop-vendor-single.html'
+
+                            },
+                            {
+                                image: 'assets/imgs/page/vendor/costctrl.png',
+                                address: '5171 W Campbell Ave undefined Kent, Utah 53127 United States',
+                                phone: '(+91) - 540-025-124553',
+                                number: '360 Products',
+                                since: 'Member since 2012',
+                                link: 'shop-vendor-single.html'
+                            },
+                            {
+                                image: 'assets/imgs/page/vendor/fasfox.png',
+                                address: '5171 W Campbell Ave undefined Kent, Utah 53127 United States',
+                                phone: '(+91) - 540-025-124553',
+                                number: '360 Products',
+                                since: 'Member since 2012',
+                                link: 'shop-vendor-single.html'
+                            },
+                            {
+                                image: 'assets/imgs/page/vendor/elmado.png',
+                                address: '5171 W Campbell Ave undefined Kent, Utah 53127 United States',
+                                phone: '(+91) - 540-025-124553',
+                                number: '360 Products',
+                                since: 'Member since 2012',
+                                link: 'shop-vendor-single.html'
+
+                            },
+                            {
+                                image: 'assets/imgs/page/vendor/fasfox.png',
+                                address: '5171 W Campbell Ave undefined Kent, Utah 53127 United States',
+                                phone: '(+91) - 540-025-124553',
+                                number: '360 Products',
+                                since: 'Member since 2012',
+                                link: 'shop-vendor-single.html'
+                            },
+                            {
+                                image: 'assets/imgs/page/vendor/tropper.png',
+                                address: '5171 W Campbell Ave undefined Kent, Utah 53127 United States',
+                                phone: '(+91) - 540-025-124553',
+                                number: '360 Products',
+                                since: 'Member since 2012',
+                                link: 'shop-vendor-single.html'
+                            },
+                            {
+                                image: 'assets/imgs/page/vendor/asembly.png',
+                                address: '5171 W Campbell Ave undefined Kent, Utah 53127 United States',
+                                phone: '(+91) - 540-025-124553',
+                                number: '360 Products',
+                                since: 'Member since 2012',
+                                link: 'shop-vendor-single.html'
+                            },
+                            {
+                                image: 'assets/imgs/page/vendor/aslan.png',
+                                address: '5171 W Campbell Ave undefined Kent, Utah 53127 United States',
+                                phone: '(+91) - 540-025-124553',
+                                number: '360 Products',
+                                since: 'Member since 2012',
+                                link: 'shop-vendor-single.html'
+
+                            },
+                            {
+                                image: 'assets/imgs/page/vendor/market.png',
+                                address: '5171 W Campbell Ave undefined Kent, Utah 53127 United States',
+                                phone: '(+91) - 540-025-124553',
+                                number: '360 Products',
+                                since: 'Member since 2012',
+                                link: 'shop-vendor-single.html'
+
+                            }
+                        ]
+                    each vendor in vendorLists
+                        .col-xl-4.col-lg-4.col-md-6.col-sm-12.col-12
+                            .card-vendor
+                                .card-top-vendor
+                                    .card-top-vendor-left
+                                        img(src= vendor.image, alt="Ecom")
+                                        .rating
+                                            img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                            img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                            img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                            img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                            img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                                            span.font-xs.color-gray-500
+                                                |  (65)
+                                    .card-top-vendor-right
+                                        a.btn.btn-gray(href= vendor.link)= vendor.number
+                                        p.font-xs.color-gray-500.mt-10= vendor.since
+                                .card-bottom-vendor
+                                    p.font-sm.color-gray-500.location.mb-10= vendor.address
+                                    p.font-sm.color-gray-500.phone= vendor.phone
+
+                include ../elements/pagination.pug
+            .col-lg-3.order-last.order-lg-first
+                include ../components/sidebar-vendor.pug

@@ -1,0 +1,95 @@
+section.section-box.pt-50
+  .container
+    .head-main.bd-gray-200
+      .row
+        .col-lg-6
+          h3.mb-5 Latest Deals
+          p.font-base.color-gray-500 Special products in this month.
+        .col-lg-6.text-end
+          .box-all-hurry
+            .d-inline-block.box-text-hurryup
+              span.font-md-bold.color-gray-900 Hurry up!
+              br
+              span.font-xs.color-gray-500 Offers end in:
+            .box-count.box-count-square.hide-period
+              .deals-countdown(data-countdown='2023/08/25 00:00:00')
+            a.btn.btn-view-all.font-md-bold(href='shop-single-product.html') View All
+    .row
+      .col-lg-4
+        .card-grid-style-3.hover-show.hurry-up
+          .card-grid-inner
+            .tools
+              a.btn.btn-trend.mb-10(href='shop-single-product.html')
+              a.btn.btn-wishlist.mb-10(href='shop-single-product.html')
+              a.btn.btn-compare.mb-10(href='shop-single-product.html')
+              a.btn.btn-quickview(aria-label="Quick view", href='#ModalQuickview', data-bs-toggle='modal')
+            span.label
+              span.font-lg-bold.color-white Hurry Up!
+            .image-box
+              .box-swiper
+                .swiper-container.swiper-group-1
+                  .swiper-wrapper.pt-5
+                    .swiper-slide
+                      img(src='assets/imgs/page/homepage1/screen.png', alt='Ecom')
+                    .swiper-slide
+                      img(src='assets/imgs/page/homepage1/screen-2.png', alt='Ecom')
+                    .swiper-slide
+                      img(src='assets/imgs/page/homepage1/screen-3.png', alt='Ecom')
+                  .swiper-pagination.swiper-pagination-2
+            .text-center.mt-10.mb-15
+              h4 Special Offer
+              p.font-base.color-gray-500 Remains until the end of the offer
+            .box-count.box-count-square
+              .deals-countdown(data-countdown='2023/08/25 00:00:00')
+            .divide
+            .info-right
+              span.font-xs.color-gray-500 Apple
+              br
+              a.color-brand-3.font-sm-bold(href='shop-single-product.html')
+                h5 2022 Apple iMac Retina 5K Display
+              .rating
+                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                img(src='assets/imgs/template/icons/star.svg', alt='Ecom')
+                span.font-xs.color-gray-500
+                  |  (65)
+              .price-info
+                h3.color-brand-3.price-main.d-inline-block $2856.3
+                span.color-gray-500.price-line $3225.6
+              .box-progress
+                .progress-bar
+                  .progress-bar-inner
+                .row
+                  .col-lg-6.col-md-6.col-sm-6.col-6
+                    span.font-xs.color-gray-500 Available:
+                    span.font-xs-bold.color-gray-900 568
+                  .col-lg-6.col-md-6.col-sm-6.col-6.text-end
+                    span.font-xs.color-gray-500 Sold:
+                    span.font-xs-bold.color-gray-900 289
+              .divide
+              ul.list-features
+                li  27-inch (diagonal) Retina 5K display
+                li 3.1GHz 6-core 10th-generation Intel Core i5
+                li AMD Radeon Pro 5300 graphics
+      .col-lg-8
+        .row
+          .col-lg-4.col-md-6.col-sm-6.col-12
+            +cardGridStyle3_1('assets/imgs/page/homepage1/imgsp1.png', "Samsung", "-17%", 'Samsung 30-100 inches The Freestyle FHD HDR Smart Projector', '$3225.6', "$2856.3", 'shop-single-product.html')
+          .col-lg-4.col-md-6.col-sm-6.col-12
+            +cardGridStyle3_1('assets/imgs/page/homepage1/imgsp2.png', "Apple", "-17%", 'Lenovo Legion 5i 15.6" Laptop, Intel Core i5-10500H', '$3225.6', "$2856.3", 'shop-single-product.html')
+          .col-lg-4.col-md-6.col-sm-6.col-12
+            +cardGridStyle3_1('assets/imgs/page/homepage1/imgsp3.png', "Apple", "-17%", 'Apple AirPods Pro with MagSafe Charging Case', '$3225.6', "$2856.3", 'shop-single-product.html')
+          .col-lg-4.col-md-6.col-sm-6.col-12
+            +cardGridStyle3_1('assets/imgs/page/homepage1/imgsp4.png', "Apple", "-17%", 'Razer Power Up Gaming Bundle V2 - Cynosa Lite, Gigantus', '$3225.6', "$2856.3", 'shop-single-product.html')
+          .col-lg-4.col-md-6.col-sm-6.col-12
+            +cardGridStyle3_1('assets/imgs/page/homepage1/imgsp5.png', "Apple", "-17%", 'ASUS ROG Strix GL10 Gaming Desktop, AMD Ryzen 5-3600X', '$3225.6', "$2856.3", 'shop-single-product.html')
+          .col-lg-4.col-md-6.col-sm-6.col-12
+            +cardGridStyle3_1('assets/imgs/page/homepage1/imgsp6.png', "Apple", "-17%", 'Fujifilm INSTAX Mini Link 2 Smartphone Printer Exclusive', '$3225.6', "$2856.3", 'shop-single-product.html')
+    .list-products-5
+      +cardGridStyle3_1('assets/imgs/page/homepage1/imgsp3.png', "Apple", "-17%", 'Klipsch ProMedia 2.1 Bluetooth Computer Speakers', '$3225.6', "$2856.3", 'shop-single-product.html')
+      +cardGridStyle3_1('assets/imgs/page/homepage1/imgsp4.png', "Apple", "-17%", 'Apple TV HD 32GB (2nd Generation) (Latest Model)', '$3225.6', "$2856.3", 'shop-single-product.html')
+      +cardGridStyle3_1('assets/imgs/page/homepage1/imgsp5.png', "Apple", "-17%", 'Hisense 40" Class 2K FHD LED LCD Roku Smart TV H4030F', '$3225.6', "$2856.3", 'shop-single-product.html')
+      +cardGridStyle3_1('assets/imgs/page/homepage1/imgsp6.png', "Apple", "-17%", '2022 Apple 10.9-inch iPad Air Wi-Fi 64GB - Space Gray', '$3225.6', "$2856.3", 'shop-single-product.html')
+      +cardGridStyle3_1('assets/imgs/page/homepage1/imgsp7.png', "Apple", "-17%", 'LeapFrog LeapPad Academy Kids Tablet with LeapFrog', '$3225.6', "$2856.3", 'shop-single-product.html')

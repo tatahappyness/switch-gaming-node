@@ -1,0 +1,32 @@
+.box-filters.mt-0.pb-5.border-bottom
+    .row
+        .col-xl-2.col-lg-3.mb-10.text-lg-start.text-center
+            a.btn.btn-filter.font-sm.color-brand-3.font-medium(href='#ModalFiltersForm', data-bs-toggle='modal') All Fillters
+        .col-xl-10.col-lg-9.mb-10.text-lg-end.text-center
+            span.font-sm.color-gray-900.font-medium.border-1-right.span Showing 1&ndash;16 of 17 results
+            .d-inline-block
+                span.font-sm.color-gray-500.font-medium Sort by:
+                .dropdown.dropdown-sort.border-1-right
+                    button#dropdownSort.btn.dropdown-toggle.font-sm.color-gray-900.font-medium(type='button', data-bs-toggle='dropdown', aria-expanded='false') Latest added
+                    ul.dropdown-menu.dropdown-menu-light(aria-labelledby='dropdownSort', style='margin: 0px;')
+                        li
+                            a.dropdown-item.active(href='#') Latest added
+                        li
+                            a.dropdown-item(href='#') Oldest added
+                        li
+                            a.dropdown-item(href='#') Comments added
+            .d-inline-block
+                span.font-sm.color-gray-500.font-medium Show
+                .dropdown.dropdown-sort.border-1-right
+                    button#dropdownSort2.btn.dropdown-toggle.font-sm.color-gray-900.font-medium(type='button', data-bs-toggle='dropdown', aria-expanded='false', data-bs-display='static')
+                        span 30 items
+                    ul.dropdown-menu.dropdown-menu-light(aria-labelledby='dropdownSort2')
+                        li
+                            a.dropdown-item.active(href='#') 30 items
+                        li
+                            a.dropdown-item(href='#') 50 items
+                        li
+                            a.dropdown-item(href='#') 100 items
+            .d-inline-block
+                a.view-type-grid.mr-5.active(href='shop-vendor-list.html')
+                a.view-type-list(href='#')

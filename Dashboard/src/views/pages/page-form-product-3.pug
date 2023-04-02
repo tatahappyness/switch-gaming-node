@@ -1,0 +1,88 @@
+extends ../layouts/master.pug
+
+block title
+	title Ecom - Marketplace Dashboard Template
+
+block content
+	.row
+		.col-9
+			.content-header
+				h2.content-title Add New Product
+				div
+					button.btn.btn-light.rounded.font-sm.mr-5.text-body.hover-up Save to draft
+					button.btn.btn-md.rounded.font-sm.hover-up Publich
+		.col-lg-6
+			.card.mb-4
+				.card-body
+					.mb-4
+						label.form-label(for='product_title') Product title
+						input#product_title.form-control(type='text' placeholder='Type here')
+					.row.gx-3
+						.col-md-4.mb-3
+							label.form-label(for='product_sku') SKU
+							input#product_sku.form-control(type='text' placeholder='Type here')
+						.col-md-4.mb-3
+							label.form-label(for='product_color') Color
+							input#product_color.form-control(type='text' placeholder='Type here')
+						.col-md-4.mb-3
+							label.form-label(for='product_size') Size
+							input#product_size.form-control(type='text' placeholder='Type here')
+					.mb-4
+						label.form-label(for='product_brand') Brand
+						input#product_brand.form-control(type='text' placeholder='Type here')
+			.card.mb-4
+				.card-body
+					div
+						label.form-label Description
+						textarea.form-control(placeholder='Type here' rows='4')
+			.card.mb-4
+				.card-body
+					div
+						label.form-label Images
+						input.form-control(type='file')
+		.col-lg-3
+			.card.mb-4
+				.card-body
+					.mb-4
+						label.form-label Price
+						input.form-control(type='text' placeholder='Type here')
+					.mb-4
+						label.form-label Status
+						select.form-select
+							option Published
+							option Draft
+					.mb-4
+						label.form-label Tags
+						input.form-control(type='text' placeholder='Type here')
+					a.font-xs.hover-up.mr-15(href='#')
+						i.font-xs.material-icons.md-close.text-body
+						|  Tech
+					a.font-xs.hover-up.mr-15(href='#')
+						i.font-xs.material-icons.md-close.text-body
+						|  Mobile
+					a.font-xs.hover-up.mr-15(href='#')
+						i.font-xs.material-icons.md-close.text-body
+						|  Apple
+					hr
+					h5.mb-3 Categories
+					.form-check
+						input#product-cat.form-check-input(type='checkbox' value='')
+						label.form-check-label(for='product-cat')  Shirt
+					.form-check
+						input#product-cat-1.form-check-input(type='checkbox' value='')
+						label.form-check-label(for='product-cat-1')  T-Shirt
+					.form-check
+						input#product-cat-2.form-check-input(type='checkbox' value='')
+						label.form-check-label(for='product-cat-2')  Sneakers
+					.form-check
+						input#product-cat-3.form-check-input(type='checkbox' value='')
+						label.form-check-label(for='product-cat-3')  Joggers
+					.form-check
+						input#product-cat-4.form-check-input(type='checkbox' value='')
+						label.form-check-label(for='product-cat-4')  Vests
+					.form-check
+						input#product-cat-5.form-check-input(type='checkbox' value='')
+						label.form-check-label(for='product-cat-5')  Knitwear
+					.form-check
+						input#product-cat-8.form-check-input(type='checkbox' value='')
+						label.form-check-label(for='product-cat-8')  Shorts

@@ -1,0 +1,235 @@
+section.section-box.shop-template.mt-30
+    .container
+        .row
+            .col-lg-12
+                include ../elements/box-filters-blog.pug
+        .row.mt-30
+            -
+                const blogLists = [
+                    {
+                        image: 'assets/imgs/page/blog/blog-1.jpg',
+                        title: 'Apple unveils iPhone 14 at far out event',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'blog-single.html'
+
+                    },
+                    {
+                        image: 'assets/imgs/page/blog/blog-2.jpg',
+                        title: 'Walmart enters the metaverse with Roblox ',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'blog-single.html'
+                    },
+                    {
+                        image: 'assets/imgs/page/blog/blog-3.jpg',
+                        title: 'Take no prisoners: In the Feds inflation fight',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'blog-single.html'
+                    },
+                    {
+                        image: 'assets/imgs/page/blog/blog-4.jpg',
+                        title: 'Amazon raising hourly pay for warehouse',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'blog-single.html'
+                    },
+                    {
+                        image: 'assets/imgs/page/blog/blog-5.jpg',
+                        title: 'Who is who: Meet the Murdoch Family ',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'blog-single.html'
+
+                    },
+                    {
+                        image: 'assets/imgs/page/blog/blog-6.jpg',
+                        title: 'NFL has a new halftime show sponsor ',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'blog-single.html'
+                    },
+                    {
+                        image: 'assets/imgs/page/blog/blog-7.jpg',
+                        title: 'Actress details sexual harassment on sitcom set',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'blog-single.html'
+                    },
+                    {
+                        image: 'assets/imgs/page/blog/blog-8.jpg',
+                        title: 'Selma Blair stuns in Dancing with the Stars',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'blog-single.html'
+                    },
+                    {
+                        image: 'assets/imgs/page/blog/blog-9.jpg',
+                        title: 'Apple unveils iPhone 14 at far out event',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'blog-single.html'
+
+                    },
+                    {
+                        image: 'assets/imgs/page/blog/blog-10.jpg',
+                        title: 'The Twitter-Musk trial is now on pause',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'blog-single.html'
+                    },
+                    {
+                        image: 'assets/imgs/page/blog/blog-11.jpg',
+                        title: 'Binance blockchain hit by $570 million crypto',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'blog-single.html'
+                    },
+                    {
+                        image: 'assets/imgs/page/blog/blog-12.jpg',
+                        title: 'Binance blockchain hit by $570 million crypto',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'blog-single.html'
+                    },
+                    {
+                        image: 'assets/imgs/page/blog/blog-13.jpg',
+                        title: 'The Twitter-Musk trial is now on pause',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'blog-single.html'
+
+                    },
+                    {
+                        image: 'assets/imgs/page/blog/blog-14.jpg',
+                        title: 'Apple unveils iPhone 14 at far out event',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'blog-single.html'
+                    },
+                    {
+                        image: 'assets/imgs/page/blog/blog-15.jpg',
+                        title: 'Walmart enters the metaverse with Roblox',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'blog-single.html'
+                    },
+                    {
+                        image: 'assets/imgs/page/blog/blog-16.jpg',
+                        title: 'Take no prisoners: In the Feds inflation fight',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'blog-single.html'
+                    },
+                    {
+                        image: 'assets/imgs/page/blog/blog-17.jpg',
+                        title: 'Amazon raising hourly pay for warehouse',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'blog-single.html'
+
+                    },
+                    {
+                        image: 'assets/imgs/page/blog/blog-9.jpg',
+                        title: 'Who is who: Meet the Murdoch Family ',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'blog-single.html'
+                    },
+                    {
+                        image: 'assets/imgs/page/blog/blog-8.jpg',
+                        title: 'NFL has a new halftime show sponsor ',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'blog-single.html'
+                    },
+                    {
+                        image: 'assets/imgs/page/blog/blog-7.jpg',
+                        title: 'The latest technologies to be used for VR in 2022',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'blog-single.html'
+                    },
+                    {
+                        image: 'assets/imgs/page/blog/blog-6.jpg',
+                        title: 'Actress details sexual harassment on sitcom set',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'blog-single.html'
+
+                    },
+                    {
+                        image: 'assets/imgs/page/blog/blog-5.jpg',
+                        title: 'Selma Blair stuns in Dancing with the Stars',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'blog-single.html'
+                    },
+                    {
+                        image: 'assets/imgs/page/blog/blog-4.jpg',
+                        title: 'The Woman King surprises at the box office',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'blog-single.html'
+                    },
+                    {
+                        image: 'assets/imgs/page/blog/blog-3.jpg',
+                        title: 'The fate of Elon Musks deal to buy Twitter',
+                        date: 'August 30, 2022',
+                        minute: '4',
+                        tag: 'Technology',
+                        link: 'blog-single.html'
+                    }
+                ]
+            - var i = 0;
+            each blog, index in blogLists
+                .col-lg-3.col-md-4.col-sm-6.mb-40
+                    .card-grid-style-1
+                        .image-box
+                            a(href= blog.link)
+                            img(src= blog.image, alt='Ecom')
+                        a.tag-dot.font-xs(href='#')= blog.tag
+                        a.color-gray-1100(href= blog.link)
+                            h4= blog.title
+                        .mt-20
+                            span.color-gray-500.font-xs.mr-30= blog.date
+                            span.color-gray-500.font-xs= blog.minute
+                                span Mins read
+                if index == 7
+                    .col-lg-12.mb-40
+                        .text-center
+                            a(href='#')
+                                img(src='assets/imgs/page/product/banner-ads.png', alt='Ecom')
+
+                if index == 19
+                    .col-lg-12.mb-40
+                        .text-center
+                            a(href='#')
+                                img(src='assets/imgs/page/product/banner-ads2.png', alt='Ecom')
+
+        .nav-center
+            include ../elements/pagination.pug

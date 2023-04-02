@@ -1,0 +1,173 @@
+include product-category.pug
+
+.sidebar-border.mb-40
+    .sidebar-head
+        h6.color-gray-900 Products Filter
+    .sidebar-content
+        h6.color-gray-900.mt-10.mb-10 Price
+        .box-slider-range.mt-20.mb-15
+            .row.mb-20
+                .col-sm-12
+                    #slider-range
+            .row
+                .col-lg-12
+                    label.lb-slider.font-sm.color-gray-500 Price Range:
+                    |
+                    span.min-value-money.font-sm.color-gray-1000
+                    label.lb-slider.font-sm.font-medium.color-gray-1000
+                    | -
+                    |
+                    span.max-value-money.font-sm.font-medium.color-gray-1000
+                .col-lg-12
+                    input.form-control.min-value(type='hidden', name='min-value', value='')
+                    input.form-control.max-value(type='hidden', name='max-value', value='')
+        ul.list-checkbox
+            li
+                label.cb-container
+                    input(type='checkbox', checked='checked')
+                    span.text-small Free - $100
+                    span.checkmark
+                span.number-item 145
+            li
+                label.cb-container
+                    input(type='checkbox')
+                    span.text-small $100 - $200
+                    span.checkmark
+                span.number-item 56
+            li
+                label.cb-container
+                    input(type='checkbox')
+                    span.text-small $200 - $400
+                    span.checkmark
+                span.number-item 23
+            li
+                label.cb-container
+                    input(type='checkbox')
+                    span.text-small $400 - $600
+                    span.checkmark
+                span.number-item 43
+            li
+                label.cb-container
+                    input(type='checkbox')
+                    span.text-small $600 - $800
+                    span.checkmark
+                span.number-item 65
+            li
+                label.cb-container
+                    input(type='checkbox')
+                    span.text-small Over $1000
+                    span.checkmark
+                span.number-item 56
+        h6.color-gray-900.mt-20.mb-10 Brands
+        ul.list-checkbox
+            li
+                label.cb-container
+                    input(type='checkbox', checked='checked')
+                    span.text-small Apple
+                    span.checkmark
+                span.number-item 12
+            li
+                label.cb-container
+                    input(type='checkbox')
+                    span.text-small Sony
+                    span.checkmark
+                span.number-item 34
+            li
+                label.cb-container
+                    input(type='checkbox')
+                    span.text-small Toshiba
+                    span.checkmark
+                span.number-item 56
+            li
+                label.cb-container
+                    input(type='checkbox')
+                    span.text-small Assus
+                    span.checkmark
+                span.number-item 78
+            li
+                label.cb-container
+                    input(type='checkbox')
+                    span.text-small Samsung
+                    span.checkmark
+                span.number-item 23
+        h6.color-gray-900.mt-20.mb-10 Color
+        ul.list-color
+            li
+                a.color-red.active(href='#')
+                span Red
+            li
+                a.color-green(href='#')
+                span Green
+            li
+                a.color-blue(href='#')
+                span Blue
+            li
+                a.color-purple(href='#')
+                span Purple
+            li
+                a.color-black(href='#')
+                span Black
+            li
+                a.color-gray(href='#')
+                span Gray
+            li
+                a.color-pink(href='#')
+                span Pink
+            li
+                a.color-brown(href='#')
+                span Brown
+            li
+                a.color-yellow(href='#')
+                span Yellow
+        a.btn.btn-filter.font-sm.color-brand-3.font-medium.mt-10(href='#ModalFiltersForm', data-bs-toggle='modal') More Fillters
+.box-slider-item.mb-30
+    .head.pb-15.border-brand-2
+        h5.color-gray-900 Best seller
+    .content-slider
+        .box-swiper.slide-shop
+            .swiper-container.swiper-best-seller
+                .swiper-wrapper.pt-5
+                    .swiper-slide
+                        +cardGridStyle2_2('assets/imgs/page/homepage2/camera.png', 'HP Slim Desktop, Intel Celeron J4025, 4GB RAM', '$187', '$150', 'shop-single-product-3.html')
+                            span.label.bg-brand-2 -17%
+                        +cardGridStyle2_2('assets/imgs/page/homepage2/clock.png', 'Class 4K UHD (2160P) LED Roku Smart TV HDR', '$3200', '$2900', 'shop-single-product-3.html')
+                        +cardGridStyle2_2('assets/imgs/page/homepage2/airpod.png', 'HP 11.6" Chromebook, AMD A4, 4GB RAM, 32GB Storage', '$168', '$160', 'shop-single-product-3.html')
+                        +cardGridStyle2_2('assets/imgs/page/homepage2/cat-img-7.png', 'LG 65" Class 4K UHD Smart TV OLED A1 Series', '$392', '$325', 'shop-single-product-3.html')
+                    .swiper-slide
+                        +cardGridStyle2_2('assets/imgs/page/homepage2/cat-img-8.png', 'Lenovo Legion 5i 15.6" Laptop, Intel Core i5', '$187', '$150', 'shop-single-product-3.html')
+                        +cardGridStyle2_2('assets/imgs/page/homepage2/cat-img-1.png', 'SAMSUNG Galaxy Tab A7 Lite, 8.7" Tablet 32GB', '$3200', '$2900', 'shop-single-product-3.html')
+                            span.label.bg-brand-2 -17%
+                        +cardGridStyle2_2('assets/imgs/page/homepage2/cat-img-2.png', 'Apple AirPods Pro with MagSafe Charging', '$168', '$160', 'shop-single-product-3.html')
+                        +cardGridStyle2_2('assets/imgs/page/homepage2/cat-img-3.png', 'Razer Power Up Gaming Bundle V2 - Cynosa', '$392', '$325', 'shop-single-product-3.html')
+            .swiper-button-next.swiper-button-next-style-2.swiper-button-next-bestseller
+            .swiper-button-prev.swiper-button-prev-style-2.swiper-button-prev-bestseller
+
+.box-slider-item
+    .head.pb-15.border-brand-2
+        h5.color-gray-900 Product Tags
+    .content-slider.mb-50
+        a.btn.btn-border.mr-5(href='shop-grid.html') Games
+        a.btn.btn-border.mr-5(href='shop-grid.html') Electronics
+        a.btn.btn-border.mr-5(href='shop-grid.html') Video
+        a.btn.btn-border.mr-5(href='shop-grid.html') Cellphone
+        a.btn.btn-border.mr-5(href='shop-grid.html') Indoor
+        a.btn.btn-border.mr-5(href='shop-grid.html') VGA Card
+        a.btn.btn-border.mr-5(href='shop-grid.html') USB
+        a.btn.btn-border.mr-5(href='shop-grid.html') Lightning
+        a.btn.btn-border.mr-5(href='shop-grid.html') Camera
+        a.btn.btn-border(href='shop-grid.html') Window
+        a.btn.btn-border.mr-5(href='shop-grid.html') Air Vent
+        a.btn.btn-border.mr-5(href='shop-grid.html') Bedroom
+        a.btn.btn-border.mr-5(href='shop-grid.html') Laptop
+        a.btn.btn-border.mr-5(href='shop-grid.html') Dashboard
+        a.btn.btn-border.mr-5(href='shop-grid.html') Keyboard
+
+.banner-right.h-500.text-center.mb-30
+    span.text-no.font-11 No.9
+    h5.font-23.mt-20
+        | Sensitive Touch
+        br.d-none.d-lg-block
+        | without fingerprint
+    p.text-desc.font-16.mt-15 Smooth handle and accurate click
+    a(href="shop-single-product-2.html")
+        | View Details

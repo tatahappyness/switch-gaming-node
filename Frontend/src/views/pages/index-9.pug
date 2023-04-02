@@ -1,0 +1,41 @@
+extends ../layouts/master.pug
+block variables
+    - var page = 'homepage9';
+block title
+    title Home 9 - Ecom Marketplace Template
+
+block header
+    include ../components/header-8.pug
+
+block content
+    include ../sections/homepage9/banner.pug
+    include ../sections/homepage9/slider-products.pug
+    .bg-home9
+        include ../sections/homepage2/home2_sec2.pug
+    include ../sections/homepage9/product-category.pug
+    .bg-home9
+        include ../sections/homepage4/home4_sec6.pug
+    include ../sections/homepage9/product-category-2.pug
+    .bg-home9
+        include ../sections/homepage7/sales.pug
+    include ../sections/homepage9/product-category-3.pug
+    include ../sections/homepage9/product-category-4.pug
+    .bg-home9.pb-60
+        include ../sections/homepage6/banner-bottom.pug
+
+    include ../sections/homepage2/home2_sec9.pug
+
+    section.section-box.mt-50
+        .container
+            .head-main
+                h3.mb-5 Latest News &amp; Events
+                p.font-base.color-gray-500 From our blog, forum
+                .box-button-slider
+                .swiper-button-next.swiper-button-next-group-4
+                .swiper-button-prev.swiper-button-prev-group-4
+    include ../sections/blog-slider-5.pug
+    include ../sections/homepage1/home1_sec9.pug
+    include ../sections/newsletter.pug
+    include ../elements/quickview.pug
+
+    block scripts-custom

@@ -1,0 +1,138 @@
+extends ../layouts/master.pug
+
+block title
+	title Ecom - Marketplace Dashboard Template
+
+block content
+	.content-header
+		h2.content-title Sellers cards
+		div
+			a.btn.btn-primary(href='#')
+				i.material-icons.md-plus
+				|  Create new
+	.card.mb-4
+		header.card-header
+			.row.gx-3
+				.col-lg-4.col-md-6.me-auto
+					input.form-control(type='text' placeholder='Search...')
+				.col-lg-2.col-6.col-md-3
+					select.form-select
+						option Show 20
+						option Show 30
+						option Show 40
+						option Show all
+				.col-lg-2.col-6.col-md-3
+					select.form-select
+						option Status: all
+						option Active only
+						option Disabled
+		// card-header end//
+		.card-body
+			.row.row-cols-1.row-cols-sm-2.row-cols-lg-3.row-cols-xl-4
+				.col
+					.card.card-user
+						.card-header
+							img.img-md.img-avatar(src='assets/imgs/people/avatar1.jpg' alt='User pic')
+						.card-body
+							h5.card-title.mt-50 Mary Sandra
+							.card-text.text-muted
+								p.m-0 Seller ID: #409
+								p mary90@example.com
+								a.btn.btn-sm.btn-brand.rounded.font-sm.mt-15(href='#') View details
+				// col.//
+				.col
+					.card.card-user
+						.card-header
+							img.img-md.img-avatar(src='assets/imgs/people/avatar2.jpg' alt='User pic')
+						.card-body
+							h5.card-title.mt-50 Leslie Alexander
+							.card-text.text-muted
+								p.m-0 Seller ID: #478
+								p leslie@example.com
+								a.btn.btn-sm.btn-brand.rounded.font-sm.mt-15(href='#') View details
+				// col.//
+				.col
+					.card.card-user
+						.card-header
+							img.img-md.img-avatar(src='assets/imgs/people/avatar3.jpg' alt='User pic')
+						.card-body
+							h5.card-title.mt-50 Leslie Alexander
+							.card-text.text-muted
+								p.m-0 Seller ID: #478
+								p leslie@example.com
+								a.btn.btn-sm.btn-brand.rounded.font-sm.mt-15(href='#') View details
+				// col.//
+				.col
+					.card.card-user
+						.card-header
+							img.img-md.img-avatar(src='assets/imgs/people/avatar4.jpg' alt='User pic')
+						.card-body
+							h5.card-title.mt-50 Floyd Miles
+							.card-text.text-muted
+								p.m-0 Seller ID: #171
+								p fedor12@example.com
+								a.btn.btn-sm.btn-brand.rounded.font-sm.mt-15(href='#') View details
+				// col.//
+				.col
+					.card.card-user
+						.card-header
+							img.img-md.img-avatar(src='assets/imgs/people/avatar1.jpg' alt='User pic')
+						.card-body
+							h5.card-title.mt-50 John Alexander
+							.card-text.text-muted
+								p.m-0 Seller ID: #987
+								p john@mymail.com
+								a.btn.btn-sm.btn-brand.rounded.font-sm.mt-15(href='#') View details
+				// col.//
+				.col
+					.card.card-user
+						.card-header
+							img.img-md.img-avatar(src='assets/imgs/people/avatar3.jpg' alt='User pic')
+						.card-body
+							h5.card-title.mt-50 Albert Flores
+							.card-text.text-muted
+								p.m-0 Seller ID: #478
+								p leslie@example.com
+								a.btn.btn-sm.btn-brand.rounded.font-sm.mt-15(href='#') View details
+				// col.//
+				.col
+					.card.card-user
+						.card-header
+							img.img-md.img-avatar(src='assets/imgs/people/avatar4.jpg' alt='User pic')
+						.card-body
+							h5.card-title.mt-50 Leslie Alexander
+							.card-text.text-muted
+								p.m-0 Seller ID: #478
+								p leslie@example.com
+								a.btn.btn-sm.btn-brand.rounded.font-sm.mt-15(href='#') View details
+				// col.//
+				.col
+					.card.card-user
+						.card-header
+							img.img-md.img-avatar(src='assets/imgs/people/avatar1.jpg' alt='User pic')
+						.card-body
+							h5.card-title.mt-50 Marx Alberto
+							.card-text.text-muted
+								p.m-0 Seller ID: #478
+								p leslie@example.com
+								a.btn.btn-sm.btn-brand.rounded.font-sm.mt-15(href='#') View details
+				// col.//
+				// row.//
+				// card-body end//
+	// card end//
+	.pagination-area.mt-15.mb-50
+		nav(aria-label='Page navigation example')
+			ul.pagination.justify-content-start
+				li.page-item.active
+					a.page-link(href='#') 01
+				li.page-item
+					a.page-link(href='#') 02
+				li.page-item
+					a.page-link(href='#') 03
+				li.page-item
+					a.page-link.dot(href='#') ...
+				li.page-item
+					a.page-link(href='#') 16
+				li.page-item
+					a.page-link(href='#')
+						i.material-icons.md-chevron_right

@@ -1,0 +1,76 @@
+section.section-box.mt-30
+    .container
+        .head-main.bd-gray-200
+            .row
+                .col-xl-12.col-lg-12
+                    ul.nav.nav-tabs.text-start(role='tablist')
+                        li.pl-0
+                            a.active.pl-0(href='#tab-1-featured', data-bs-toggle='tab', role='tab', aria-controls='tab-1-featured', aria-selected='true', data-index='1')
+                                h4 Featured
+                        li
+                            a(href='#tab-1-bestseller', data-bs-toggle='tab', role='tab', aria-controls='tab-1-bestseller', aria-selected='false', data-index='2')
+                                h4 Best seller
+                        li
+                            a(href='#tab-1-mostviewed', data-bs-toggle='tab', role='tab', aria-controls='tab-1-mostviewed', aria-selected='false', data-index='3')
+                                h4 Most viewed
+                    // Button slider
+                    .box-button-slider
+                        #tab-1-featured-nav.button-slider-nav
+                            .swiper-button-next.swiper-button-next-tab-1
+                            .swiper-button-prev.swiper-button-prev-tab-1
+                        #tab-1-bestseller-nav.button-slider-nav(style='display: none;')
+                            .swiper-button-next.swiper-button-next-tab-2
+                            .swiper-button-prev.swiper-button-prev-tab-2
+                        #tab-1-mostviewed-nav.button-slider-nav(style='display: none;')
+                            .swiper-button-next.swiper-button-next-tab-3
+                            .swiper-button-prev.swiper-button-prev-tab-3
+                    // End Button slider
+        .tab-content.tab-content-slider
+            #tab-1-featured.tab-pane.fade.active.show(role='tabpanel', aria-labelledby='tab-1-featured')
+                .box-swiper
+                    .swiper-container.swiper-tab-1
+                        .swiper-wrapper.pt-5
+                            .swiper-slide
+                                .list-products-5.list-style-brand-2
+                                    +cardGridStyle3('assets/imgs/page/homepage5/sp1.png', "Dell", "-17%", 'Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage5/sp2.png', "HP", "-17%", 'Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage5/sp3.png', "Gateway", "-17%", 'Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage5/sp4.png', "HP", "-17%", 'Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage5/sp5.png', "HP", "-17%", 'Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage5/sp6.png', "Dell", "-17%", 'Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage5/sp7.png', "HP", "-17%", 'Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage5/sp8.png', "Gateway", "-17%", 'Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage5/sp9.png', "HP", "-17%", 'Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage5/sp10.png', "HP", "-17%", 'Samsung 36" French door 28 cu. ft. Smart Energy Star Refrigerator', '$3225.6', "$2856.3", 'shop-single-product.html')
+            #tab-1-bestseller.tab-pane.fade(role='tabpanel', aria-labelledby='tab-1-bestseller')
+                .box-swiper
+                    .swiper-container.swiper-tab-2
+                        .swiper-wrapper.pt-5
+                            .swiper-slide
+                                .list-products-5
+                                    +cardGridStyle3('assets/imgs/page/homepage5/sp1.png', "Roku", "-17%", 'Class 4K UHD (2160P) LED Roku Smart TV HDR', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage5/sp2.png', "SAMSUNG", "-17%", 'SAMSUNG Galaxy Tab S7 Plus 12.4" 128GB Mystic Black', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage5/sp3.png', "HP", "-17%", 'HP 11.6" Chromebook, AMD A4, 4GB RAM, 32GB Storage', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage5/sp4.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage5/sp5.png', "SAMSUNG", "-17%", 'SAMSUNG Galaxy Tab A7 Lite, 8.7" Tablet 32GB', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage5/sp6.png', "Roku", "-17%", 'Class 4K UHD (2160P) LED Roku Smart TV HDR', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage5/sp7.png', "SAMSUNG", "-17%", 'SAMSUNG Galaxy Tab S7 Plus 12.4" 128GB Mystic Black', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage5/sp8.png', "HP", "-17%", 'HP 11.6" Chromebook, AMD A4, 4GB RAM, 32GB Storage', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage5/sp9.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage5/sp10.png', "SAMSUNG", "-17%", 'SAMSUNG Galaxy Tab A7 Lite, 8.7" Tablet 32GB', '$3225.6', "$2856.3", 'shop-single-product.html')
+            #tab-1-mostviewed.tab-pane.fade(role='tabpanel', aria-labelledby='tab-1-mostviewed')
+                .box-swiper
+                    .swiper-container.swiper-tab-3
+                        .swiper-wrapper.pt-5
+                            .swiper-slide
+                                .list-products-5
+                                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp2.png', "Apple", "-17%", 'MSI Optix G272 27" Full HD LED Gaming LCD Monitor', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp3.png', "Apple", "-17%", 'LG 65" Class 4K UHD Smart TV OLED A1 Series ', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp7.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp6.png', "Apple", "-17%", 'Chromecast with Google TV - Streaming Entertainment', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp5.png', "Apple", "-17%", 'Apple Watch Series 7 GPS + Cellular, 41mm Midnight', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp2.png', "Apple", "-17%", 'MSI Optix G272 27" Full HD LED Gaming LCD Monitor', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp3.png', "Apple", "-17%", 'LG 65" Class 4K UHD Smart TV OLED A1 Series ', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp7.png', "Apple", "-17%", '2022 Apple iMac with Retina 5K Display 8GB RAM, 256GB SSD', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp6.png', "Apple", "-17%", 'Chromecast with Google TV - Streaming Entertainment', '$3225.6', "$2856.3", 'shop-single-product.html')
+                                    +cardGridStyle3('assets/imgs/page/homepage1/imgsp5.png', "Apple", "-17%", 'Apple Watch Series 7 GPS + Cellular, 41mm Midnight', '$3225.6', "$2856.3", 'shop-single-product.html')

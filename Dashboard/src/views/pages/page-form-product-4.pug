@@ -1,0 +1,63 @@
+extends ../layouts/master.pug
+
+block title
+	title Ecom - Marketplace Dashboard Template
+
+block content
+	.row
+		.col-9
+			.content-header
+				h2.content-title Add New Product
+				div
+					button.btn.btn-light.rounded.font-sm.mr-5.text-body.hover-up Save to draft
+					button.btn.btn-md.rounded.font-sm.hover-up Publich
+		.col-9
+			.card
+				.card-body
+					.row.gx-5
+						aside.col-lg-3.border-end
+							nav.nav.nav-pills.flex-column.mb-4
+								a.nav-link.active(aria-current='page' href='#') General
+								a.nav-link(href='#') Catgeory info
+								a.nav-link(href='#') Pricing
+								a.nav-link(href='#') Images
+								a.nav-link(href='#') SEO keywords
+								a.nav-link(href='#') Related items
+						.col-lg-9
+							section.content-body.p-xl-4
+								form
+									.row.mb-4
+										label.col-lg-3.col-form-label Product name*
+										.col-lg-9
+											input.form-control(type='text' placeholder='Type here')
+									.row.mb-4
+										label.col-lg-3.col-form-label Description*
+										.col-lg-9
+											textarea.form-control(placeholder='Type here' rows='4')
+									.row.mb-4
+										label.col-lg-3.col-form-label Brand
+										.col-lg-4
+											small.text-muted.font-sm.mb-10 Multiselect: Cmd+click
+											select.form-control.select-multiple(multiple='' size='4')
+												option Adidas
+												option Puma
+												option Apple
+												option Toyota
+												option Toshiba
+												option Artel
+									.row.mb-4
+										label.col-lg-3.col-form-label Tax ID
+										.col-lg-4
+											input.form-control(type='number' placeholder='012345678')
+									.row.mb-4
+										label.col-lg-3.col-form-label Related tags
+										.col-lg-4
+											input.form-control(type='text' placeholder='Type')
+									.row.mb-4
+										label.col-lg-3.col-form-label Status
+										.col-lg-9
+											label.form-check.my-2
+												input.form-check-input(type='checkbox' checked='')
+												span.form-check-label Enable this product
+									br
+									button.btn.btn-primary(type='submit')  Continue to next

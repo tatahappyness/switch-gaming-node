@@ -1,0 +1,15 @@
+extends ../layouts/master.pug
+block variables
+    - var PageTitle = 'Register'
+block title
+    title Register - Ecom Marketplace Template
+
+block header
+    include ../components/header.pug
+
+block content
+    include ../sections/register_sec1.pug
+
+    include ../sections/newsletter.pug
+
+    block scripts-custom
