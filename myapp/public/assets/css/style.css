@@ -3207,7 +3207,7 @@ a.text-brand-3:hover {
 .header .main-header .header-left .header-search .box-header-search .box-category {
   position: relative;
   margin-right: 15px;
-  min-width: 120px;
+  min-width: 150px;
 }
 .header .main-header .header-left .header-search .box-header-search .box-category::before {
   content: "";
