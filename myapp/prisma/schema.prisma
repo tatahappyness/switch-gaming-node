@@ -16,6 +16,7 @@ model category {
   produit  produit[]
 }
 
+
 model user {
   id         Int          @id @default(autoincrement())
   username   String?
@@ -57,6 +58,17 @@ model visitor {
   agent     String?
   createdAt DateTime @default(now())
 }
+
+model seller {
+  id        Int      @id @default(autoincrement())
+  imgSeller String?
+  name      String?
+  status    String?
+  email     String   @unique
+  createdAt DateTime @default(now())
+}
+
+
 
 enum user_role {
   USER
