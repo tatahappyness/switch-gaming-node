@@ -1,0 +1,61 @@
+html
+    head
+        title Selamat Datang
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css")
+    body
+        div.container           
+            h3(align="center") Data
+            table.table.table-striped.table-bordered.table-hover.table-sm
+                tr
+                    td(colspan="7")
+                         a(class="btn btn-success" href="/data/create") Tambah
+                         a(class="btn btn-success" href="/logout") Keluar
+                tr
+                    th NO
+                    th NAMA
+                    th ALAMAT
+                    th No HP
+                    th JK
+                    th FOTO
+                    th AKSI
+                for row, index in posts
+                    tr
+                        td #{index + 1}
+                        td #{row.title}
+                        td #{row.texte}
+                        td #{row.priceNew}
+                        td #{row.priceOld}
+                        
+        div.container
+            h3(align="center") Tambah Data
+            form(action="/data/create" method="post" enctype="multipart/form-data")
+                table.table
+                    tr
+                        td Nama
+                        td 
+                            input(class="form-control" type="text" name="nama" required)
+                    tr
+                        td Alamat
+                        td 
+                            input(class="form-control" type="text" name="alamat")
+                    tr
+                        td No HP
+                        td
+                            input(class="form-control" type="text" name="telepon" )
+                    tr
+                        td Foto
+                        td
+                            input(class="form-control" type="file" name="foto" required)
+                    tr
+                        td Jenis Kelamin
+                        td
+                            div.form-check.form-check-inline
+                                input(class="form-check-input" type='radio' name="jk" value="L") 
+                                | L
+                            div.form-check.form-check-inline
+                                input(class="form-check-input" type='radio' name="jk" value="P") 
+                                | P
+                    tr
+                        td(colspan="2") 
+                            input(class="btn btn-success" type="submit" value="Simpan")
+                            button(type='button' class="btn btn-success" onclick='self.history.back()') Kembali

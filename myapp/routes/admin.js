@@ -1,5 +1,12 @@
 const express = require('express');
 const router_admin = express.Router();
+const { PrismaClient } = require('@prisma/client');
+
+const prisma = new PrismaClient()
+
+//test
+
+
 
 /* GET admin page. */
 router_admin.get('/dashbord', function(req, res, next) {
@@ -100,5 +107,20 @@ router_admin.get('/dashbord', function(req, res, next) {
   router_admin.get('/page-transactions-details', function(req, res, next) {
       res.render('backend/pages/page-transactions-details', { title: 'Express' });
   });
+
+  router_admin.get('/test', async function(req, res, next) {
+    const posts = await prisma.produit.findMany({
+    })
+    res.render('backend/pages/test', { title: 'Express', posts:posts });
+    
+  });
+
+  router_admin.post('/test', async function(req, res, next) {
+    const posts = await prisma.produit.findMany({
+    })
+    res.render('backend/pages/test', { title: 'Express', posts:posts });
+    
+  });
+
 
   module.exports = router_admin
