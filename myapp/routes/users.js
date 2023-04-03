@@ -1,9 +1,13 @@
 const express = require('express');
-const router = express.Router(); 
+const router_user = express.Router(); 
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+router_user.get('/', function(req, res, next) {
+  res.render('pages/index-3', 
+    { 
+      title: 'Switch-gaming', 
+      menus: JSON.parse(JSON.stringify(process.env.MENUS)).split(','),
+
+    });
 });
 
-module.exports = router;
+module.exports = router_user;

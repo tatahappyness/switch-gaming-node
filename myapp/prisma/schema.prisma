@@ -1,0 +1,63 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["filterJson"]
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model category {
+  id          Int          @id @default(autoincrement())
+  name        String
+  createdAt   DateTime     @default(now())
+  description String?      @db.VarChar(1000)
+  produit  produit[]
+}
+
+model user {
+  id         Int          @id @default(autoincrement())
+  email      String       @unique(map: "User_email_key")
+  passwd     String
+  name       String?
+  role       user_role    @default(ADMIN)
+  createdAt  DateTime     @default(now())
+  produit  produit[]
+}
+
+model produit {
+  id            Int       @id @default(autoincrement())
+  title         String?
+  text          String?
+  createdAt     DateTime  @default(now())
+  categoryId    Int?
+  priceNew      Float?
+  priceOld      Float?
+  adviceTitle   String?
+  ratingNb      Int?
+  ratingLabel   String?
+  imgAlaUne     String?
+  imgGalery     Json?
+  authorId      Int?
+  user          user?     @relation(fields: [authorId], references: [id], map: "Produit_authorId_fkey")
+  category      category? @relation(fields: [categoryId], references: [id], map: "Produit_categoryId_fkey")
+
+  @@index([authorId], map: "Produit_authorId_fkey")
+  @@index([categoryId], map: "Produit_categoryId_fkey")
+}
+
+model visitor {
+  id        Int      @id @default(autoincrement())
+  ip        String   @unique(map: "Visitor_ip_key")
+  platform  String?
+  language  String?
+  mobile    String?
+  agent     String?
+  createdAt DateTime @default(now())
+}
+
+enum user_role {
+  USER
+  ADMIN
+}
