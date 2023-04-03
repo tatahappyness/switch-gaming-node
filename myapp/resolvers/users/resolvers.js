@@ -16,7 +16,8 @@ const resolvers = {
     
         return users;
     
-      }
+      }, 
+    
 
 }
 

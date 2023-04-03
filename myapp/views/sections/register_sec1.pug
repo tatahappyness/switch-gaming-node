@@ -3,24 +3,24 @@ section.section-box.shop-template.mt-60
         .row.mb-100
             .col-lg-1
             .col-lg-5
-                h3 Create an account
+                h3 Créer un compte
                 p.font-md.color-gray-500 Access to all features. No credit card required.
                 .form-register.mt-30.mb-30
                     .form-group
-                        label.mb-5.font-sm.color-gray-700 Full Name *
-                        input.form-control(type="text", placeholder='Steven job')
+                        label.mb-5.font-sm.color-gray-700 Nom et prénom *
+                        input.form-control(type="text", name="fullname" placeholder='Steven job')
                     .form-group
                         label.mb-5.font-sm.color-gray-700 Email *
-                        input.form-control(type="text", placeholder='stevenjob@gmail.com')
+                        input.form-control(type="text", name="email" placeholder='stevenjob@gmail.com')
                     .form-group
                         label.mb-5.font-sm.color-gray-700 Username *
-                        input.form-control(type="text", placeholder='stevenjob')
+                        input.form-control(type="text", name="username" placeholder='stevenjob')
                     .form-group
-                        label.mb-5.font-sm.color-gray-700 Password *
-                        input.form-control(type="password", placeholder='******************')
+                        label.mb-5.font-sm.color-gray-700 Mot de passe *
+                        input.form-control(type="password", name="password" placeholder='******************')
                     .form-group
-                        label.mb-5.font-sm.color-gray-700 Re-Password *
-                        input.form-control(type="password", placeholder='******************')
+                        label.mb-5.font-sm.color-gray-700 Retapez mot de passe *
+                        input.form-control(type="password", name="confirm_password" placeholder='******************')
                     .form-group
                         label
                             input.checkagree(type="checkbox")
