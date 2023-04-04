@@ -44,7 +44,8 @@ app.use('/login', require('./routes/login'))
 app.use('/api', require('./routes/api'))
 
 //Graphql WS
-app.use('/graphql/users', require('./graphql/graphql'), )
+app.use('/graphql/users', require('./graphql/users/graphql'), )
+app.use('/graphql/products', require('./graphql/products/graphql'), )
 
 
 // catch 404 and forward to error handler

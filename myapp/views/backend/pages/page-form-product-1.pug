@@ -7,93 +7,93 @@ block content
 	.row
 		.col-9
 			.content-header
-				h2.content-title Add New Product
+				h2.content-title Ajouter nouvel produit
 				div
-					button.btn.btn-light.rounded.font-sm.mr-5.text-body.hover-up Save to draft
-					button.btn.btn-md.rounded.font-sm.hover-up Publich
+					button.btn.btn-light.rounded.font-sm.mr-5.text-body.hover-up Enregistrer dans le brouillon
+					button.btn.btn-md.rounded.font-sm.hover-up Publier
 		.col-lg-6
 			.card.mb-4
 				.card-header
-					h4 Basic
+					h4 Basique
 				.card-body
 					form
 						.mb-4
-							label.form-label(for='product_name') Product title
+							label.form-label(for='product_name') Titre d'un produit
 							input#product_name.form-control(type='text' placeholder='Type here')
 						.mb-4
-							label.form-label Full description
+							label.form-label Description
 							textarea.form-control(placeholder='Type here' rows='4')
 						.row
 							.col-lg-4
 								.mb-4
-									label.form-label Regular price
+									label.form-label Prix ​​habituel
 									.row.gx-2
 									input.form-control(placeholder='$' type='text')
 							.col-lg-4
 								.mb-4
-									label.form-label Promotional price
+									label.form-label Prix promotionnel
 									input.form-control(placeholder='$' type='text')
 							.col-lg-4
-								label.form-label Currency
+								label.form-label monnaie
 								select.form-select
 									option  USD
 									option  EUR
 									option  RUBL
 						.mb-4
-							label.form-label Tax rate
+							label.form-label Taux d'imposition
 							input#product_name.form-control(type='text' placeholder='%')
 						label.form-check.mb-4
 							input.form-check-input(type='checkbox' value='')
-							span.form-check-label  Make a template
+							span.form-check-label  Faire un modèle
 			.card.mb-4
 				.card-header
-					h4 Shipping
+					h4 Expédition
 				.card-body
 					form
 						.row
 							.col-lg-6
 								.mb-4
-									label.form-label(for='product_name') Width
+									label.form-label(for='product_name') Largeur
 									input#product_name.form-control(type='text' placeholder='inch')
 							.col-lg-6
 								.mb-4
-									label.form-label(for='product_name') Height
+									label.form-label(for='product_name') Hauteur
 									input#product_name.form-control(type='text' placeholder='inch')
 							.mb-4
-								label.form-label(for='product_name') Weight
+								label.form-label(for='product_name') Lester
 								input#product_name.form-control(type='text' placeholder='gam')
 							.mb-4
-								label.form-label(for='product_name') Shipping fees
+								label.form-label(for='product_name') Frais de port
 								input#product_name.form-control(type='text' placeholder='$')
 		.col-lg-3
 			.card.mb-4
 				.card-header
-					h4 Media
+					h4 Médias
 				.card-body
 					.input-upload
 						img(src='/backend/assets/imgs/theme/upload.svg' alt='')
 						input.form-control(type='file')
 			.card.mb-4
 				.card-header
-					h4 Organization
+					h4 Organisation
 				.card-body
 					.row.gx-2
 						.col-sm-6.mb-3
-							label.form-label Category
+							label.form-label Catégorie
 							select.form-select
-								option  Automobiles
-								option  Home items
-								option  Electronics
+								option  Voitures
+								option  Articles pour la maison
+								option  Électronique
 								option  Smartphones
-								option  Sport items
-								option  Baby and Tous
+								option  Articles de sport
+								option  Bébé et Jouets
 						.col-sm-6.mb-3
-							label.form-label Sub-category
+							label.form-label Sous-catégorie
 							select.form-select
 								option  Nissan
 								option  Honda
 								option  Mercedes
 								option  Chevrolet
 						.mb-4
-							label.form-label(for='product_name') Tags
+							label.form-label(for='product_name') Mots clés
 							input.form-control(type='text')

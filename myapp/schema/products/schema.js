@@ -6,6 +6,7 @@ const schema = buildSchema(`
 
     scalar DateTime
 
+
     input ProduitInput {
 
 		title: String	
@@ -18,7 +19,11 @@ const schema = buildSchema(`
 
         priceOld: String
 
-		imgGalery: [Json]
+		ratingNb: String
+
+		ratingLabel: String
+
+		imgGalery: [String]
 
 		adviceTitle: String
 
@@ -29,6 +34,67 @@ const schema = buildSchema(`
 		categoryId: ID
 
 	}
+
+	type Produit {
+
+		id: ID!
+
+		title: String	
+
+		text: String
+
+		imgAlaUne: String
+
+		priceNew: String
+
+        priceOld: String
+
+		ratingNb: String
+
+		ratingLabel: String
+
+		imgGalery: [String]
+
+		adviceTitle: String
+
+		adviceContent: String
+
+		authorId: ID
+
+		categoryId: ID
+
+	}
+
+	
+	type Query {
+
+
+		products(user: ID): [Produit]
+
+		produit(id: ID!): Produit
+
+		
+
+		productByCategoryAndType(category: ID, type: String): [Produit]
+
+		
+
+		productByPagination(page: Int): [Produit]
+		
+
+	}
+
+
+	type Mutation {
+
+		createProduct(produit: ProduitInput): Produit
+
+		updateProduct(id: ID!, produit: ProduitInput): Produit
+
+		deleteProduct(id: ID!): Produit
+
+	}
+
 
 `)
 
