@@ -5,7 +5,7 @@ section.section-box.shop-template.mt-60
             .col-lg-5
                 h3 Créer un compte
                 p.font-md.color-gray-500 Access to all features. No credit card required.
-                .form-register.mt-30.mb-30
+                form.form-register.mt-30.mb-30(action="/register/create/admin" method="POST")
                     .form-group
                         label.mb-5.font-sm.color-gray-700 Nom et prénom *
                         input.form-control(type="text", name="fullname" placeholder='Steven job')

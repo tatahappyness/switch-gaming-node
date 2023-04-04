@@ -20,6 +20,8 @@ const schema = buildSchema(`
 
         fullname: String
 
+		role: String
+
         username: String
         
         email: String
@@ -31,7 +33,7 @@ const schema = buildSchema(`
     type User {
 
 		id: ID!
-
+		
 		username: String
 
         fullname: String

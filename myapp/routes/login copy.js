@@ -8,7 +8,7 @@ require('dotenv').config()
 
 router_login.get('/', function(req, res, next) {
 
-  res.render('pages/page-login', 
+  res.render('pages/index-3', 
     { 
       title: 'Switch-gaming', 
       menus: JSON.parse(JSON.stringify(process.env.MENUS)).split(','),
@@ -40,9 +40,7 @@ router_login.post('/auth', (req, res) => {
 
 					id
 
-					username
-
-          fullname
+					name
 
 					email
 
@@ -56,9 +54,11 @@ router_login.post('/auth', (req, res) => {
 
 		`
 
-		const authenticated = await request(process.env.SERVER_URL + '/users', query)
+		const authenticated = await request(process.env.SERVER_URL, query)
 
 		console.log(JSON.stringify(authenticated.login.token, undefined, 2))
+
+		
 
 		if(authenticated.login.user == null){
 
@@ -67,7 +67,10 @@ router_login.post('/auth', (req, res) => {
 		}
 
 		//Passing token in request session
+
 		req.session.token = authenticated.login.token;
+
+		
 
 		switch(authenticated.login.user.role) {
 
@@ -77,9 +80,9 @@ router_login.post('/auth', (req, res) => {
 
 			break;
 
-		  case "USER":
+		  case "SUBSCRIBER":
 
-			return res.redirect('user/dashbord')
+			return res.redirect('/member')
 
 			break;
 

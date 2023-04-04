@@ -1,7 +1,7 @@
 const express = require('express');
 const router_register = express.Router(); 
 
-const { request, gql, GraphQLClient } = require("graphql-request")
+const { request, gql } = require("graphql-request")
 
 const bcrypt = require('bcrypt')
 
@@ -13,21 +13,22 @@ router_register.post('/create/:type_user?', function(req, res, next) {
     const result = async (req) => {
         
         const passwd = await bcrypt.hash(req.body.password, 10)
-        
+        let role = ''
+
         if(req.params.type_user == 'admin')
         {
-            const role = 'ADMIN'
+             role = 'ADMIN'
         }
         else
         {
-            const role = 'USER'
+            role = 'USER'
         }
 
         const query = gql`
 
 			  mutation {
 
-				  createUser(user: {role: "${role}" username: "${res.body.username}", fullname: "${res.body.fullname}" email: "${res.body.email}", passwd: "${passwd}"}) {
+				  createUser(user: {role: "${role}", username: "${req.body.username}", fullname: "${req.body.fullname}", email: "${req.body.email}", passwd: "${passwd}"}) {
 
 					id
 
@@ -37,7 +38,7 @@ router_register.post('/create/:type_user?', function(req, res, next) {
 
 			`
 
-        const data = await request(process.env.SERVER_URL, query)
+        const data = await request(process.env.SERVER_URL + '/users', query)
 
         console.log(JSON.stringify(data.createUser.id, undefined, 2))
 
