@@ -1,7 +1,7 @@
 const express = require('express');
 const router_register = express.Router(); 
 
-router_register.get('/register', function(req, res, next) {
+router_register.get('/', function(req, res, next) {
     
   res.render('pages/page-register', 
     { 
